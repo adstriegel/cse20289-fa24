@@ -172,9 +172,9 @@ We will be creating two repositories eventually, one for you individually and on
 
 1. Login to your GitHub account and create a new repository named `student-cse20289-fa24-NETID` where `NETID` is your Notre Dame net ID (e.g. `striegel`). It is critical that the format is exactly as noted above to allow the various test scripts to operate correctly.  
 2. Go to that repository and make sure that the repository is set as private.
-3. Add Professor Striegel and the grading TA (adstriegel, aputtasw) as collaborators for your repository.  We will strictly be read-only but we do need access for your private repository.  
+3. Add Professor Striegel and the grading TA (adstriegel, Annapurna-B-P) as collaborators for your repository.  We will strictly be read-only but we do need access for your private repository.  
 
-Now that we have it created, let's clone your repository then locally.  You should replace `adstriegel` with your GitHub username and the repository name to use your netid. This should be done on the CSE student machine to make sure that everything is working correctly.    
+Now that we have it created, let's clone your repository then locally.  You should replace `adstriegel` with your GitHub username and the repository name to use your netid. This should be done on the CSE student machine to make sure that everything is working correctly. 
 
     % cd ~/repos
     % pwd
