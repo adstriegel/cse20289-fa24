@@ -1,15 +1,15 @@
 # Homework 0 - CSE20289 - Fall 2024
 
-The focus of this document is to get you set up for homework submission for CSE 20289 - Systems Programming for Fall 2024.  
+The focus of this document is to get you set up for homework submission for [CSE 20289 - Systems Programming for Fall 2024](https://canvas.nd.edu/courses/99306).  
 
 | **Aspect** | **Information** |
-| --- | --- | 
-| **Assigned** | Wednesday, August 28th | 
-| **Due** | Monday, September 2nd - 10 PM | 
+| --- | --- |
+| **Assigned** | Wednesday, August 28th |
+| **Due** | Monday, September 2nd - 10 PM |
 | **Due (EC)** | Friday, August 30th - 10 PM |
 | **Group** | To be done individually |  
-| **Canvas Link** | Homework 00 | 
-| **Points** | TBD | 
+| **Canvas Link** | [Homework 00](https://canvas.nd.edu/courses/99306/assignments/299838) |
+| **Points** | 7 |
 
 ## Pre-Requisites
 
@@ -337,9 +337,3 @@ Submit the final hash for your submission via the text field in Canvas for Homew
 * 3 pts - Homework submission is problem free without intervention required by the TA including files in the correct locations (`hw/hw00`) off of the private repository 
 * 1 pts - At least three commit messages in the proper format
 * 2 pts - All files are present as request (0.5 pts each) and modified as requested
-   
-
-
-   
-
- 
