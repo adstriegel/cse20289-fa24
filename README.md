@@ -22,7 +22,7 @@ There are also various materials provided only via Canvas, the learning manageme
 
 ## Related LInks
 
-* Fall 2023 offering of Systems Programming by Prof. Striegel
+* [Fall 2023 offering](https://github.com/adstriegel/cse20289-fa23) of Systems Programming by Prof. Striegel
    * Notable changes from the prior offering are a shifting of the materials to cover Python, shell scripting, and C rather than shell scripting, Python, and then C
 * [Prof. Peter Bui](https://www3.nd.edu/~pbui/index.html)'s offerings of Systems Programming for on whom this course material is based
    * [Spring 2024](https://www3.nd.edu/~pbui/teaching/cse.20289.sp24/)
