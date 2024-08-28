@@ -19,20 +19,20 @@ Outside of Homework 1 which has an early due date, assignments will generally fo
 | 2 | 09-02 | M | Functions, Doctests, Lists | Slides <br> Recap | [HW 0 (Due)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) <br> HW 1 (Assigned) <br> Quiz - Wk 2| 
 | 2 | 09-04 | W | Strings, Dictionaries | Slides <br> Recap | | 
 | 2 | 09-06 | F | I/O, Processes, Requests | Slides <br> Recap | | 
-|   |       |   | **Regular Expressions, Common File Formats** | | | 
+|   |       |   | **Regular Expressions, Common File Formats** | | [Week 3 Readings](../readings/readings-week03.md) | 
 | 3 | 09-09 | M | CSVs, Regular Expressions | Slides | HW 1 (Due) <br> HW 2 (Assigned) <br> Quiz - Wk 3 | 
-| 3 | 09-11 | W | Regular Expressions (Cont'd) | Slides | | 
-| 3 | 09-13 | F | Regular Expressions + JSONs | Slides | | 
-| 3 |       |   | **Functional Programming, Iterators** | | |
-| 3 | 09-16 | M | Functional Programming | Slides | HW 2 (Due) <br> HW 3 (Assigned) <br> Quiz - Wk 4  | 
-| 3 | 09-18 | W | Iterators / Generators | Slides | | 
-| 3 | 09-20 | F | Parallel Computing | Slides | |
-| 5 |       |   | **Servers, Slack, Exam Review** | | |
+| 3 | 09-11 | W | Regular Expressions (Cont'd) | Slides <br> Recap | | 
+| 3 | 09-13 | F | Regular Expressions + JSONs | Slides  <br> Recap | | 
+| 3 |       |   | **Functional Programming, Iterators** | | [Week 4 Readings](../readings/readings-week04.md) |
+| 3 | 09-16 | M | Functional Programming | Slides <br> Recap | HW 2 (Due) <br> HW 3 (Assigned) <br> Quiz - Wk 4  | 
+| 3 | 09-18 | W | Iterators / Generators | Slides <br> Recap | | 
+| 3 | 09-20 | F | Parallel Computing | Slides <br> Recap | |
+| 5 |       |   | **Servers, Slack, Exam Review** | | [Week 5 Readings](../readings/readings-week05.md) |
 | 5 | 09-23 | M | Server-Side Programming | Slides | HW 3 (Due) <br> HW 4 (Assigned) <br> Quiz - Wk 5 | 
-| 5 | 09-25 | W | Practice / Review | Slides | | 
-| 5 | 09-27 | F | Review for Exam | Slides | |
-| 6 |       |   | **Exam + Shell Scripting** | | |
-| 6 | 09-30 | M | Exam 1 | No Slides | HW 4 (Due) <br> HW 5 (Assigned) <br> No Quiz |  
+| 5 | 09-25 | W | Practice / Review | Slides <br> Recap | | 
+| 5 | 09-27 | F | Review for Exam | Slides <br> Recap | |
+| 6 |       |   | **Exam + Shell Scripting** | | [Week 6 Readings](../readings/readings-week06.md) |
+| 6 | 09-30 | M | Exam 1 | No Slides | HW 4 (Due) <br> No Quiz |  
 
 We will then continue onto the second module that will cover shell scripting with Homework 5 being due on October 7th.  The second module will span across fall break.
 
