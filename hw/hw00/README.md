@@ -164,6 +164,8 @@ We can see this in practice with the steps that we did above. The public half of
 
 ### Task 2 - Checklist
 
+Nothing outside of creating the relevant key pair that we will use to eventually get access to your private Git repository.  
+
 ## Task 3 - Creating a repository
 
 For Git, there are two ways to create a repository: initializing a repository and then associating it with a remote repository or creating the remote repository and then cloning it locally.  Generally, using the web for creation tends to be a bit easier.
