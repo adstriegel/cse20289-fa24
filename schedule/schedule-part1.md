@@ -14,7 +14,7 @@ Outside of Homework 1 which has an early due date, assignments will generally fo
 |:-:|:-:|:-:|---|:-:|---|
 |   |       |   | **Introduction to Python** | | [Week 1 Readings](../readings/readings-week01.md) |
 | 1 | 08-28 | W | Class Introduction / Overview | [Slides](https://canvas.nd.edu/files/3901901/download?download_frd=1) <br> [Recap](../lectures/lecture-01-08-28-24/lecture01-recap.md) | [HW 0 (Assigned)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) |
-| 1 | 08-30 | F | Python Scripting Refresher, git | Slides <br> Recap | | 
+| 1 | 08-30 | F | UNIX, git | [Slides](https://canvas.nd.edu/files/3911921/download?download_frd=1) <br> [Recap](../lectures/lecture-02-08-30-24/lecture02-recap.md) | | 
 |   |       |   | **Python Refresher**  | | [Week 2 Readings](../readings/readings-week02.md) |
 | 2 | 09-02 | M | Functions, Doctests, Lists | Slides <br> Recap | [HW 0 (Due)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) <br> HW 1 (Assigned) <br> Quiz - Wk 2| 
 | 2 | 09-04 | W | Strings, Dictionaries | Slides <br> Recap | | 
