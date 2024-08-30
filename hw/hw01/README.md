@@ -1,4 +1,4 @@
-# Homework 1 - CSE20289 - Fall 2024
+# Homework 1 - CSE20289 - Fall 2024 - Near Final Draft
 
 The focus of this homework is to practice a bit of Python programming, specifically opening up a file and scanning said file for a variety of strings.  
 
