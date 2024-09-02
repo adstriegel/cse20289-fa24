@@ -24,7 +24,7 @@ do
     # likely a valid URL
     if [ "${#FldURLI}" -ge 2 ]; 
     then
-        #printf 'Repository URL: %s\n' "$FldURL"
+#        printf 'Repository URL: %s\n' "$FldURL"
 
         # Skip the first line
         if [ "$FldNetID" = "NetID" ];
@@ -32,8 +32,11 @@ do
             continue
         fi
 
-        DirCorrect="student-cse20289-fa24-$FldNetID"
-        #echo $DirCorrect
+        # Remove any leading or trailing spaces
+        TrimmedNetID=$(echo $FldNetID | tr -d ' ')
+
+        DirCorrect="student-cse20289-fa24-$TrimmedNetID"
+#        echo $DirCorrect
         
         if [ ! -d "$DirCorrect" ];
         then
@@ -52,11 +55,7 @@ do
 
 done < "$1"
 
-# Summarize the number of directories present
-printf 'Total Directories Present:'
-# TBA: Fix this to properly count only directories.  In theory, the location where you run
-#  this should only have directories but just in case - tune to do a wildcard on the student*
-#  and that pattern being a directory
-ls -l | wc -l
+# Count the number of directories present
+find . -mindepth 1 -maxdepth 1 -type d | wc -l
 
 
