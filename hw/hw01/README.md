@@ -35,8 +35,8 @@ For your code, you will be writing code to accomplish the following:
 * If the `--include` argument is present, print out the number of include statements
 * If the `--member` argument is present, count the number of `::` combinations that are present which contains the rough number of member functions defined
 * If the `--ptr` argument is present, count the number of `->` (C++ pointer dereferences) that are present in the code
-* If the `--simplefunc` argument is present, determine the number of functions that consist of only a single line of code (or less)
-   * You need only evaluate functions where left curly brace is on its own line and the right curly brace is on a separate line with potential code in the middle  
+* If the `--simplefunc` argument is present, determine the number of functions that consist of only a single line of code (or a blank line).
+   * You need only evaluate functions where left curly brace is on its own line and the right curly brace is on a separate line with potential line (could have code, comment, or be an empty line) in the middle  
    * For extra credit (via the `simplefuncec` argument), consider cases where the initial left curly brace need not be on its own line
 
 You can also operate with a few assumptions to make things easier:
@@ -51,7 +51,7 @@ Your output should be done in the following manner:
 
 ```
    file: PktQueue.cc
-   lines: 43
+   lines: 42
    include: 1
 ```
 
