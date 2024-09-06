@@ -8,7 +8,7 @@ For the first module, we will be using the following textbook:
 
 Each week will have an assigned reading that is best completed prior to the class but can also be completed in a pinch after the lecture on the particular topic. Lectures are recorded but are not linked in the schedule and can be found via Panopto in Canvas. 
 
-Outside of Homework 1 which has an early due date, assignments will generally follow a cadence where the assignment can be submitted early (Friday) for a slight bit of extra credit with the official due date being on Monday.  Assignments are due at 10 PM generally unless specified otherwise.
+Outside of Homework 0 which has an accelerated timeline, assignments will generally follow a cadence where the assignment is assigned on Monday, can be submitted early (Friday) for a slight bit of extra credit, and has an official due date being on Monday.  Assignments are due at 10 PM generally unless specified otherwise with the five minute grace period as discussed in class.
 
 | **Wk** | **Date** | **Day** | **Description** | **Content** | **Readings / Homework** |
 |:-:|:-:|:-:|---|:-:|---|
@@ -16,13 +16,13 @@ Outside of Homework 1 which has an early due date, assignments will generally fo
 | 1 | 08-28 | W | Class Introduction / Overview | [Slides](https://canvas.nd.edu/files/3901901/download?download_frd=1) <br> [Recap](../lectures/lecture-01-08-28-24/lecture01-recap.md) | [HW 0 (Assigned)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) |
 | 1 | 08-30 | F | UNIX, git | [Slides](https://canvas.nd.edu/files/3911921/download?download_frd=1) <br> [Recap](../lectures/lecture-02-08-30-24/lecture02-recap.md) | | 
 |   |       |   | **Python Refresher**  | | [Week 2 Readings](../readings/readings-week02.md) |
-| 2 | 09-02 | M | Functions, Doctests, Lists | Slides <br> Recap | [HW 0 (Due)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) <br> HW 1 (Assigned) <br> Quiz - Wk 2| 
-| 2 | 09-04 | W | Strings, Dictionaries | Slides <br> Recap | | 
+| 2 | 09-02 | M | Functions, Doctests, Lists | Slides <br> [Recap](../lectures/lecture-03-09-02-24/lecture03.recap.md) | [HW 0 (Due)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) <br> [HW 1 (Assigned)](../hw/hw01/README.md) <br> Quiz - Wk 2| 
+| 2 | 09-04 | W | Strings, Dictionaries | Slides <br> [Recap](../lectures/lecture-04-09-04-24/lecture04-recap.md) | | 
 | 2 | 09-06 | F | I/O, Processes, Requests | Slides <br> Recap | | 
 |   |       |   | **Regular Expressions, Common File Formats** | | [Week 3 Readings](../readings/readings-week03.md) | 
 | 3 | 09-09 | M | CSVs, Regular Expressions | Slides | HW 1 (Due) <br> HW 2 (Assigned) <br> Quiz - Wk 3 | 
-| 3 | 09-11 | W | Regular Expressions (Cont'd) | Slides <br> Recap | | 
-| 3 | 09-13 | F | Regular Expressions + JSONs | Slides  <br> Recap | | 
+| 3 | 09-11 | W | YAML + Regular Expressions (Cont'd) | Slides <br> Recap | | 
+| 3 | 09-13 | F | JSONs + Regular Expressions | Slides  <br> Recap | | 
 | 3 |       |   | **Functional Programming, Iterators** | | [Week 4 Readings](../readings/readings-week04.md) |
 | 3 | 09-16 | M | Functional Programming | Slides <br> Recap | HW 2 (Due) <br> HW 3 (Assigned) <br> Quiz - Wk 4  | 
 | 3 | 09-18 | W | Iterators / Generators | Slides <br> Recap | | 
@@ -38,8 +38,8 @@ We will then continue onto the second module that will cover shell scripting wit
 
 | **HW** | **Overview** | **Assigned** | **Due (Normal)** | **Due (EC)** |
 |:-:|---|:-:|:-:|:-:|
-| [0]((https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) | [Git / Submission Basics]((https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) | 08-28 | 09-02 | 08-30 | 
-| 1 | Python Basics (Files, Functions) | 09-02 | 09-09 | 09-06 | 
-| 2 | CSVs Large and Small | 09-09 | 09-16 | 09-13 | 
-| 3 | JSONs, Web Requests | 09-16 | 09-23 | 09-20 | 
+| [0](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) | [Git / Submission Basics](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) | 08-28 | 09-02 | 08-30 | 
+| [1](../hw/hw01/README.md) | Python Basics (Files, Functions) | 09-02 | 09-09 | 09-06 | 
+| 2 | Automation - Python | 09-09 | 09-16 | 09-13 | 
+| 3 | JSONs, CSVs, Web Requests | 09-16 | 09-23 | 09-20 | 
 | 4 | Parallelization | 09-23 | 09-30 | 09-27 | 
