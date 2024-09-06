@@ -44,7 +44,9 @@ You can also operate with a few assumptions to make things easier:
 * The files will only be C++ source files (e.g. ending with `.cc`)
 * The file will always be present - you do not need to test to see if the file exists
 * The file will read without issue and will contain only ASCII characters
-* For the pointer dereferencing, you can either look for `->` being present in a line and / or count the number of times that sub-string occurs (both yield the same result)
+* For the pointer dereferencing, you can either look for `->` being present in a line and / or count the number of times that sub-string occurs
+   * Note in your `README.md` as appropriate if you operate on a line by line basis or try to count all occurrences.  We will test for both and the example output files have results for both as well.  
+* For the member counting, the same criterion applies.  
 * A line with an `#include` will always start with `#include`
    * An include line that is commented out should not be counted
 * For the `simplefunc` argument, the `PktQueue.cc` file would not have any simple functions while the `fmnc_manager.cc` code might have several.  

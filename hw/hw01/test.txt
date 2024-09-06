@@ -1,5 +1,10 @@
 The following examples count a line with a pointer only once.  See later
-for the output if you count every -> instance separately.  
+for the output if you count every -> instance separately. The same breakout
+is listed below for member functions.
+
+=========
+Output if only one item in a line can count (ptr, member)
+=========
 
 file:  ../../hw/hw01/src/PktQueue.cc
 lines:  42
@@ -36,7 +41,7 @@ member:  0
 ptr:  13
 simplefunc:  0
 
-
+==============
 If you elect to do so, you can also count multiple pointers per line:
 
 file:  ../../hw/hw01/src/PktQueue.cc
@@ -54,4 +59,20 @@ ptr:  40
 file:  ../../hw/hw01/src/Thread_IO.cc
 ptr:  13
 
+==============
+Same note for counting member functions:
 
+file:  ../../hw/hw01/src/PktQueue.cc
+member:  4
+
+file:  ../../hw/hw01/src/fmnc_manager.cc
+member:  113
+
+file:  ../../hw/hw01/src/ParamDictionary.cc
+member:  36
+
+file:  ../../hw/hw01/src/RIPPS_PktPair.cc
+member:  54
+
+file:  ../../hw/hw01/src/Thread_IO.cc
+member:  0
