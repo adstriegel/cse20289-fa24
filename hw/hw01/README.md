@@ -49,13 +49,19 @@ You can also operate with a few assumptions to make things easier:
 
 Your output should be done in the following manner:
 
+```
    file: PktQueue.cc
    lines: 43
    include: 1
+```
+
+> *NOTE:* If you wrote your code and made it be a single line due to the incorrect formatting by Prof. Striegel, please note that in your `README.md`.  The intent is to have one line per output.  
 
 If an argument is not specified, you should not output that particular result (e.g. -include).Your code should always display the name of the file and the number of lines in that particular file. The output if a particular argument is present should be the argument name (e.g. `include` followed by a colon followed by the number). See the example above which would have been executed in the following manner:
 
+```
    python3 searchsrc.py PktQueue.cc --include
+```
 
 ## Solving the Problem
 
