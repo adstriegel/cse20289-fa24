@@ -21,6 +21,14 @@ def import_studentcsv (filename):
 
 TheList = import_studentcsv('StudentFile.csv')
 
+# Are there any students with the same first name in the list?
+for student in TheList:
+    for otherstudent in TheList:
+        if student['FirstName'] == otherstudent['FirstName'] and student['NetID'] != otherstudent['NetID']:
+            print('Student: ', student['FirstName'], ' ', student['LastName'], ' NetID: ', student['NetID'], ' shares first name with Student: ', otherstudent['FirstName'], ' ', otherstudent['LastName'], ' NetID: ', otherstudent['NetID'])
+
+
+
 # How could we identify if any two students shared the same first name?
 
 # Extra: How could we identify the first name that occurs the most?
