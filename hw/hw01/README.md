@@ -80,6 +80,28 @@ For testing purposes, several of the files are reasonable small.  Use those file
 
 > **Hint 2:** If your code is not behaving correctly, it can be helpful to print out what the respective values of the different variables contain.  When in doubt, print it out.  
 
+## Test Cases
+
+A complete listing of the correct outputs with all options enabled can be found in the [test.txt](test.txt) file in the class repository.  The results from `Thread_IO.cc` and `PktQueue.cc` are excerpted below:
+
+```
+file:  ../../hw/hw01/src/PktQueue.cc
+lines:  42
+include:  1
+member:  4
+ptr:  0
+simplefunc:  0
+```
+
+```
+file:  ../../hw/hw01/src/Thread_IO.cc
+lines:  149
+include:  7
+member:  0
+ptr:  13
+simplefunc:  0
+```
+
 ## Submission and Grading
 
 Your code should be submitted in the `hw/hw01` sub-directory and should contain a `searchsrc.py` file as well as a `README.md` file.  The `README.md` should contain if you are attempting the extra credit for the simple function test.  

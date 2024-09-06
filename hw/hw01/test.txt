@@ -1,0 +1,34 @@
+file:  ../../hw/hw01/src/PktQueue.cc
+lines:  42
+include:  1
+member:  4
+ptr:  0
+simplefunc:  0
+
+file:  ../../hw/hw01/src/fmnc_manager.cc
+lines:  2310
+include:  18
+member:  105
+ptr:  385
+simplefunc:  35
+
+file:  ../../hw/hw01/src/ParamDictionary.cc
+lines:  379
+include:  3
+member:  32
+ptr:  13
+simplefunc:  10
+
+file:  ../../hw/hw01/src/RIPPS_PktPair.cc
+lines:  607
+include:  5
+member:  54
+ptr:  36
+simplefunc:  0
+
+file:  ../../hw/hw01/src/Thread_IO.cc
+lines:  149
+include:  7
+member:  0
+ptr:  13
+simplefunc:  0
