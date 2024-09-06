@@ -1,0 +1,5 @@
+[ 0 ]:  ex-args.py
+[ 1 ]:  .cc
+Cur Dir: .
+CWD: /Users/striegel/Documents/repos/cse20289-fa24/lectures/lecture-05-09-06-24
+List Dir on . ['ex-read.py', 'ex-args.py', 'ex-read-output.txt', 'ex-args-output.txt', 'PktQueue.cc']
