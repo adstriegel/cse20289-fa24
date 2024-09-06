@@ -57,6 +57,8 @@ Your output should be done in the following manner:
 
 > *NOTE:* If you wrote your code and made it be a single line due to the incorrect formatting by Prof. Striegel, please note that in your `README.md`.  The intent is to have one line per output.  
 
+> *NOTE:* The file could also include a path to the file as well.
+
 If an argument is not specified, you should not output that particular result (e.g. -include).Your code should always display the name of the file and the number of lines in that particular file. The output if a particular argument is present should be the argument name (e.g. `include` followed by a colon followed by the number). See the example above which would have been executed in the following manner:
 
 ```
