@@ -37,4 +37,4 @@ In today's lecture (Wednesday, September 4th), we continued with Python diving i
 |---|---|---|---|
 | [Readings - Week 2](../../readings/readings-week02.md) | Readings for Week 2 | N/A | N/A | 
 | [Homework 1](../../hw/hw01/README.md) | Python Fundamentals | Monday, Sept. 9th, 10 PM | Friday, Sept. 6th, 10 PM | 
-| [Readings - Week 3](../../readings/readings-week02.md) | Readings for Week 2 | N/A | N/A | 
+| [Readings - Week 3](../../readings/readings-week03.md) | Readings for Week 3 | N/A | N/A | 
