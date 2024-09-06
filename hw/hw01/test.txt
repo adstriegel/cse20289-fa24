@@ -1,3 +1,6 @@
+The following examples count a line with a pointer only once.  See later
+for the output if you count every -> instance separately.  
+
 file:  ../../hw/hw01/src/PktQueue.cc
 lines:  42
 include:  1
@@ -32,3 +35,23 @@ include:  7
 member:  0
 ptr:  13
 simplefunc:  0
+
+
+If you elect to do so, you can also count multiple pointers per line:
+
+file:  ../../hw/hw01/src/PktQueue.cc
+ptr:  0
+
+file:  ../../hw/hw01/src/fmnc_manager.cc
+ptr:  499
+
+file:  ../../hw/hw01/src/ParamDictionary.cc
+ptr:  22
+
+file:  ../../hw/hw01/src/RIPPS_PktPair.cc
+ptr:  40
+
+file:  ../../hw/hw01/src/Thread_IO.cc
+ptr:  13
+
+
