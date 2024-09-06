@@ -7,7 +7,7 @@ In today's lecture, we took a look at how we can interact with files for the pur
 * Slides - See also Canvas
    * [PDF - 1 Page per Slide](https://canvas.nd.edu/files/3944836/download?download_frd=1)
    * [PDF - Notes Format](https://canvas.nd.edu/files/3944837/download?download_frd=1)
-* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=534ff286-36d3-423c-973e-b1e101105201)
+* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=64e92dbd-8b76-4dfe-b2ab-b1e301113b01)
 
 ## Key Points
 
@@ -23,6 +23,7 @@ In today's lecture, we took a look at how we can interact with files for the pur
 ## Action Items
 
 * Complete [Homework 1](../../hw/hw01/README.md)
+   * An [example set of outputs](../../hw/hw01/test.txt) for the homework is also available
 * Continue your review of Python basics
 
 ## Upcoming Due Dates
