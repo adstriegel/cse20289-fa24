@@ -50,6 +50,7 @@ You can also operate with a few assumptions to make things easier:
 * A line with an `#include` will always start with `#include`
    * An include line that is commented out should not be counted
 * For the `simplefunc` argument, the `PktQueue.cc` file would not have any simple functions while the `fmnc_manager.cc` code might have several.  
+   * Note that a simple function does not have to be a member function.
 
 Your output should be done in the following manner:
 
