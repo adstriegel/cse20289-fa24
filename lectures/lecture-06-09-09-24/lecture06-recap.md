@@ -5,9 +5,9 @@ In today's lecture, we wrapped up the discussion on `subprocess`, explored the n
 ## Relevant Links
 
 * Slides - See also Canvas
-   * [PDF - 1 Page per Slide](https://canvas.nd.edu/files/3944836/download?download_frd=1)
-   * [PDF - Notes Format](https://canvas.nd.edu/files/3944837/download?download_frd=1)
-* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=64e92dbd-8b76-4dfe-b2ab-b1e301113b01)
+   * [PDF - 1 Page per Slide](https://canvas.nd.edu/files/3954428/download?download_frd=1)
+   * [PDF - Notes Format](https://canvas.nd.edu/files/3954427/download?download_frd=1)
+* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ca6658b2-7f4f-4503-b2bb-b1e601128ebf)
 
 ## Key Points
 
