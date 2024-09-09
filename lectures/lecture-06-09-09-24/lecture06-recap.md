@@ -40,4 +40,4 @@ Either one or both of the regular expression sheets will be provided on the exam
 | [Readings - Week 3](../../readings/readings-week02.md) | Readings for Week 3 | N/A | N/A | 
 | Quiz - Week 3 | Quiz for Week 3 | Monday, September 9th, 10 PM | Monday, September 9th, 10 AM |
 | [Homework 2](../../hw/hw02/README.md) | Python Automation | Monday, Sept. 16th, 10 PM | Friday, Sept. 13th, 10 PM | 
-| Group Assignment | Group Selection or Request | Monday, Sept. 16th, 10 PM | Friday, Sept. 13th, 10 PM |  
+| [Group Assignment](https://canvas.nd.edu/courses/99306/assignments/305521) | Group Selection or Request | Monday, Sept. 16th, 10 PM | Friday, Sept. 13th, 10 PM |  

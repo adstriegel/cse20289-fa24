@@ -41,5 +41,6 @@ We will then continue onto the second module that will cover shell scripting wit
 | [0](../hw/hw00/README.md) | [Git / Submission Basics](../hw/hw00/README.md) | 08-28 | 09-02 | 08-30 | 
 | [1](../hw/hw01/README.md) | Python Basics (Files, Functions) | 09-02 | 09-09 | 09-06 | 
 | [2](../hw/hw02/README.md) | Automation - Python | 09-09 | 09-16 | 09-13 | 
+| [Group Selection](https://canvas.nd.edu/courses/99306/assignments/305521) | Select / Indicate Group | 09-09 | 09-16 | 09-13 | 
 | 3 | JSONs, CSVs, Web Requests | 09-16 | 09-23 | 09-20 | 
 | 4 | Parallelization | 09-23 | 09-30 | 09-27 | 
