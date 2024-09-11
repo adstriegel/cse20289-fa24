@@ -22,7 +22,7 @@ In today's lecture, we wrapped up the discussion on `subprocess`, explored the n
 ## Handouts
 
 * [In-Class Handout - Slide 18](./Lecture-06-Handout.pdf)
-* [Cheat Sheet - RegEx - Dave Child](./DataCamp-RegularExpressions.pdf)
+* [Cheat Sheet - RegEx - Dave Child](./davechild_regular-expressions.pdf)
 * [Cheat Sheet - RegEx - Data Camp](./DataCamp-RegularExpressions.pdf)
 
 Either one or both of the regular expression sheets will be provided on the exam.
