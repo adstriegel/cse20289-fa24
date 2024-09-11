@@ -9,7 +9,7 @@ In lieu of there not being class on Friday for Father Dowd's inauguration, Homew
 * Slides - See also Canvas
    * [PDF - 1 Page per Slide](https://canvas.nd.edu/files/3967434/download?download_frd=1)
    * [PDF - Notes Format](https://canvas.nd.edu/files/3967433/download?download_frd=1)
-* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ca6658b2-7f4f-4503-b2bb-b1e601128ebf)
+* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f902ea7c-635a-4a41-84d9-b1e80111eccf)
 
 ## Key Points
 
