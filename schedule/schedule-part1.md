@@ -16,12 +16,12 @@ Outside of Homework 0 which has an accelerated timeline, assignments will genera
 | 1 | 08-28 | W | Class Introduction / Overview | [Slides](https://canvas.nd.edu/files/3901901/download?download_frd=1) <br> [Recap](../lectures/lecture-01-08-28-24/lecture01-recap.md) | [HW 0 (Assigned)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) |
 | 1 | 08-30 | F | UNIX, git | [Slides](https://canvas.nd.edu/files/3911921/download?download_frd=1) <br> [Recap](../lectures/lecture-02-08-30-24/lecture02-recap.md) | | 
 |   |       |   | **Python Refresher**  | | [Week 2 Readings](../readings/readings-week02.md) |
-| 2 | 09-02 | M | Functions, Doctests, Lists | Slides <br> [Recap](../lectures/lecture-03-09-02-24/lecture03.recap.md) | [HW 0 (Due)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) <br> [HW 1 (Assigned)](../hw/hw01/README.md) <br> Quiz - Wk 2| 
+| 2 | 09-02 | M | Functions, Doctests, Lists | [Slides](https://canvas.nd.edu/files/3921257/download?download_frd=1) <br> [Recap](../lectures/lecture-03-09-02-24/lecture03.recap.md) | [HW 0 (Due)](https://github.com/adstriegel/cse20289-fa24/tree/main/hw/hw00) <br> [HW 1 (Assigned)](../hw/hw01/README.md) <br> Quiz - Wk 2| 
 | 2 | 09-04 | W | Strings, Dictionaries | [Slides](https://canvas.nd.edu/files/3932694/download?download_frd=1) <br> [Recap](../lectures/lecture-04-09-04-24/lecture04-recap.md) | | 
 | 2 | 09-06 | F | I/O, OS File Queries | [Slides](https://canvas.nd.edu/files/3944836/download?download_frd=1) <br> [Recap](../lectures/lecture-05-09-06-24/lecture05-recap.md) | | 
 |   |       |   | **Regular Expressions, Common File Formats** | | [Week 3 Readings](../readings/readings-week03.md) | 
 | 3 | 09-09 | M | Processes, Regular Expressions | [Slides](https://canvas.nd.edu/files/3954428/download?download_frd=1) | [HW 1 (Due)](../hw/hw01/README.md) <br> [HW 2 (Assigned)](../hw/hw02/README.md) <br> Quiz - Wk 3 | 
-| 3 | 09-11 | W | YAML + Regular Expressions (Cont'd) | Slides <br> Recap | | 
+| 3 | 09-11 | W | CSVs + Regular Expressions (Cont'd) | [Slides](https://canvas.nd.edu/files/3967434/download?download_frd=1) <br> [Recap](../lectures/lecture-07-09-11-24/lecture07-recap.md) | | 
 | 3 | 09-13 | F | No Class | No Class | | 
 | 3 |       |   | **Functional Programming, Iterators** | | [Week 4 Readings](../readings/readings-week04.md) |
 | 3 | 09-16 | M | RegEx, JSON, YAML, Functional Programming | Slides <br> Recap | Quiz - Wk 4  | 
@@ -35,7 +35,7 @@ Outside of Homework 0 which has an accelerated timeline, assignments will genera
 | 6 | 09-30 | M | Exam Review | No Slides | HW 3 (Due) <br> HW 4 (Assigned) <br> No Quiz |  
 | 6 | 10-02 | W | Exam 1 | No Slides | |
 
-We will then continue onto the second module that will cover shell scripting with Homework 5 being due on October 7th.  The second module will span across fall break.
+We will then continue onto the second module that will cover shell scripting with Homework 5 being due on October 14th.  The second module will span across fall break.
 
 | **HW** | **Overview** | **Assigned** | **Due (Normal)** | **Due (EC)** |
 |:-:|---|:-:|:-:|:-:|
@@ -44,4 +44,4 @@ We will then continue onto the second module that will cover shell scripting wit
 | [2](../hw/hw02/README.md) | Automation - Python | 09-09 | 09-23 | 09-20 | 
 | [Group Selection](https://canvas.nd.edu/courses/99306/assignments/305521) | Select / Indicate Group | 09-09 | 09-16 | 09-13 | 
 | 3 | JSONs, CSVs, Web Requests | 09-23 | 09-30 | 09-27 | 
-| 4 | Parallelization | 09-30 | 09-30 | 09-27 | 
+| 4 | Parallelization | 09-30 | 10-07 | 10-04 | 
