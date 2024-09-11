@@ -24,7 +24,7 @@ Outside of Homework 0 which has an accelerated timeline, assignments will genera
 | 3 | 09-11 | W | CSVs + Regular Expressions (Cont'd) | [Slides](https://canvas.nd.edu/files/3967434/download?download_frd=1) <br> [Recap](../lectures/lecture-07-09-11-24/lecture07-recap.md) | | 
 | 3 | 09-13 | F | No Class | No Class | | 
 | 3 |       |   | **Functional Programming, Iterators** | | [Week 4 Readings](../readings/readings-week04.md) |
-| 3 | 09-16 | M | RegEx, JSON, YAML, Functional Programming | Slides <br> Recap | Quiz - Wk 4  | 
+| 3 | 09-16 | M | RegEx, JSON, YAML, Functional Programming | Slides <br> Recap | Quiz - Wk 4 <br> [Group Selection](https://canvas.nd.edu/courses/99306/assignments/305521) | Select / Indicate Group | 
 | 3 | 09-18 | W | Iterators / Generators | Slides <br> Recap | | 
 | 3 | 09-20 | F | Parallel Computing | Slides <br> Recap | |
 | 5 |       |   | **Servers, Slack, Exam Review** | | [Week 5 Readings](../readings/readings-week05.md) |
