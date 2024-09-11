@@ -22,17 +22,18 @@ Outside of Homework 0 which has an accelerated timeline, assignments will genera
 |   |       |   | **Regular Expressions, Common File Formats** | | [Week 3 Readings](../readings/readings-week03.md) | 
 | 3 | 09-09 | M | Processes, Regular Expressions | [Slides](https://canvas.nd.edu/files/3954428/download?download_frd=1) | [HW 1 (Due)](../hw/hw01/README.md) <br> [HW 2 (Assigned)](../hw/hw02/README.md) <br> Quiz - Wk 3 | 
 | 3 | 09-11 | W | YAML + Regular Expressions (Cont'd) | Slides <br> Recap | | 
-| 3 | 09-13 | F | JSONs + Regular Expressions | Slides  <br> Recap | | 
+| 3 | 09-13 | F | No Class | No Class | | 
 | 3 |       |   | **Functional Programming, Iterators** | | [Week 4 Readings](../readings/readings-week04.md) |
-| 3 | 09-16 | M | Functional Programming | Slides <br> Recap | HW 2 (Due) <br> HW 3 (Assigned) <br> Quiz - Wk 4  | 
+| 3 | 09-16 | M | RegEx, JSON, YAML, Functional Programming | Slides <br> Recap | Quiz - Wk 4  | 
 | 3 | 09-18 | W | Iterators / Generators | Slides <br> Recap | | 
 | 3 | 09-20 | F | Parallel Computing | Slides <br> Recap | |
 | 5 |       |   | **Servers, Slack, Exam Review** | | [Week 5 Readings](../readings/readings-week05.md) |
-| 5 | 09-23 | M | Server-Side Programming | Slides | HW 3 (Due) <br> HW 4 (Assigned) <br> Quiz - Wk 5 | 
-| 5 | 09-25 | W | Practice / Review | Slides <br> Recap | | 
-| 5 | 09-27 | F | Review for Exam | Slides <br> Recap | |
+| 5 | 09-23 | M | Server-Side Programming | Slides | HW 2 (Due) <br> HW 3 (Assigned) <br> Quiz - Wk 5 | 
+| 5 | 09-25 | W | Servers, Review | Slides <br> Recap | | 
+| 5 | 09-27 | F | Practice / Review | Slides <br> Recap | |
 | 6 |       |   | **Exam + Shell Scripting** | | [Week 6 Readings](../readings/readings-week06.md) |
-| 6 | 09-30 | M | Exam 1 | No Slides | HW 4 (Due) <br> No Quiz |  
+| 6 | 09-30 | M | Exam Review | No Slides | HW 3 (Due) <br> HW 4 (Assigned) <br> No Quiz |  
+| 6 | 10-02 | W | Exam 1 | No Slides | |
 
 We will then continue onto the second module that will cover shell scripting with Homework 5 being due on October 7th.  The second module will span across fall break.
 
@@ -40,7 +41,7 @@ We will then continue onto the second module that will cover shell scripting wit
 |:-:|---|:-:|:-:|:-:|
 | [0](../hw/hw00/README.md) | [Git / Submission Basics](../hw/hw00/README.md) | 08-28 | 09-02 | 08-30 | 
 | [1](../hw/hw01/README.md) | Python Basics (Files, Functions) | 09-02 | 09-09 | 09-06 | 
-| [2](../hw/hw02/README.md) | Automation - Python | 09-09 | 09-16 | 09-13 | 
+| [2](../hw/hw02/README.md) | Automation - Python | 09-09 | 09-23 | 09-20 | 
 | [Group Selection](https://canvas.nd.edu/courses/99306/assignments/305521) | Select / Indicate Group | 09-09 | 09-16 | 09-13 | 
-| 3 | JSONs, CSVs, Web Requests | 09-16 | 09-23 | 09-20 | 
-| 4 | Parallelization | 09-23 | 09-30 | 09-27 | 
+| 3 | JSONs, CSVs, Web Requests | 09-23 | 09-30 | 09-27 | 
+| 4 | Parallelization | 09-30 | 09-30 | 09-27 | 
