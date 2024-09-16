@@ -113,7 +113,9 @@ Your code should be submitted in the `hw/hw01` sub-directory and should contain 
 
 Push your code to your private repository when it is complete and submit the hash via Canvas.
 
-### Grading
+> **Note:** For the purposes of homework tracking, the GitHub date will be used for determining the core lateness penalty (e.g. the 25% per day).  The hash may be submitted late to Canvas but will result in a 5% reduction to the maximum score and the homework no longer being eligible for the extra credit bonus.  
+
+### Rubric
 
 * 3 pts - Homework submission is problem free without intervention required by the TA including files in the correct locations (`hw/hw01`) off of the private repository 
 * 1 pt - `searchsrc.py` contains name and e-mail
