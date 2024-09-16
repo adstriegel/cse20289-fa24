@@ -210,8 +210,45 @@ Before you submit your code, make sure to check the following:
 * You have two output files created from the run on ScaleBox: `fullrepo.csv` and `stats.txt`
 * You have multiple commit messages that have `hw02` at the start
 
-Push your working code to your private repository and submit the final commit hash via Canvas.
+**Push your working code** to your private repository and **submit the final commit hash via Canvas**.
 
 ## Rubric
 
-To be posted later in the week
+### General - 7 pts
+
+* 3 pts - Homework submission is problem free without intervention required by the TA including files in the correct locations (`hw/hw02`) off of the private repository
+* 3 pts - Code quality is excellent, clean and well commented code
+* 1 pt - All source files + README.md contain name and e-mail
+
+### Revised SearchSrc.py - 11 pts
+
+* 6 pts - Passes all base files from hw01 with correct results
+* 3 pts - Passes all test files
+* 1 pt - Well-formed regex(es) is / are used for detecting member functions
+* 1 pt - Well-formed regex(es) is / are used for detecting one line functions
+
+### Subprocess Usage - 5 pts
+
+* 1 pt - Invokes functions from `subprocess` package
+* 2 pts - Code is clear / easy to follow on choice for invocation of subprocess
+* 2 pts - Successful dictionary creation
+
+### Non-Recursive Directory - 10 pts
+
+* 5 pts - Provides correct answers in a directory with the files from HW1
+* 5 pts - Handles two other directories correctly
+
+### Recursive Directories - 10 pts 
+
+* 5 pts - Test case(s) with a single sub-directory
+* 5 pts - Test case(s) with multiple nested sub-directories
+
+### CSV Creation - 10 pts
+
+* 5 pts - Handles the non-recursive test case(s) correctly
+* 5 pts - Handles the recursive test case(s) correctly
+
+### Statistics - 10 pts
+
+* 5 pts - Handles the non-recursive test case(s) correctly
+* 5 pts - Handles the recursive test case(s) correctly
