@@ -212,6 +212,8 @@ Before you submit your code, make sure to check the following:
 
 **Push your working code** to your private repository and **submit the final commit hash via Canvas**.
 
+> **Note:** For the purposes of homework tracking, the GitHub date will be used for determining the core lateness penalty (e.g. the 25% per day).  The hash may be submitted late to Canvas but will result in a 5% reduction to the maximum score and the homework no longer being eligible for the extra credit bonus.  
+
 ## Rubric
 
 ### General - 7 pts
@@ -252,3 +254,18 @@ Before you submit your code, make sure to check the following:
 
 * 5 pts - Handles the non-recursive test case(s) correctly
 * 5 pts - Handles the recursive test case(s) correctly
+
+### Full Run - 12 pts
+
+* 3 pts - Output is correct
+* 3 pts - CSV is correct
+* 4 pts - Statistics are correct
+* 1 pt - Saved result is present in repository and correct
+* 1 pt - CSV generated result is present in repository and correct
+
+### Robust Coding - 5 pts
+
+* 1 pt - Handles a bad input directory
+* 1 pt - Handles an empty sub-directory when operating recursively
+* 1 pt - Handles an empty directory
+* 2 pts - Properly handles incorrect arguments or usage
