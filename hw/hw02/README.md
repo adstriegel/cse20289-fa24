@@ -9,7 +9,7 @@ The focus of this homework is build on Homework 1 by incorporating more systems-
 | **Due (EC)** | Friday, September 13th - 10 PM |
 | **Group** | To be done individually |  
 | **Canvas Link** | Homework 02 |
-| **Points** | TBA |
+| **Points** | 80 |
 
 ## Preliminary Setup
 
@@ -186,8 +186,10 @@ Before embarking on the full repo, make sure to enable the `--quiet` option in y
 Test your code in full by attempting to analyze the entire `ScaleBox` repository. Run your code with recursion enabled, save a CSV file named `fullrepo.csv`, and save the statistical results to a file named `stats.txt`.  You can direct the output of your code using the following command:
 
 ```
-python3 searchdir.py DIRTOSCAN --quiet --r > stats.txt
+python3 searchdir.py DIRTOSCAN --quiet -r > stats.txt
 ```
+
+> **Note:** The originale homework writeup had both `--r` and `-r` in the writeup.  The example in Task 8 used `--r` and the earlier description of the arguments had `-r`.  Please state in your `README.md` which one you are using.   
 
 ## Offramps
 
