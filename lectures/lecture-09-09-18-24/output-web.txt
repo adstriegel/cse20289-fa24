@@ -1,4 +1,5 @@
 61556  bytes received
+=====================
 
 
 
@@ -777,11 +778,15 @@ var megamenu = {"timeout":"300","interval":"100"};
 </body>
 </html>
 
+=====================
 The string @nd.edu is found at position 55961
 
+=====================
 Finding just the @nd.edu part of the address
 <re.Match object; span=(55961, 55968), match='@nd.edu'>
+=====================
 Finding a complete mail address
 <re.Match object; span=(55958, 55968), match='cse@nd.edu'>
+=====================
 Fetch a different page
 <re.Match object; span=(2704, 2731), match='3637janeclelandhuang@nd.edu'>
