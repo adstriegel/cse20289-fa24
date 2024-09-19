@@ -5,10 +5,10 @@ The focus of this homework is build on Homework 1 by incorporating more systems-
 | **Aspect** | **Information** |
 | --- | --- |
 | **Assigned** | Monday, September 9th |
-| **Due** | Monday, September 16th - 10 PM |
-| **Due (EC)** | Friday, September 13th - 10 PM |
+| **Due** | Monday, September 23rd - 10 PM |
+| **Due (EC)** | Friday, September 20th - 10 PM |
 | **Group** | To be done individually |  
-| **Canvas Link** | Homework 02 |
+| **Canvas Link** | [Homework 02](https://canvas.nd.edu/courses/99306/assignments/301236) |
 | **Points** | 80 |
 
 ## Preliminary Setup
