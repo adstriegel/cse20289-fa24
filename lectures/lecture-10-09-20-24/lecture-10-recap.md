@@ -7,7 +7,7 @@ In today's lecture, we largely moved on from regular expressions to focus on the
 * Slides - See also Canvas
    * [PDF - 1 Page per Slide](https://canvas.nd.edu/files/4012771/download?download_frd=1)
    * [PDF - Notes Format](https://canvas.nd.edu/files/4012770/download?download_frd=1)
-* [Panopto Lecture Recording]https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=83690475-2dbc-424c-af09-b1f101119dd1)
+* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=83690475-2dbc-424c-af09-b1f101119dd1)
 
 ## Key Points
 
