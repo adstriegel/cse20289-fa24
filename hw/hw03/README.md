@@ -80,8 +80,10 @@ Essentially, there is a Rasbperry Pi installed at each home with the Raspberry P
 
 There are several examples of the data placed in the `ex-data` sub-directory in the class repository for `hw03`.  For the purposes of this effort, the relevant fields are as follows:
 
-* `timestamp`: The time at which the test was run.  Note that the data is not sorted by time in the JSON. Also, you may effectively ignore the timezone information and only work with the year, month, and date as specified. 
-* `interface`: The interface on which the test was run, generally having one of two values: `eth0` for a wired (Ethernet) test and `wlan0` for the WiFi interface.  
+* `timestamp`: The time at which the test was run.  Note that the data is not sorted by time in the JSON. Also, you may effectively ignore the timezone information and only work with the year, month, and date as specified. Each of the fields will follow roughly the following example format: `2024-05-01T00:10:34-04:00` 
+* `interface`: The interface on which the test was run, generally having one of two values:
+   * `eth0` for a wired (Ethernet) interface
+   * `wlan0` for the WiFi interface.  
 * `type`: The type of test.  For this homework, we will want to only consider `iperf` tests.
 * `direction`: There are two different values, `downlink` and `uplink`.  For the purpose of this assignment, we will focus on only the downlink.
 * `tput_mbps`: The measured throughput (speed) of the link in megabits per second.  
@@ -93,22 +95,27 @@ To accomplish this task, we will be using three different packages: `numpy` for 
 The overall workflow will be as follows:
 
 1. Download the JSON file from the URL specified in the argument
-2. Sort the data according to the timestamps
-3. Filter out the data appropriately
-4. Compute and display the statistical summaries (number of points, mean, median, standard deviation, inter-quartile range) for the overall data.  Do this breakdown amongst for each interface, e.g. wired (Ethernet) and wireless (WiFi).  
-5. Compute and display the statistical summaries on a month by month basis
-6. If requested, create graphs via `matplotlib` for each of the months
-7. If requested, create a Word document and include graphs if generated.
+2. Sort the data according to the timestamps and / or filter the data appropriately
+3. Compute and display the statistical summaries (number of points, mean, median, standard deviation, inter-quartile range) for the overall data.  Do this breakdown amongst for each interface, e.g. wired (Ethernet) and wireless (WiFi).  
+4. Compute and display the statistical summaries on a month by month basis
+5. Create graphs via `matplotlib` for the specified month
+6. Create two Word document that have an introductory text, a statistical summary as a table, and the plotted graph results with one file for each of the respective interface types (wired and wireless)
 
 ## Tasks 3-5
 
-Tasks 3 through 5 may be done in parallel by different group members.    
+Tasks 3 through 5 may be done in parallel by different group members.
 
+* Task 3 covers the `checktests.py` file which covers downloading and processing the JSON data from the website as well as computing the statistical summaries.
+* Task 4 covers the `plotdata.py` file which covers creating a bar graph containing the average daily throughput as observed.
+* Task 5 covers the `createreport.py` file which creates a Word document and embeds an image within the Word file as well as text.  
+
+While `checktests.py` is the overall orchestration file that will `import` from each of the others files, the other two files should still be interpretable for testing purposes as described in the various tasks.  
 
 ## Task 3 - Fetch and Filter the Data
 
-Write code in `checktests.py` that takes in a single required argument which is the URL to fetch for the JSON file. You can see all of the various JSONs in the class repository under the `hw/hw03/ex-data` sub-directory or on at the following [URL](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03).
+To start, write your code in `checktests.py` to take in a single required argument which is the URL to fetch for the JSON file. While we will eventually modify the various arguments in a later task, we will initially begin with fetching a single URL.  
 
+You can see all of the various JSONs in the class repository under the `hw/hw03/ex-data` sub-directory or on at the following [URL](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03).
 The following JSONs are available to download:
 
 * [`http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-10.json`](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-10.json) - This is a small JSON consisting of only ten data points.  You can find example code that reads a direct file in the [parse-json.py](./ex-src/parse.json) file.  The data file itself can be found in the `ex-src` directory.  
@@ -123,17 +130,17 @@ The following JSONs are available to download:
 
 Write code to fetch the data from the server and confirm that you are able to fetch and display the data for the smallest dataset instance.  
 
-### Design Choice - Sort or Filter First?
+### Task 3.1 Design Choice - Sort or Filter First?
 
 Once you have confirmed that you can download the data, look at filtering the data to include only what we want (`downlink`, `iperf`) and to appropriately sort the data according to its timestamp.  You could elect to do the filter or sort first but think through why you might want to do one first versus the other.  State the group's choice and rationale in the `README.md`.  
 
-Implement your choice through a function that takes in a received dataset and then gives only the relevant, sorted data as needed. 
+Implement your choice through a function that takes in a received dataset and then gives only the relevant, sorted data as needed.
 
-### Filter the Data
+### Task 3.2 - Filter the Data
 
-Write a function that returns a filtered subset of data that takes in: the dataset, a month (the default should be 5), a year (default should be 2024), and an interface (default should be `eth0`). The function should return a list of all data points that satisfy the requested filtering.   
+Write a function that returns a filtered subset of data that takes in as parameters: the dataset, a month (the default should be 5), a year (default should be 2024), and an interface (default should be `eth0`). The function should return a list of all data points that satisfy the requested filtering.  
 
-### Analyze the Data
+### Task 3.3 - Analyze the Data
 
 Write a function that takes in a list of data points, the requested interface to examine (`eth0` or `wlan0`) and returns a populated dictionary containing the statistics for that dataset (see below).  
 
