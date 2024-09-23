@@ -80,7 +80,7 @@ Essentially, there is a Rasbperry Pi installed at each home with the Raspberry P
 
 There are several examples of the data placed in the `ex-data` sub-directory in the class repository for `hw03`.  For the purposes of this effort, the relevant fields are as follows:
 
-* `timestamp`: The time at which the test was run.  Note that the data is not sorted by time in the JSON.  
+* `timestamp`: The time at which the test was run.  Note that the data is not sorted by time in the JSON. Also, you may effectively ignore the timezone information and only work with the year, month, and date as specified. 
 * `interface`: The interface on which the test was run, generally having one of two values: `eth0` for a wired (Ethernet) test and `wlan0` for the WiFi interface.  
 * `type`: The type of test.  For this homework, we will want to only consider `iperf` tests.
 * `direction`: There are two different values, `downlink` and `uplink`.  For the purpose of this assignment, we will focus on only the downlink.
@@ -107,17 +107,19 @@ Tasks 3 through 5 may be done in parallel by different group members.
 
 ## Task 3 - Fetch and Filter the Data
 
-Write code in `checktests.py` that takes in a single required argument which is the URL to fetch for the JSON file.  The following JSONs are available to download:
+Write code in `checktests.py` that takes in a single required argument which is the URL to fetch for the JSON file. You can see all of the various JSONs in the class repository under the `hw/hw03/ex-data` sub-directory or on at the following [URL](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03).
 
-* `http://ns-mn1.cse.nd.edu/cse20289-fa24/hw3/data-10.json` - This is a small JSON consisting of only ten data points.  You can find example code that reads a direct file in the [parse-json.py](./ex-src/parse.json) file.  The data file itself can be found in the `ex-src` directory.  
+The following JSONs are available to download:
 
-* `http://ns-mn1.cse.nd.edu/cse20289-fa24/hw3/data-250.json` - This is a medium JSON that contains 250 data points from the study.  
+* [`http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-10.json`](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-10.json) - This is a small JSON consisting of only ten data points.  You can find example code that reads a direct file in the [parse-json.py](./ex-src/parse.json) file.  The data file itself can be found in the `ex-src` directory.  
 
-* `http://ns-mn1.cse.nd.edu/cse20289-fa24/hw3/data-1000.json` - This is a medium JSON that contains 1000 data points from the study.  
+* [`http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-250.json`](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-250.json) - This is a medium JSON that contains 250 data points from the study.  
 
-* `http://ns-mn1.cse.nd.edu/cse20289-fa24/hw3/data-all.json` - This is a full JSON containing all of the data as recorded at Prof. Striegel's house across the entirety of the study in beautified (indented format).  This should be the last file that you try to operate on. 
+* [`http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-1000.json`](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-1000.json) - This is a medium JSON that contains 1000 data points from the study.  
 
-* `http://ns-mn1.cse.nd.edu/cse20289-fa24/hw3/data-raw.json` - This is a full JSON containing all of the data as recorded at Prof. Striegel's house across the entirety of the study.  This should be the last file that you try to operate on.  It is the same as the `data-all.json` dataset but is not formatted to make it easier to read.  
+* [`http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-all.json`](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-all.json) - This is a full JSON containing all of the data as recorded at Prof. Striegel's house across the entirety of the study in beautified (indented format).  This should be the last file that you try to operate on. 
+
+* [`http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-raw.json`](http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-raw.json) - This is a full JSON containing all of the data as recorded at Prof. Striegel's house across the entirety of the study.  This should be the last file that you try to operate on.  It is the same as the `data-all.json` dataset but is not formatted to make it easier to read.  
 
 Write code to fetch the data from the server and confirm that you are able to fetch and display the data for the smallest dataset instance.  
 
