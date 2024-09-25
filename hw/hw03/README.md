@@ -1,4 +1,4 @@
-# Homework 3 - CSE20289 - Fall 2024 - DRAFT
+# Homework 3 - CSE20289 - Fall 2024
 
 In this homework, we are going to bring along several aspects from class including virtual environments, JSONs, web requests, as well as two new aspects, creating plots via matplotlib and editing Word docs via docx. 
 
@@ -13,9 +13,11 @@ In this homework, we are going to bring along several aspects from class includi
 
 ## Task 1 - Setting up the Environment
 
-### Task 1a - Virtual Environment
+### Task 1.1 - Virtual Environment
 
-In order to be able to use packages that are not installed by default on the student machines, we will be taking advantage of Python [virtual environments](https://docs.python.org/3/library/venv.html).  This will allow us to install any packages as we see fit that will end up being accessible to your Python code.
+In order to be able to use packages that are not installed by default on the student machines, we will be taking advantage of Python [virtual environments](https://docs.python.org/3/library/venv.html).  This will allow us to install any packages as we see fit that will end up being accessible to your Python code. 
+
+> Note that while you can install any packages to this virtual environment, you will need to identify in your `README.md` if you install any particular packages beyond what is stated in the assignment.   
 
 ```
 % python -m venv ~/cse20289-fa24
@@ -28,11 +30,14 @@ The first command creates a Python virtual environment while the `source bin/act
 > **Note**: Each you login to the student machine, you will need to run `source ~/cse20289-fa24/bin/activate` in order to start up your virtual environment.  
 
 ```
-% which python3
+(cse20289-fa24) striegel@student10:~$
+(cse20289-fa24) striegel@student10:~$ % which python3
 ~/cse20289-fa24/bin/python3
 ```
 
 You should see that the `python3` actually is found now in your home directory.
+
+> Technically, the actual executable is not there but it is instead a [symbolic link](https://en.wikipedia.org/wiki/Symbolic_link), effectively a pointer referencing the actual Python location.  
 
 Now that we are in the right virtual environment, we will want to install the needed packages for the homework.  Note that you now have complete control when operating in this environment to install the Python packages as you see fit.  
 
@@ -44,9 +49,15 @@ Install the following packages:
 % python3 -m pip install matplotlib
 ```
 
-### Task 1b - Confirm Installation
+The documentation for the respective packages can be found below:
 
-While staying in your virtual environment, do a fresh pull of the class repository (in your repos directory).  Confirm that you can execute the two example files in the `hw/hw03/ex-src` directory without errors:
+* [python-docx](https://python-docx.readthedocs.io/en/latest/index.html)
+* [numpy](https://numpy.org)
+* [matplotlib](https://matplotlib.org)
+
+### Task 1.2 - Confirm Installation
+
+While staying in your virtual environment, do a fresh pull of the class repository.  For the purposes of this writeup, the assumption will be that you are using a `repos` directory in your main folder to place any repositories.  Confirm while operating in the previously identified virtual environment that you can execute the two example files in the `hw/hw03/ex-src` directory without errors:
 
 ```
 % python3 ~/repos/cse20289-fa24/hw/hw03/ex-src/plot-graph.py
@@ -54,13 +65,17 @@ While staying in your virtual environment, do a fresh pull of the class reposito
 % ls
 ```
 
-Using either `scp` or an application such as [FileZilla](https://filezilla-project.org), download the Word document as well as the created PNG.  Open up the image as well as the Word doc to confirm that they were created correctly.  
+Using either `scp` from your local machine or an application such as [FileZilla](https://filezilla-project.org), download the Word document as well as the created PNG.  Open up the image as well as the Word doc to confirm that they were created correctly.  
 
-### Task 1c - Share Group Access
+### Task 1.3 - Share Group Access
 
 For this homework, we will be using the group repository that you created in the first assignment (ex. `group-cse20289-fa24-striegel`). If you are in a group, select one group member to host the repository.  Make sure if you are in a group to extend collaborator access to each of your group members. If you are working individually, you will not need to extend collaborative access but you should use that same group repository location.
 
-Create an appropriate `hw/hw03` directory for where to place your source code for the homework.  Create a `README.md` file and include the names of the group members as well as the e-mails of any group members.  Do an initial commit of your repository.
+> If you forgot to extend collaborator access to the instructor and grading TA, now might be a good time to do so as well.  
+
+Create an appropriate `hw/hw03` directory for where to place your source code for the homework.  Create a `README.md` file and include the names of the group members as well as the e-mails of any group members.  Identify any installed packages that you have added to your virtual environment. Do an initial commit of your repository making sure to prepend your message with `hw03`.
+
+Appropriately define a `.gitignore` as needed.  
 
 ### Task 1d - Create the Files
 
@@ -72,11 +87,13 @@ For the homework, you will be creating three files:
 
 Briefly review how to [invoke functions from different Python files](https://www.geeksforgeeks.org/python-call-function-from-another-file/).  Unlike in the last homework where we used `subprocess`, we will be intentionally doing an `import` to bring in code from multiple files.  
 
+Each code file should contain the names and e-mails of all group members.  
+
 ## Task 2 - Understanding the Assignment
 
 The data that you will working with was gathered from a project studying [broadband speeds in underserved areas](https://wireless.nd.edu/research/new-methods-for-residential-broadband-monitoring/).  In particular, you will be working with two datasets, one gathered directly from Prof. Striegel's house and the other gathered from Prof. Ghosh's house.  
 
-Essentially, there is a Rasbperry Pi installed at each home with the Raspberry Pi configured to run an [`iperf`](https://iperf.fr) every hour to examine the broadband performance receieved, both across the wired (Ethernet - `eth0`) interface as well as the wireless (WiFi - `wlan0`) interface.  Your task is to write code that will fetch the dataset as a JSON from the web server, filter the data for the relevant components, and then to create a report embedded in a Word document where the report contains various statistical as well as graphed summaries from the dataset.
+In short as part of the project, there were Rasbperry Pi nodes installed at each home with each Raspberry Pi configured to run an [`iperf`](https://iperf.fr) every hour to examine the broadband performance receieved, both across the wired (Ethernet - `eth0`) interface as well as the wireless (WiFi - `wlan0`) interface.  Your task is to write code that will fetch the dataset as a JSON from the web server, filter the data for the relevant components, and then to create a report embedded in a Word document where the report contains various statistical as well as graphed summaries from the dataset.
 
 There are several examples of the data placed in the `ex-data` sub-directory in the class repository for `hw03`.  For the purposes of this effort, the relevant fields are as follows:
 
@@ -88,17 +105,17 @@ There are several examples of the data placed in the `ex-data` sub-directory in 
 * `direction`: There are two different values, `downlink` and `uplink`.  For the purpose of this assignment, we will focus on only the downlink.
 * `tput_mbps`: The measured throughput (speed) of the link in megabits per second.  
 
-For the purposes of this homework, we are interested in creating a report to be shared with participants in the study that creates a Word document containing monthly statistical summaries as well as plots of the day to day average performance as a set of bar graphs. 
+For the purposes of this homework, we are interested in creating a report to be shared with participants in the study that creates a Word document containing monthly statistical summaries for each of the two interfaces (wired and wireless) as well as plots of the day to day average performance as a set of bar graphs embedded inside of those Word documents. 
 
-To accomplish this task, we will be using three different packages: `numpy` for the statistics, `python-docx` for the Word document, and `matplotlib` for the graphs. You should have all three of these packages installed using the Python virtual environment as described in Task 1.
+To accomplish this task, we will be using three different packages: `statistics` or `numpy` for the statistics, `python-docx` for the Word document, and `matplotlib` for the graphs. You should have access to all of these packages installed using the Python virtual environment as described in Task 1.
 
 The overall workflow will be as follows:
 
 1. Download the JSON file from the URL specified in the argument
 2. Sort the data according to the timestamps and / or filter the data appropriately
-3. Compute and display the statistical summaries (number of points, mean, median, standard deviation, inter-quartile range) for the overall data.  Do this breakdown amongst for each interface, e.g. wired (Ethernet) and wireless (WiFi).  
-4. Compute and display the statistical summaries on a month by month basis
-5. Create graphs via `matplotlib` for the specified month
+3. Compute and display the statistical summaries (number of points, mean, median, standard deviation, 10th and 90th percentiles) for the data.  Do this breakdown amongst for each interface, e.g. wired (Ethernet) and wireless (WiFi).  
+4. Compute the statistical summaries on that dataset
+5. Create a graph containing daily averages via `matplotlib` and saved to an intermediate file
 6. Create two Word document that have an introductory text, a statistical summary as a table, and the plotted graph results with one file for each of the respective interface types (wired and wireless)
 
 ## Tasks 3-5
@@ -144,8 +161,8 @@ Write a function that returns a filtered subset of data that takes in as paramet
 
 Write a function that takes in a list of data points, the requested interface to examine (`eth0` or `wlan0`) and returns a populated dictionary containing the statistics for that dataset (see below).  
 
-* `Period`: The period over which the data was generated.
-* `Interface`: The interface on which the data was generated (wired or wired).
+* `Period`: The period over which the data was generated
+* `Interface`: The interface on which the data was generated (wired or wired)
 * `Num Points`: The number of the data points present
 * `Min`: The minimum throughput observed across the data points
 * `Max`: The maximum throughput observed across the data points
@@ -155,9 +172,11 @@ Write a function that takes in a list of data points, the requested interface to
 * `10th Percentile`: The 10th percentile for throughput across the data points
 * `90th Percentile`: The 90th percentile for throughput across the data points
 
-> *Hint*: To compute the 10th and 90th percentile, look at the quantiles function offered by the `statistics` package.   
+> Note that the function may not necessarily know the period that was used to generate the data and that particular name / value pair may need to be populated elsewhere in your code.  
 
-### Output the Data
+> *Hint*: To compute the 10th and 90th percentile, look at the quantiles function offered by the `statistics` package.
+
+### Task 3.4 - Output the Data
 
 Write a function that takes in that generated dictionary (field, value) and outputs that dictionary information to a string as follows:
 
@@ -176,32 +195,40 @@ Std Dev: 0
 
 The `interface` should be either `Wired` (Ethernet) or `Wireless` (WiFi). The period is either `All` or the month and the year together (`2024-05`).  
 
-### Bring it Together - Task 3
+### Task 3.5 - Bring it Together
 
 Bring all of your code together to do the following:
 
 * The only argument to your code to start will be the input URL
 * Start by fetching either the 10 or 250 point dataset from the web server
-* Compute the statistics across the relevant, sorted dataset for all data points for both the WiFi (`wlan0`) and the Wired (`eth0`) interfaces.
+* Compute the statistics across the relevant, sorted dataset for all data points for both the WiFi (`wlan0`) and the Wired (`eth0`) interfaces
 * Output the statistics to the console
 * Fetch the 1000 point dataset and check your results
 * Filter the 1000 point dataset for only May 2024
 * Fetch the full dataset
-* Confirm operation for both of the full datasets for the full data as well as only the May 2024 subset for each 
+* Confirm operation for both of the full datasets for the full data as well as only the May 2024 subset for each
 
 Reference output will be provided for the smaller datasets at mid-week.
 
 ## Task 4 - Plotting
 
-For Task 4, write code in `plotdata.py`.  For testing purposes, insert the following code:
+For Task 4, write code in `plotdata.py`. This code will eventually be called by your `checktests.py` code but for this task, it will be directly tested.  
+
+### Task 4.1 - Direct Invocation for Testing
+
+For testing purposes, insert the following code:
 
 ```
 if __name__ == "__main__":
 ```
 
-This block of code will let you identify when this particular Python code is being invoked directly, e.g. `python3 plotdata.py` as opposed to being invoked through an import of the functions from the code.  You should use `argparse` to take in three arguments when invoked directly, the name of to read in as a JSON, the number of days in the month, and the name of the file to output. 
+This block of code will let you identify when this particular Python code is being invoked directly, e.g. `python3 plotdata.py` as opposed to being invoked through an import of the functions from the code.  You should use `argparse` to take in three arguments when invoked directly, the name to read in as a JSON, the number of days in the month, and the name of the file to output.  For instance, your code should be executed as follows:
 
-Place the two files `data-2024-05-eth0.json` and `data-2024-05-wlan0.json` into the `ex-data` directory in your repository for testing purposes.  You may find those files in the class repository.
+```
+% python3 plotdata.py ~/repos/cse20289-fa24/hw/hw03/ex-data/data-2024-05-eth0.json 31 Out-May.png
+```
+
+Locate the two files `data-2024-05-eth0.json` and `data-2024-05-wlan0.json` from the `ex-data` directory in HW3.  You may put those files into an appropriate sub-directory in your repository or you may test your code by referencing those files from the class repository.  
 
 Look at the [plot-graph.py](./ex-src/plot-graph.py) for an example of creating a Python bar graph plot. You may either build on this code or start your own code for the purposes of this effort.
 
@@ -212,25 +239,25 @@ The goal of the code is to provide the following functionality:
 * Create a graph from the first day until the last day of the month
 * Output a PNG using the specified filename
 
-### Create the Testing Framework
+### Task 4.2 - Create the Testing Framework
 
 Write the code to properly capture the arguments when invoked directly as a Python script including capturing the input file, the number of days in the month, and the output filename.  
 
 > *Hint:* Look at the [split-json.py](./ex-src/split-json.py) for examples of using `argparse` for arguments.  
 
-### Average Daily Performance
+### Task 4.3 - Average Daily Performance
 
 Write a function that takes in an input dataset and the number of days in the month and then computes the daily average.  You may assume that the dataset has been pre-filtered to only include only WiFi or Ethernet as well as already being filtered to have only days from a given month.  If a day has no data, the average should be marked as zero.  
 
 Your function should return an appropriate data structure that denotes that day and the average for that particular day.  
 
-### Create a Plot
+### Task 4.4 - Create a Plot
 
 Write a function that takes in the data structure that you recently created and an output filename to create a bar graph plot where each day and its average represents an individual bar in the graph plot.  The Y axis label should be `Average Throughput (Mb/s)` and the X axis label should be `Day` where each day should be output from 1 until the last day in the month.  
 
 Output the file as the specified filename. 
 
-### Test Your Code
+### Task 4.5 - Test Your Code
 
 Test your code on the two input datasets. If you are not running your code on your local machine, you will need to download the output PNG files and confirm the correct output.  
 
@@ -246,15 +273,15 @@ For Task 5, your code should take in three arguments:
 * An image (PNG) to read in
 * A requested output file
 
-### Write the Word Document
+### Task 5.1 -  Write the Word Document
 
 Using the [create-word.py](./ex-src/create-word.py) as guidance as well as the `python-docx` package, write code that reads in a text file and creates an output Word document.  
 
-### Create a Table
+### Task 5.2 - Create a Table
 
 Read about [table creation](https://python-docx.readthedocs.io/en/latest/api/table.html) in the `python-docx` documentation.  Drawing upon your data structure from Task 3, create a dummy instance of the dictionary entry holding statistics (all entries are zeroes). Using that dummy instance, write a function that takes in that dictionary entry and a docx object to insert a well-formatted table.
 
-### Combine All Parts
+### Task 5.3 - Combine the Doc Parts
 
 Write a function that takes in four parameters: a text string, the statistic dictionary, the PNG for the graph, and the output filename. Modify your code to invoke this new function when executed directly as a script where the text string is drawn from the text file (appears first in the Word document), the table containing the statistics values, and the input PNG. 
 
