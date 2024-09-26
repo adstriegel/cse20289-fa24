@@ -193,7 +193,7 @@ Std Dev: 0
 90th Percentile: 0
 ```
 
-The `interface` should be either `Wired` (Ethernet) or `Wireless` (WiFi). The period is either `All` or the month and the year together (`2024-05`).  
+The `interface` should be either `Wired` (Ethernet) or `Wireless` (WiFi). The period is either `All` (during Task 3) or the month and the year together (`2024-05` - later tasks).  
 
 ### Task 3.5 - Bring it Together
 
@@ -332,4 +332,38 @@ If the `checktests.py` code is invoked with a `--all` argument, ignore the month
 
 ## Rubric
 
-To be added mid-week
+### General - 8 pts
+
+* 3 pts - Homework submission is problem free without intervention required by the TA including files in the correct locations (`hw/hw03`) off of the private group repository
+* 3 pts - Code quality is excellent, clean and well commented code
+* 1 pt - All source files + README.md contain name and e-mail
+* 1 pt - `.gitignore` is present and excludes Python cache files
+
+### Orchestration Code - `checktests.py` - 26 pts
+
+If Task 6 is not completed, partial grading will be assessed using the required functionality from Task 3.  That rubric portion is not specified but will start at half of the points for Task 6.  
+
+* 18 pts - Correct argument specifications and operation on provided data files
+* 12 pts - Correct operation on test-specific files (valid URLs, etc.)
+* 3 pts - Robust / does not crash with simple argument mistakes (missing arguments, wrong type for argument, etc.)
+* 3 pts - Properly tolerates arguments with bad files / URLs
+* 2 pts - Proper cleanup of any intermediate files (PNGs)
+
+### Graph Generation - `plotdata.py` - 21 pts
+
+* 10 pts - Correct operation under direct execution for provided test files across multiple selected month inputs
+* 6 pts - Correct operation under direct execution for test-specific files
+* 5 pts - Graph aesthetics / readability including proper labeling of X axis, Y axis
+
+### Word Document Generation - `createreport.py` - 16 pts
+
+* 3 pts - Correct inclusion of text on direct execution
+* 3 pts - Correct inclusion of dummy statistical data into table on direct execution
+* 3 pts - Aesthetically pleasing / well-formatted table for statistics
+* 3 pts - Correct inclusion of PNG into the Word document on direct execution
+* 4 pts - Robust operation with varying selections and inputs on direct execution on test-specific files
+
+### Overall Workflow / Testing - 10 pts
+
+* 5 pts - Proper naming convention and operation with existing data
+* 5 pts - Proper naming convention, operation with test-specific data and inputs
