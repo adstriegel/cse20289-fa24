@@ -87,6 +87,8 @@ For the final task for the homework, you will be using the [concurrent.futures](
 
 If the `--multi` argument is specified, use the [ProcessPoolExecutor and map](https://superfastpython.com/processpoolexecutor-in-python/) to call your function that you wrote in Task 5 where the list (sequence) provided to map is the list of tasks from the YAML configuration file.
 
+> **Note:** When executing in parallel, it is OK that the order of completion may not be preserved. Note that with your various intermediate files, the naming convention may become particularly important.  See [this YAML configuration](./ex-do-overlap.yaml) for an example.
+
 ## Task 7 - Compare Performance
 
 Finally, compare and contrast the total run time of the `ex-do-five.yaml` script using 1, 2, and 4 processes.  To time the performance of your script, do the following:
