@@ -9,7 +9,7 @@ In this homework, we are going to bring along several aspects from class includi
 | **Due (EC)** | Friday, September 27th - 10 PM |
 | **Group** | May be done as a group |  
 | **Canvas Link** | Homework 03 |
-| **Points** | TBA |
+| **Points** | 81 |
 
 ## Task 1 - Setting up the Environment
 
@@ -319,7 +319,7 @@ Before you submit your code, make sure to check the following:
 
 * You have a `.gitignore` file to ensure that no Python caching files are included in your repository
 * You have a `README.md` file along with all group member names and e-mails as well as any specific quirks for your code.  
-* You have three pieces of source code present: `checktests.py`, `plotdata.py.py`, `createreport.py` where each code can be run individually
+* You have three pieces of source code present: `checktests.py`, `plotdata.py`, `createreport.py` where each code can be run individually
 * You have multiple commit messages that have `hw03` at the start and if you have multiple group members, at least one commit per group member
 
 **Push your working code** to the group repository and **submit the final commit hash via Canvas**. Only the owning group member of the repository needs to submit the hash. 

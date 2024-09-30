@@ -1,0 +1,22 @@
+---
+# What are the URLs to process and the parameters to use?
+tasks:
+ - task05:
+    URL: http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-all.json
+    Year: 2024
+    Month: 05
+    StartText: 'intro.txt'
+    Prepend: 'RPI01'
+ - task04:
+    URL: http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-all.json
+    Year: 2024
+    Month: 04
+    StartText: 'intro.txt'
+    Prepend: 'RPI01'
+ - task03:
+    URL: http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-all.json
+    Year: 2024
+    Month: 03
+    StartText: 'intro.txt'
+    Prepend: 'RPI01'
+  
