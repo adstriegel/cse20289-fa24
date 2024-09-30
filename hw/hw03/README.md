@@ -208,7 +208,7 @@ Bring all of your code together to do the following:
 * Fetch the full dataset
 * Confirm operation for both of the full datasets for the full data as well as only the May 2024 subset for each
 
-Reference output will be provided for the smaller datasets at mid-week.
+Reference output for several of the files and adapters can be found [here](./refs/all-stats.txt).
 
 ## Task 4 - Plotting
 

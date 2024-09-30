@@ -1,0 +1,91 @@
+All File -> 05-2024 - wlan0
+
+Detected  31458  entries in the JSON file
+Filtered to  873  entries in the JSON file
+Statistics via the statistics package
+
+Num of Points: 873
+Min: 8.25451076467706
+Max: 82.26179199954561
+Mean: 45.78641439813294
+Median: 49.37406163002784
+Std Dev: 11.641332875264276
+10th Percentile: 26.489752225176375
+90th Percentile: 56.81734717153252
+
+All File -> 04-2024 - wlan0
+
+Detected  31458  entries in the JSON file
+Filtered to  888  entries in the JSON file
+Statistics via the statistics package
+
+Num of Points: 888
+Min: 17.4146785640503
+Max: 83.4389484368047
+Mean: 46.80443744087583
+Median: 50.700128621481674
+Std Dev: 10.865190826757607
+10th Percentile: 27.74261190944398
+90th Percentile: 55.888498868891475
+
+All File -> 05-2024 - eth0
+
+Detected  31458  entries in the JSON file
+Filtered to  1056  entries in the JSON file
+Statistics via the statistics package
+
+Num of Points: 1056
+Min: 42.85730890973587
+Max: 814.7847217041838
+Mean: 707.7775789786124
+Median: 727.6278365420187
+Std Dev: 90.5503574398168
+10th Percentile: 619.8525127118694
+90th Percentile: 785.3246672281745
+
+All File -> 04-2024 - eth0
+
+Detected  31458  entries in the JSON file
+Filtered to  991  entries in the JSON file
+Statistics via the statistics package
+
+Num of Points: 991
+Min: 144.15661330879536
+Max: 815.2165079337143
+Mean: 710.8453865341049
+Median: 724.5507064875337
+Std Dev: 74.73227011863912
+10th Percentile: 624.5691052479809
+90th Percentile: 787.6350929525131
+
+Data-250 -> 05-2024 - eth0
+
+Detected  250  entries in the JSON file
+Filtered to  27  entries in the JSON file
+Statistics via the statistics package
+
+Num of Points: 27
+Min: 85.40810109904089
+Max: 792.2716761121426
+Mean: 701.0010144032451
+Median: 727.124845627686
+Std Dev: 133.77143034592018
+10th Percentile: 610.5640802722063
+90th Percentile: 782.5014102722864
+
+Data-1000 - 05-2024 - eth0 
+
+Detected  1000  entries in the JSON file
+Filtered to  66  entries in the JSON file
+Statistics via the statistics package
+
+Num of Points: 66
+Min: 85.40810109904089
+Max: 793.9276783042912
+Mean: 702.3703914077305
+Median: 728.9176968190102
+Std Dev: 117.79389448300549
+10th Percentile: 615.0929558643872
+90th Percentile: 784.5228944663206
+
+
