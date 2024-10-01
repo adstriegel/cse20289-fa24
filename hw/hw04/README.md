@@ -1,4 +1,4 @@
-# Homework 4 - CSE20289 - Fall 2024 - DRAFT
+# Homework 4 - CSE20289 - Fall 2024
 
 Similar to Homework 2, you will be building on your Homework 3 submission to add the following capabilities: (1) YAML as a configuration mechanism, (2) Conversion of your Word output to PDF, and (3) Parallelization of your code.  
 
@@ -99,7 +99,7 @@ Finally, compare and contrast the total run time of the `ex-do-five.yaml` script
 
 Make sure to clean up any PDFs in between your runs.  
 
-List the run times in your `README.md` in a small table:
+List the run times in your `README.md` in a small table noting the real time (actual time that transpired):
 
 ```
 Processes   Real Time
@@ -112,11 +112,12 @@ Processes   Real Time
 
 Create a Flask server running on port 40000 to 40100 (you can pick any port in this range) that looks for the `hw04` URL off of the student meachine with three parameters (the year, the month, and the interface). Return the appropriate PDF in response.
 
+> **Note** We are waiting on an official confirmation on the ports.
+
 State the name of your Flask code in your `README.md`.
 
 > **Note:** You must be on campus or connected by the VPN to test this functionality.  
 
-**Note** We are waiting on an official confirmation on the ports.
 
 ## Submission Checklist
 
@@ -127,7 +128,7 @@ Before you submit your code, make sure to check the following:
 * You have four pieces of source code present: `gogo.py`, `checktests.py`, `plotdata.py`, `createreport.py` where each code can be run individually
 * You have multiple commit messages that have `hw04` at the start and if you have multiple group members, at least one commit per group member
 
-**Push your working code** to the group repository and **submit the final commit hash via Canvas**. Only the owning group member of the repository needs to submit the hash. 
+**Push your working code** to the group repository and **submit the final commit hash via Canvas**. Only the owning group member of the repository needs to submit the hash.
 
 > **Note:** For the purposes of homework tracking, the GitHub date will be used for determining the core lateness penalty (e.g. the 25% per day).  The hash may be submitted late to Canvas but will result in a 5% reduction to the maximum score and the homework no longer being eligible for the extra credit bonus.
 
