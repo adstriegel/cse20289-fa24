@@ -110,7 +110,7 @@ Processes   Real Time
 
 ## Extra Credit Opportunity 1 - Up to 7 points
 
-Create a Flask server running on port 40000 to 40100 (you can pick any port in this range) that looks for the `hw04` URL off of the student meachine with three parameters (the year, the month, and the interface). Return the appropriate PDF in response.
+Create a Flask server running on port 54000-54150 (you can pick any port in this range though I might take someone's 900 number modulus 150 for some randomization) that looks for the `hw04` URL off of the student meachine with three parameters (the year, the month, and the interface). Return the appropriate PDF in response.
 
 > **Note** We are waiting on an official confirmation on the ports.
 
