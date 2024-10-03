@@ -52,9 +52,17 @@ sure that it is reasonably well-formed and has the appropriate parameters.  Thin
 
 Read the following [guide as a reference point](https://medium.com/@alice.yang_10652/convert-word-doc-or-docx-to-pdf-with-python-a-comprehensive-guide-6c8e8b5a079a) or also [this guide](https://www.e-iceblue.com/Tutorials/Python/Spire.PDF-for-Python/Program-Guide/Conversion/Python-Convert-PDF-to-Word-DOC-or-DOCX.html) as well.
 
-> **Note**: Similar to the usage of YAML, make sure to denote which package you are using for your PDF conversion.  Note that the code must be confirmed to run on the CSE student machine. It is highly recommended that you use the Spire.Doc package.  
+> **Note**: Similar to the usage of YAML, make sure to denote which package you are using for your PDF conversion.  Note that the code must be confirmed to run on the CSE student machine. It is highly recommended that you use the Spire.Doc package. 
 
 Confirm that the code in `ex-src` indeed runs correctly and outputs a PDF.  Note that it is OK that your final output PDF contains the evaluation labeling. You can convert up to 10 pages in a PDF without a license, albeit with the watermark.  
+
+> **Note:** If you have issues getting Spire installed on your virtual environment, try adjusting your Python to point to Prof. Bui's more recent version of Python.
+
+```
+% PATH=/escnfs/home/pbui/pub/pkgsrc/bin:$PATH
+% which python3
+/escnfs/home/pbui/pub/pkgsrc/bin/python3
+```
 
 ## Task 5 - Automate the Full Process - Single Process
 
