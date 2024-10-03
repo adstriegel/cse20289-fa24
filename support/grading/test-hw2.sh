@@ -22,23 +22,48 @@ pwd
 
 echo "== Revised SearchSrc.py =="
 echo "Provided Test Case: hw02/nrd-1/PktQueue.cc"
-python3 $FileTest $GradeTest/nrd-1/PktQueue.cc --include --includelocal --memberfuncs --onelinefuncs 
+if [ $1 = "striegel" ] 
+then
+    python3 $FileDir $GradeTest/nrd-1 --file PktQueue.cc
+else
+    python3 $FileTest $GradeTest/nrd-1/PktQueue.cc --include --includelocal --memberfuncs --onelinefuncs 
+fi
 echo ""
 
 echo "Provided Test Case: hw02/nrd-1/fmnc_manager.cc"
-python3 $FileTest $GradeTest/nrd-1/fmnc_manager.cc --include --includelocal --memberfuncs --onelinefuncs 
+if [ $1 = "striegel" ] 
+then
+    python3 $FileDir $GradeTest/nrd-1 --file fmnc_manager.cc
+else
+    python3 $FileTest $GradeTest/nrd-1/fmnc_manager.cc --include --includelocal --memberfuncs --onelinefuncs 
+fi
 echo ""
 
 echo "Provided Test Case: hw02/nrd-1/RIPPS_PktPair.cc"
-python3 $FileTest $GradeTest/nrd-1/RIPPS_PktPair.cc --include --includelocal --memberfuncs --onelinefuncs 
+if [ $1 = "striegel" ] 
+then
+    python3 $FileDir $GradeTest/nrd-1 --file RIPPS_PktPair.cc
+else
+    python3 $FileTest $GradeTest/nrd-1/RIPPS_PktPair.cc --include --includelocal --memberfuncs --onelinefuncs 
+fi
 echo ""
 
 echo "Provided Test Case: hw02/nrd-1/Thread_IO.cc"
-python3 $FileTest $GradeTest/nrd-1/Thread_IO.cc --include --includelocal --memberfuncs --onelinefuncs 
+if [ $1 = "striegel" ] 
+then
+    python3 $FileDir $GradeTest/nrd-1 --file Thread_IO.cc
+else
+    python3 $FileTest $GradeTest/nrd-1/Thread_IO.cc --include --includelocal --memberfuncs --onelinefuncs 
+fi
 echo ""
 
 echo "Provided Test Case: hw02/nrd-1/ParamDictionary.cc"
-python3 $FileTest $GradeTest/nrd-1/ParamDictionary.cc --include --includelocal --memberfuncs --onelinefuncs 
+if [ $1 = "striegel" ] 
+then
+    python3 $FileDir $GradeTest/nrd-1 --file ParamDictionary.cc
+else
+    python3 $FileTest $GradeTest/nrd-1/ParamDictionary.cc --include --includelocal --memberfuncs --onelinefuncs 
+fi
 echo ""
 
 echo "== searchsrc.py =="
