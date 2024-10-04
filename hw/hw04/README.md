@@ -95,7 +95,23 @@ For the final task for the homework, you will be using the [concurrent.futures](
 
 If the `--multi` argument is specified, use the [ProcessPoolExecutor and map](https://superfastpython.com/processpoolexecutor-in-python/) to call your function that you wrote in Task 5 where the list (sequence) provided to map is the list of tasks from the YAML configuration file.
 
-> **Note:** When executing in parallel, it is OK that the order of completion may not be preserved. Note that with your various intermediate files, the naming convention may become particularly important.  See [this YAML configuration](./ex-do-overlap.yaml) for an example.
+> **Note:** When executing in parallel, it is OK that the order of completion may not be preserved. Note that with your various intermediate files, the naming convention may become particularly important.  See [this YAML configuration](./ex-do-overlap.yaml) and [this YAML configuration](./ex-do-five-race.yaml) for examples where race conditions can emerge.
+
+### Race Conditions
+
+Depending on how you set up your code, expanding to more than one process can result in *weird* and unexpected behavior.  One notable behavior is that if one of the executor processes has an exception, it does not bubble up the Python exception (e.g. it just stops silently).  
+
+If you are seeing weird bugs with two processes, try modifying your code to add in a broad *try* and *except*:
+
+```
+def myMapFunction ():
+  try:
+    # Your normal code here
+  except Exception as e:
+    print('Oh no, there was an exception', e)
+```
+
+This can help shed a bit of light on why your code breaks when going from one to two child processes.  
 
 ## Task 7 - Compare Performance
 

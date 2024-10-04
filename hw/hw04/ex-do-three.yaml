@@ -6,17 +6,17 @@ tasks:
     Year: 2024
     Month: 05
     StartText: 'intro.txt'
-    Prepend: 'RPI01'
+    Prepend: 'RPI01-2024-05'
  - task04:
     URL: http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-all.json
     Year: 2024
     Month: 04
     StartText: 'intro.txt'
-    Prepend: 'RPI01'
+    Prepend: 'RPI01-2024-04'
  - task03:
     URL: http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-all.json
     Year: 2024
     Month: 03
     StartText: 'intro.txt'
-    Prepend: 'RPI01'
+    Prepend: 'RPI01-2024-03'
   
