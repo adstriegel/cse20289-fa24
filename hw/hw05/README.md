@@ -71,7 +71,7 @@ A few pointers / tips:
 
 18. On the student machine, use the `id` command via `id --group --name` to list the group name that is associated with your username. Create a file named `mygroup` that contains the output from that same command. 
 
-19. `touch` a file named `pythoninfo.txt`.  Append to the file the version of Python (e.g. `python3 --version`) that you are running by default.  Switch to the virtual environment used in Homework 3 or 4.  Append to that same file the version of Python that is invoked.  Append the result of the `ls -l` command from the `bin` directory in your Python virtual environment to the file.
+19. `touch` a file named `pythoninfo.txt`.  Append to the file the version of Python (e.g. `python3 --version`) that you are running by default.  Switch to the **virtual environment** used in Homework 3 or 4.  Append to that same file the version of Python that is invoked.  Append the result of the `ls -l` command from the `bin` directory in your Python virtual environment directory to the file.
 
 20. Write a simple Python bit of code named `doErr.py` that has two print statements, one that will output correctly and one that will have an error. Create two files, one named `doErr-NoErr.txt` that redirects only `stdout` when running your file and another named `doErr-StdErr.txt` that redirects both `stdout` and `stderr` when running that code. Compare and contrast the two files. 
 
