@@ -11,7 +11,7 @@ Each week will have an assigned reading that is best completed prior to the clas
 | **Wk** | **Date** | **Day** | **Description** | **Content** | **Readings / Homework** |
 |:-:|:-:|:-:|---|:-:|---|
 |   |       |   | **Shell Scripting**  | | [Week 7 Readings](../readings/readings-week07.md) |
-| 7 | 10-07 | M | Process, I/O Redirection | Slides <br> Recap | HW 5 (Assigned) |
+| 7 | 10-07 | M | Process, I/O Redirection | [Slides](https://canvas.nd.edu/files/4095737/download?download_frd=1) <br> [Recap](../lectures/lecture-17-10-07-24/lecture-17-recap.md) | [HW 5 (Assigned)](../hw/hw05/README.md) |
 | 7 | 10-09 | W | Variables, Command Substitution <br> Matching | Slides <br> Recap | | 
 | 7 | 10-11 | F | Control Flow, Cmd Line Args | Slides <br> Recap | | 
 |   |       |   | **Pipelines, Filters** | | [Week 8 Readings](../readings/readings-week08.md) | 
