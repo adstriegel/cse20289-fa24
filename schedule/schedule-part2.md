@@ -18,7 +18,7 @@ Each week will have an assigned reading that is best completed prior to the clas
 | 8 | 10-14 | M | Pipelines | Slides <br> Recap | HW 6 (Assigned) | 
 | 8 | 10-16 | W | Reg Ex - Shell Style | Slides <br> Recap | | 
 | 8 | 10-18 | F | Filters - Part 1 | Slides <br> Recap | | 
-|   |       |   | **Fall Break** | | |
+|   |       |   | **Fall Break** | | No Readings |
 |   | 10-21 | M | **Fall Break** | | | 
 |   | 10-23 | W | **Fall Break** | | | 
 |   | 10-25 | F | **Fall Break** | | | 
@@ -26,7 +26,7 @@ Each week will have an assigned reading that is best completed prior to the clas
 | 9 | 10-28 | M | Filters - Part 2 | Slides <br> Recap | | 
 | 9 | 10-30 | W | Cron / Scheduling | Slides <br> Recap | | 
 | 9 | 11-01 | F | Blending - Shell / Python | Slides <br> Recap | |
-|   |       |   | **Review, Exam 2 , C** | | No Readings |
+|   |       |   | **Review, Exam 2 , C** | | No Readings - Week 10 |
 | 10 | 11-04 | M | Review - Exam 2 | Slides <br> Recap | HW 7 (Assigned) | 
 | 10 | 11-06 | W | Exam 2 | | | 
 | 10 | 11-08 | F | Third Module - C | Slides <br> Recap | |
