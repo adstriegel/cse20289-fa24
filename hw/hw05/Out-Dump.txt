@@ -1,0 +1,429 @@
+22:51:34.709706 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 3575657303:3575658703, ack 669131756, win 2602, options [nop,nop,TS val 944259621 ecr 3426106868], length 1400
+22:51:34.709707 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 1400:2800, ack 1, win 2602, options [nop,nop,TS val 944259621 ecr 3426106868], length 1400
+22:51:34.709708 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 2800:4200, ack 1, win 2602, options [nop,nop,TS val 944259622 ecr 3426106868], length 1400
+22:51:34.709709 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 4200:5600, ack 1, win 2602, options [nop,nop,TS val 944259622 ecr 3426106868], length 1400
+22:51:34.709779 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 5600, win 438, options [nop,nop,TS val 3426106912 ecr 944259622], length 0
+22:51:34.713936 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 5600:7000, ack 1, win 2602, options [nop,nop,TS val 944259625 ecr 3426106870], length 1400
+22:51:34.713938 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 7000:8400, ack 1, win 2602, options [nop,nop,TS val 944259625 ecr 3426106870], length 1400
+22:51:34.713999 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 8400, win 438, options [nop,nop,TS val 3426106917 ecr 944259625], length 0
+22:51:34.717976 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 8400:9800, ack 1, win 2602, options [nop,nop,TS val 944259628 ecr 3426106874], length 1400
+22:51:34.717978 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 9800:11200, ack 1, win 2602, options [nop,nop,TS val 944259628 ecr 3426106874], length 1400
+22:51:34.717979 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 11200:12334, ack 1, win 2602, options [nop,nop,TS val 944259630 ecr 3426106874], length 1134
+22:51:34.718028 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 12334, win 438, options [nop,nop,TS val 3426106921 ecr 944259630], length 0
+22:51:34.758326 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [P.], seq 1:71, ack 12334, win 438, options [nop,nop,TS val 3426106961 ecr 944259630], length 70
+22:51:34.799550 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], ack 71, win 2602, options [nop,nop,TS val 944259713 ecr 3426106961], length 0
+22:51:34.799695 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [P.], seq 71:150, ack 12334, win 438, options [nop,nop,TS val 3426107002 ecr 944259713], length 79
+22:51:34.846920 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], ack 150, win 2602, options [nop,nop,TS val 944259754 ecr 3426107002], length 0
+22:51:34.961513 IP ringfloodlightcam-85.lan.63473 > ec2-3-213-4-111.compute-1.amazonaws.com.https: Flags [P.], seq 215309987:215310041, ack 3833960526, win 2048, options [nop,nop,TS val 4286489547 ecr 1071142162], length 54
+22:51:34.970784 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 12334:13734, ack 150, win 2602, options [nop,nop,TS val 944259882 ecr 3426107002], length 1400
+22:51:34.970786 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 13734:15134, ack 150, win 2602, options [nop,nop,TS val 944259882 ecr 3426107002], length 1400
+22:51:34.970788 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 15134:16534, ack 150, win 2602, options [nop,nop,TS val 944259883 ecr 3426107002], length 1400
+22:51:34.970789 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 16534:17934, ack 150, win 2602, options [nop,nop,TS val 944259883 ecr 3426107002], length 1400
+22:51:34.970917 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 17934, win 460, options [nop,nop,TS val 3426107174 ecr 944259883], length 0
+22:51:34.975768 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 17934:19334, ack 150, win 2602, options [nop,nop,TS val 944259886 ecr 3426107002], length 1400
+22:51:34.975769 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 19334:20555, ack 150, win 2602, options [nop,nop,TS val 944259886 ecr 3426107002], length 1221
+22:51:34.975836 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 20555, win 460, options [nop,nop,TS val 3426107178 ecr 944259886], length 0
+22:51:34.982083 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 20555:21955, ack 150, win 2602, options [nop,nop,TS val 944259889 ecr 3426107002], length 1400
+22:51:34.982085 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 21955:23355, ack 150, win 2602, options [nop,nop,TS val 944259889 ecr 3426107002], length 1400
+22:51:34.982086 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 23355:24755, ack 150, win 2602, options [nop,nop,TS val 944259892 ecr 3426107002], length 1400
+22:51:34.982087 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 24755:26155, ack 150, win 2602, options [nop,nop,TS val 944259892 ecr 3426107002], length 1400
+22:51:34.982151 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 26155, win 460, options [nop,nop,TS val 3426107185 ecr 944259892], length 0
+22:51:34.987886 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 26155:27555, ack 150, win 2602, options [nop,nop,TS val 944259895 ecr 3426107002], length 1400
+22:51:34.987893 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 27555:28955, ack 150, win 2602, options [nop,nop,TS val 944259895 ecr 3426107002], length 1400
+22:51:34.987894 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 28955:30355, ack 150, win 2602, options [nop,nop,TS val 944259898 ecr 3426107002], length 1400
+22:51:34.987895 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 30355:31755, ack 150, win 2602, options [nop,nop,TS val 944259898 ecr 3426107002], length 1400
+22:51:34.987985 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 31755, win 460, options [nop,nop,TS val 3426107191 ecr 944259898], length 0
+22:51:34.989185 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 31755:33155, ack 150, win 2602, options [nop,nop,TS val 944259901 ecr 3426107002], length 1400
+22:51:34.989186 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 33155:34555, ack 150, win 2602, options [nop,nop,TS val 944259901 ecr 3426107002], length 1400
+22:51:34.989187 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 34555:35955, ack 150, win 2602, options [nop,nop,TS val 944259904 ecr 3426107002], length 1400
+22:51:34.989188 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 35955:37355, ack 150, win 2602, options [nop,nop,TS val 944259904 ecr 3426107002], length 1400
+22:51:34.989243 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 37355, win 460, options [nop,nop,TS val 3426107192 ecr 944259904], length 0
+22:51:34.994999 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 37355:38755, ack 150, win 2602, options [nop,nop,TS val 944259907 ecr 3426107002], length 1400
+22:51:34.995001 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 38755:40155, ack 150, win 2602, options [nop,nop,TS val 944259907 ecr 3426107002], length 1400
+22:51:34.995085 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 40155, win 460, options [nop,nop,TS val 3426107198 ecr 944259907], length 0
+22:51:35.003789 IP ec2-3-213-4-111.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.63473: Flags [.], ack 54, win 8, options [nop,nop,TS val 1071149319 ecr 4286489547], length 0
+22:51:35.003791 IP ec2-3-213-4-111.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.63473: Flags [P.], seq 1:57, ack 54, win 8, options [nop,nop,TS val 1071149320 ecr 4286489547], length 56
+22:51:35.003975 IP ringfloodlightcam-85.lan.63473 > ec2-3-213-4-111.compute-1.amazonaws.com.https: Flags [.], ack 57, win 2047, options [nop,nop,TS val 4286489590 ecr 1071149320], length 0
+22:51:35.022055 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 40155:41555, ack 150, win 2602, options [nop,nop,TS val 944259932 ecr 3426107178], length 1400
+22:51:35.022058 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 41555:42955, ack 150, win 2602, options [nop,nop,TS val 944259932 ecr 3426107178], length 1400
+22:51:35.022060 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 42955:44355, ack 150, win 2602, options [nop,nop,TS val 944259934 ecr 3426107178], length 1400
+22:51:35.022061 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 44355:45755, ack 150, win 2602, options [nop,nop,TS val 944259934 ecr 3426107178], length 1400
+22:51:35.022298 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 45755, win 460, options [nop,nop,TS val 3426107225 ecr 944259934], length 0
+22:51:35.034134 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 45755:47155, ack 150, win 2602, options [nop,nop,TS val 944259937 ecr 3426107178], length 1400
+22:51:35.034136 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 47155:48555, ack 150, win 2602, options [nop,nop,TS val 944259937 ecr 3426107178], length 1400
+22:51:35.034138 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 48555:49955, ack 150, win 2602, options [nop,nop,TS val 944259940 ecr 3426107185], length 1400
+22:51:35.034139 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 49955:51355, ack 150, win 2602, options [nop,nop,TS val 944259940 ecr 3426107185], length 1400
+22:51:35.034351 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 51355, win 460, options [nop,nop,TS val 3426107237 ecr 944259940], length 0
+22:51:35.036504 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 51355:52755, ack 150, win 2602, options [nop,nop,TS val 944259943 ecr 3426107185], length 1400
+22:51:35.036506 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 52755:54155, ack 150, win 2602, options [nop,nop,TS val 944259943 ecr 3426107185], length 1400
+22:51:35.036556 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 54155, win 460, options [nop,nop,TS val 3426107239 ecr 944259943], length 0
+22:51:35.042179 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 54155:55555, ack 150, win 2602, options [nop,nop,TS val 944259946 ecr 3426107191], length 1400
+22:51:35.042180 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 55555:56955, ack 150, win 2602, options [nop,nop,TS val 944259946 ecr 3426107191], length 1400
+22:51:35.042181 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 56955:58355, ack 150, win 2602, options [nop,nop,TS val 944259949 ecr 3426107192], length 1400
+22:51:35.042182 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 58355:59755, ack 150, win 2602, options [nop,nop,TS val 944259949 ecr 3426107192], length 1400
+22:51:35.042183 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 59755:61155, ack 150, win 2602, options [nop,nop,TS val 944259952 ecr 3426107192], length 1400
+22:51:35.042184 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 61155:62555, ack 150, win 2602, options [nop,nop,TS val 944259952 ecr 3426107192], length 1400
+22:51:35.042254 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 62555, win 482, options [nop,nop,TS val 3426107245 ecr 944259952], length 0
+22:51:35.047719 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 62555:63955, ack 150, win 2602, options [nop,nop,TS val 944259955 ecr 3426107192], length 1400
+22:51:35.047723 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 63955:65355, ack 150, win 2602, options [nop,nop,TS val 944259955 ecr 3426107192], length 1400
+22:51:35.047724 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 65355:66755, ack 150, win 2602, options [nop,nop,TS val 944259958 ecr 3426107198], length 1400
+22:51:35.047725 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 66755:68155, ack 150, win 2602, options [nop,nop,TS val 944259958 ecr 3426107198], length 1400
+22:51:35.047726 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 68155:69555, ack 150, win 2602, options [nop,nop,TS val 944259961 ecr 3426107198], length 1400
+22:51:35.047728 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 69555:69595, ack 150, win 2602, options [nop,nop,TS val 944259961 ecr 3426107198], length 40
+22:51:35.047933 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 69595, win 482, options [nop,nop,TS val 3426107250 ecr 944259961], length 0
+22:51:35.066532 IP ringfloodlightcam-85.lan.63458 > ord37s33-in-f3.1e100.net.https: Flags [P.], seq 2269416156:2269416232, ack 2005744491, win 2048, options [nop,nop,TS val 2201791279 ecr 2443173924], length 76
+22:51:35.067396 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 69595:70995, ack 150, win 2602, options [nop,nop,TS val 944259980 ecr 3426107225], length 1400
+22:51:35.067397 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 70995:72395, ack 150, win 2602, options [nop,nop,TS val 944259980 ecr 3426107225], length 1400
+22:51:35.067458 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 72395:73795, ack 150, win 2602, options [nop,nop,TS val 944259982 ecr 3426107225], length 1400
+22:51:35.067459 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 73795:75195, ack 150, win 2602, options [nop,nop,TS val 944259982 ecr 3426107225], length 1400
+22:51:35.067506 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 72395, win 482, options [nop,nop,TS val 3426107270 ecr 944259980], length 0
+22:51:35.067553 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 75195, win 482, options [nop,nop,TS val 3426107270 ecr 944259982], length 0
+22:51:35.089129 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 75195:76595, ack 150, win 2602, options [nop,nop,TS val 944259994 ecr 3426107237], length 1400
+22:51:35.089132 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 76595:77995, ack 150, win 2602, options [nop,nop,TS val 944259994 ecr 3426107237], length 1400
+22:51:35.089133 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 77995:79395, ack 150, win 2602, options [nop,nop,TS val 944259996 ecr 3426107237], length 1400
+22:51:35.089134 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 79395:80795, ack 150, win 2602, options [nop,nop,TS val 944259996 ecr 3426107237], length 1400
+22:51:35.089135 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 80795:82195, ack 150, win 2602, options [nop,nop,TS val 944259999 ecr 3426107239], length 1400
+22:51:35.089136 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 82195:83595, ack 150, win 2602, options [nop,nop,TS val 944259999 ecr 3426107239], length 1400
+22:51:35.089137 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 83595:84995, ack 150, win 2602, options [nop,nop,TS val 944260002 ecr 3426107245], length 1400
+22:51:35.089139 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 84995:86395, ack 150, win 2602, options [nop,nop,TS val 944260002 ecr 3426107245], length 1400
+22:51:35.089139 IP ord37s33-in-f3.1e100.net.https > ringfloodlightcam-85.lan.63458: Flags [.], ack 76, win 386, options [nop,nop,TS val 2443183534 ecr 2201791279], length 0
+22:51:35.089428 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 86395, win 482, options [nop,nop,TS val 3426107292 ecr 944260002], length 0
+22:51:35.095542 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 86395:87795, ack 150, win 2602, options [nop,nop,TS val 944260005 ecr 3426107245], length 1400
+22:51:35.095545 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 87795:89195, ack 150, win 2602, options [nop,nop,TS val 944260005 ecr 3426107245], length 1400
+22:51:35.095750 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 89195, win 504, options [nop,nop,TS val 3426107298 ecr 944260005], length 0
+22:51:35.100885 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 89195:90555, ack 150, win 2602, options [nop,nop,TS val 944260008 ecr 3426107245], length 1360
+22:51:35.100886 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 90555:91955, ack 150, win 2602, options [nop,nop,TS val 944260009 ecr 3426107245], length 1400
+22:51:35.100887 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 91955:93355, ack 150, win 2602, options [nop,nop,TS val 944260009 ecr 3426107245], length 1400
+22:51:35.100953 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 93355, win 504, options [nop,nop,TS val 3426107304 ecr 944260009], length 0
+22:51:35.105306 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 93355:94755, ack 150, win 2602, options [nop,nop,TS val 944260013 ecr 3426107250], length 1400
+22:51:35.105309 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 94755:96155, ack 150, win 2602, options [nop,nop,TS val 944260013 ecr 3426107250], length 1400
+22:51:35.105310 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 96155:97555, ack 150, win 2602, options [nop,nop,TS val 944260016 ecr 3426107250], length 1400
+22:51:35.105311 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 97555:98955, ack 150, win 2602, options [nop,nop,TS val 944260016 ecr 3426107250], length 1400
+22:51:35.105312 IP ord37s33-in-f3.1e100.net.https > ringfloodlightcam-85.lan.63458: Flags [P.], seq 1:96, ack 76, win 386, options [nop,nop,TS val 2443183546 ecr 2201791279], length 95
+22:51:35.105312 IP ord37s33-in-f3.1e100.net.https > ringfloodlightcam-85.lan.63458: Flags [P.], seq 96:170, ack 76, win 386, options [nop,nop,TS val 2443183546 ecr 2201791279], length 74
+22:51:35.105313 IP ord37s33-in-f3.1e100.net.https > ringfloodlightcam-85.lan.63458: Flags [P.], seq 170:209, ack 76, win 386, options [nop,nop,TS val 2443183546 ecr 2201791279], length 39
+22:51:35.105444 IP ringfloodlightcam-85.lan.63458 > ord37s33-in-f3.1e100.net.https: Flags [.], ack 209, win 2044, options [nop,nop,TS val 2201791318 ecr 2443183546], length 0
+22:51:35.105513 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 98955, win 504, options [nop,nop,TS val 3426107308 ecr 944260016], length 0
+22:51:35.106274 IP ringfloodlightcam-85.lan.63458 > ord37s33-in-f3.1e100.net.https: Flags [P.], seq 76:115, ack 209, win 2048, options [nop,nop,TS val 2201791318 ecr 2443183546], length 39
+22:51:35.108267 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 98955:100355, ack 150, win 2602, options [nop,nop,TS val 944260022 ecr 3426107270], length 1400
+22:51:35.108268 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 100355:101755, ack 150, win 2602, options [nop,nop,TS val 944260022 ecr 3426107270], length 1400
+22:51:35.108410 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 101755, win 504, options [nop,nop,TS val 3426107311 ecr 944260022], length 0
+22:51:35.112578 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 101755:103155, ack 150, win 2602, options [nop,nop,TS val 944260023 ecr 3426107270], length 1400
+22:51:35.112582 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 103155:104555, ack 150, win 2602, options [nop,nop,TS val 944260023 ecr 3426107270], length 1400
+22:51:35.112775 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 104555, win 504, options [nop,nop,TS val 3426107315 ecr 944260023], length 0
+22:51:35.144002 IP sense-w927005450.lan.distinct > broadcasthost.distinct: UDP, length 63
+22:51:35.147127 IP ord37s33-in-f3.1e100.net.https > ringfloodlightcam-85.lan.63458: Flags [.], ack 115, win 386, options [nop,nop,TS val 2443183584 ecr 2201791318], length 0
+22:51:35.147129 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 104555:105955, ack 150, win 2602, options [nop,nop,TS val 944260051 ecr 3426107292], length 1400
+22:51:35.147131 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 105955:107355, ack 150, win 2602, options [nop,nop,TS val 944260051 ecr 3426107292], length 1400
+22:51:35.147132 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 107355:108755, ack 150, win 2602, options [nop,nop,TS val 944260052 ecr 3426107292], length 1400
+22:51:35.147133 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 108755:110155, ack 150, win 2602, options [nop,nop,TS val 944260052 ecr 3426107292], length 1400
+22:51:35.148841 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 110155:111555, ack 150, win 2602, options [nop,nop,TS val 944260055 ecr 3426107292], length 1400
+22:51:35.148843 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 111555:112955, ack 150, win 2602, options [nop,nop,TS val 944260055 ecr 3426107292], length 1400
+22:51:35.148845 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 112955:114355, ack 150, win 2602, options [nop,nop,TS val 944260058 ecr 3426107292], length 1400
+22:51:35.148845 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 114355:115755, ack 150, win 2602, options [nop,nop,TS val 944260058 ecr 3426107292], length 1400
+22:51:35.148847 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 115755:117155, ack 150, win 2602, options [nop,nop,TS val 944260061 ecr 3426107304], length 1400
+22:51:35.148848 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 117155:118555, ack 150, win 2602, options [nop,nop,TS val 944260061 ecr 3426107304], length 1400
+22:51:35.151275 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 118555:119955, ack 150, win 2602, options [nop,nop,TS val 944260065 ecr 3426107304], length 1400
+22:51:35.151277 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 119955:121355, ack 150, win 2602, options [nop,nop,TS val 944260065 ecr 3426107304], length 1400
+22:51:35.153386 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 121355:122755, ack 150, win 2602, options [nop,nop,TS val 944260068 ecr 3426107308], length 1400
+22:51:35.153388 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 122755:124155, ack 150, win 2602, options [nop,nop,TS val 944260068 ecr 3426107308], length 1400
+22:51:35.154092 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 110155, win 504, options [nop,nop,TS val 3426107357 ecr 944260052], length 0
+22:51:35.154183 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 118555, win 504, options [nop,nop,TS val 3426107357 ecr 944260061], length 0
+22:51:35.154210 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 121355, win 525, options [nop,nop,TS val 3426107357 ecr 944260065], length 0
+22:51:35.154235 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 124155, win 525, options [nop,nop,TS val 3426107357 ecr 944260068], length 0
+22:51:35.157850 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 124155:125555, ack 150, win 2602, options [nop,nop,TS val 944260071 ecr 3426107308], length 1400
+22:51:35.157852 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 125555:126955, ack 150, win 2602, options [nop,nop,TS val 944260071 ecr 3426107308], length 1400
+22:51:35.157996 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 126955, win 525, options [nop,nop,TS val 3426107361 ecr 944260071], length 0
+22:51:35.161111 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 126955:128355, ack 150, win 2602, options [nop,nop,TS val 944260074 ecr 3426107311], length 1400
+22:51:35.161113 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 128355:129755, ack 150, win 2602, options [nop,nop,TS val 944260074 ecr 3426107311], length 1400
+22:51:35.161224 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 129755, win 525, options [nop,nop,TS val 3426107364 ecr 944260074], length 0
+22:51:35.170509 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 129755:131155, ack 150, win 2602, options [nop,nop,TS val 944260077 ecr 3426107315], length 1400
+22:51:35.170511 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 131155:132555, ack 150, win 2602, options [nop,nop,TS val 944260077 ecr 3426107315], length 1400
+22:51:35.170512 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 132555:133955, ack 150, win 2602, options [nop,nop,TS val 944260080 ecr 3426107315], length 1400
+22:51:35.170513 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 133955:135355, ack 150, win 2602, options [nop,nop,TS val 944260080 ecr 3426107315], length 1400
+22:51:35.170700 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 135355, win 525, options [nop,nop,TS val 3426107373 ecr 944260080], length 0
+22:51:35.172163 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 135355:136755, ack 150, win 2602, options [nop,nop,TS val 944260083 ecr 3426107315], length 1400
+22:51:35.172164 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 136755:136811, ack 150, win 2602, options [nop,nop,TS val 944260083 ecr 3426107315], length 56
+22:51:35.172203 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 136811, win 525, options [nop,nop,TS val 3426107375 ecr 944260083], length 0
+22:51:35.195849 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 136811:138211, ack 150, win 2602, options [nop,nop,TS val 944260109 ecr 3426107357], length 1400
+22:51:35.195851 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 138211:139611, ack 150, win 2602, options [nop,nop,TS val 944260109 ecr 3426107357], length 1400
+22:51:35.195853 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 139611:141011, ack 150, win 2602, options [nop,nop,TS val 944260110 ecr 3426107357], length 1400
+22:51:35.195854 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 141011:142411, ack 150, win 2602, options [nop,nop,TS val 944260110 ecr 3426107357], length 1400
+22:51:35.196064 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 142411, win 525, options [nop,nop,TS val 3426107399 ecr 944260110], length 0
+22:51:35.198036 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 142411:143811, ack 150, win 2602, options [nop,nop,TS val 944260113 ecr 3426107357], length 1400
+22:51:35.198038 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 143811:145211, ack 150, win 2602, options [nop,nop,TS val 944260113 ecr 3426107357], length 1400
+22:51:35.198099 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 145211, win 525, options [nop,nop,TS val 3426107401 ecr 944260113], length 0
+22:51:35.201814 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 145211:146611, ack 150, win 2602, options [nop,nop,TS val 944260115 ecr 3426107357], length 1400
+22:51:35.201815 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 146611:148011, ack 150, win 2602, options [nop,nop,TS val 944260115 ecr 3426107357], length 1400
+22:51:35.201847 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 148011, win 525, options [nop,nop,TS val 3426107405 ecr 944260115], length 0
+22:51:35.206900 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 148011:149411, ack 150, win 2602, options [nop,nop,TS val 944260117 ecr 3426107357], length 1400
+22:51:35.206902 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 149411:150811, ack 150, win 2602, options [nop,nop,TS val 944260117 ecr 3426107357], length 1400
+22:51:35.206905 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 150811:152211, ack 150, win 2602, options [nop,nop,TS val 944260120 ecr 3426107361], length 1400
+22:51:35.206907 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 152211:153611, ack 150, win 2602, options [nop,nop,TS val 944260120 ecr 3426107361], length 1400
+22:51:35.206957 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 153611, win 525, options [nop,nop,TS val 3426107410 ecr 944260120], length 0
+22:51:35.210771 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 153611:154955, ack 150, win 2602, options [nop,nop,TS val 944260122 ecr 3426107361], length 1344
+22:51:35.210772 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 154955:156355, ack 150, win 2602, options [nop,nop,TS val 944260124 ecr 3426107361], length 1400
+22:51:35.210773 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 156355:157755, ack 150, win 2602, options [nop,nop,TS val 944260124 ecr 3426107361], length 1400
+22:51:35.210809 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 157755, win 547, options [nop,nop,TS val 3426107413 ecr 944260124], length 0
+22:51:35.213393 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 157755:159155, ack 150, win 2602, options [nop,nop,TS val 944260126 ecr 3426107364], length 1400
+22:51:35.213395 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 159155:160555, ack 150, win 2602, options [nop,nop,TS val 944260126 ecr 3426107364], length 1400
+22:51:35.213439 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 160555, win 547, options [nop,nop,TS val 3426107416 ecr 944260126], length 0
+22:51:35.224333 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 160555:161955, ack 150, win 2602, options [nop,nop,TS val 944260128 ecr 3426107364], length 1400
+22:51:35.224334 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 161955:163355, ack 150, win 2602, options [nop,nop,TS val 944260128 ecr 3426107364], length 1400
+22:51:35.224336 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 163355:164755, ack 150, win 2602, options [nop,nop,TS val 944260131 ecr 3426107373], length 1400
+22:51:35.224338 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 164755:166155, ack 150, win 2602, options [nop,nop,TS val 944260131 ecr 3426107373], length 1400
+22:51:35.224339 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 166155:167555, ack 150, win 2602, options [nop,nop,TS val 944260133 ecr 3426107373], length 1400
+22:51:35.224340 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 167555:168955, ack 150, win 2602, options [nop,nop,TS val 944260133 ecr 3426107373], length 1400
+22:51:35.224341 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 168955:170355, ack 150, win 2602, options [nop,nop,TS val 944260136 ecr 3426107375], length 1400
+22:51:35.224342 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 170355:170411, ack 150, win 2602, options [nop,nop,TS val 944260136 ecr 3426107375], length 56
+22:51:35.224434 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 170411, win 547, options [nop,nop,TS val 3426107427 ecr 944260136], length 0
+22:51:35.237106 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 170411:171811, ack 150, win 2602, options [nop,nop,TS val 944260149 ecr 3426107399], length 1400
+22:51:35.237109 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 171811:173211, ack 150, win 2602, options [nop,nop,TS val 944260149 ecr 3426107399], length 1400
+22:51:35.237111 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 173211:174611, ack 150, win 2602, options [nop,nop,TS val 944260150 ecr 3426107399], length 1400
+22:51:35.237112 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 174611:176011, ack 150, win 2602, options [nop,nop,TS val 944260150 ecr 3426107399], length 1400
+22:51:35.237325 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 176011, win 547, options [nop,nop,TS val 3426107440 ecr 944260150], length 0
+22:51:35.239040 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 176011:177411, ack 150, win 2602, options [nop,nop,TS val 944260153 ecr 3426107401], length 1400
+22:51:35.239041 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 177411:178811, ack 150, win 2602, options [nop,nop,TS val 944260153 ecr 3426107401], length 1400
+22:51:35.239087 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 178811, win 547, options [nop,nop,TS val 3426107442 ecr 944260153], length 0
+22:51:35.246108 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 178811:180211, ack 150, win 2602, options [nop,nop,TS val 944260158 ecr 3426107405], length 1400
+22:51:35.246109 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 180211:181611, ack 150, win 2602, options [nop,nop,TS val 944260158 ecr 3426107405], length 1400
+22:51:35.246235 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 181611, win 547, options [nop,nop,TS val 3426107449 ecr 944260158], length 0
+22:51:35.252716 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 181611:183011, ack 150, win 2602, options [nop,nop,TS val 944260162 ecr 3426107410], length 1400
+22:51:35.252719 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 183011:184411, ack 150, win 2602, options [nop,nop,TS val 944260162 ecr 3426107410], length 1400
+22:51:35.252719 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 184411:185811, ack 150, win 2602, options [nop,nop,TS val 944260164 ecr 3426107410], length 1400
+22:51:35.252720 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 185811:187211, ack 150, win 2602, options [nop,nop,TS val 944260164 ecr 3426107410], length 1400
+22:51:35.252870 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 187211, win 547, options [nop,nop,TS val 3426107455 ecr 944260164], length 0
+22:51:35.254218 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 187211:188611, ack 150, win 2602, options [nop,nop,TS val 944260168 ecr 3426107413], length 1400
+22:51:35.254219 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 188611:190011, ack 150, win 2602, options [nop,nop,TS val 944260168 ecr 3426107413], length 1400
+22:51:35.254337 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 190011, win 569, options [nop,nop,TS val 3426107457 ecr 944260168], length 0
+22:51:35.260573 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 190011:191411, ack 150, win 2602, options [nop,nop,TS val 944260173 ecr 3426107416], length 1400
+22:51:35.260575 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 191411:192811, ack 150, win 2602, options [nop,nop,TS val 944260173 ecr 3426107416], length 1400
+22:51:35.260723 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 192811, win 569, options [nop,nop,TS val 3426107463 ecr 944260173], length 0
+22:51:35.279565 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 192811:194211, ack 150, win 2602, options [nop,nop,TS val 944260181 ecr 3426107427], length 1400
+22:51:35.279567 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 194211:195611, ack 150, win 2602, options [nop,nop,TS val 944260181 ecr 3426107427], length 1400
+22:51:35.279568 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 195611:197011, ack 150, win 2602, options [nop,nop,TS val 944260182 ecr 3426107427], length 1400
+22:51:35.279569 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 197011:198411, ack 150, win 2602, options [nop,nop,TS val 944260182 ecr 3426107427], length 1400
+22:51:35.279569 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 198411:199811, ack 150, win 2602, options [nop,nop,TS val 944260185 ecr 3426107427], length 1400
+22:51:35.279571 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 199811:201211, ack 150, win 2602, options [nop,nop,TS val 944260185 ecr 3426107427], length 1400
+22:51:35.279572 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 201211:202611, ack 150, win 2602, options [nop,nop,TS val 944260187 ecr 3426107427], length 1400
+22:51:35.279572 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 202611:204011, ack 150, win 2602, options [nop,nop,TS val 944260187 ecr 3426107427], length 1400
+22:51:35.279717 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 204011, win 569, options [nop,nop,TS val 3426107482 ecr 944260187], length 0
+22:51:35.280932 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 204011:205411, ack 150, win 2602, options [nop,nop,TS val 944260195 ecr 3426107440], length 1400
+22:51:35.280934 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 205411:206811, ack 150, win 2602, options [nop,nop,TS val 944260195 ecr 3426107440], length 1400
+22:51:35.280964 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 206811, win 569, options [nop,nop,TS val 3426107484 ecr 944260195], length 0
+22:51:35.283245 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 206811:208211, ack 150, win 2602, options [nop,nop,TS val 944260196 ecr 3426107440], length 1400
+22:51:35.283247 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 208211:209611, ack 150, win 2602, options [nop,nop,TS val 944260196 ecr 3426107440], length 1400
+22:51:35.283273 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 209611, win 569, options [nop,nop,TS val 3426107486 ecr 944260196], length 0
+22:51:35.292364 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 209611:211011, ack 150, win 2602, options [nop,nop,TS val 944260198 ecr 3426107442], length 1400
+22:51:35.292366 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 211011:212411, ack 150, win 2602, options [nop,nop,TS val 944260198 ecr 3426107442], length 1400
+22:51:35.292428 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 212411, win 569, options [nop,nop,TS val 3426107495 ecr 944260198], length 0
+22:51:35.295763 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 212411:213811, ack 150, win 2602, options [nop,nop,TS val 944260205 ecr 3426107455], length 1400
+22:51:35.295765 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 213811:215211, ack 150, win 2602, options [nop,nop,TS val 944260205 ecr 3426107455], length 1400
+22:51:35.295766 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 215211:216611, ack 150, win 2602, options [nop,nop,TS val 944260206 ecr 3426107455], length 1400
+22:51:35.295767 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 216611:218011, ack 150, win 2602, options [nop,nop,TS val 944260206 ecr 3426107455], length 1400
+22:51:35.295830 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 218011, win 569, options [nop,nop,TS val 3426107498 ecr 944260206], length 0
+22:51:35.298582 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 218011:219355, ack 150, win 2602, options [nop,nop,TS val 944260209 ecr 3426107455], length 1344
+22:51:35.298584 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 219355:220755, ack 150, win 2602, options [nop,nop,TS val 944260210 ecr 3426107455], length 1400
+22:51:35.298585 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 220755:222155, ack 150, win 2602, options [nop,nop,TS val 944260210 ecr 3426107455], length 1400
+22:51:35.298641 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 222155, win 569, options [nop,nop,TS val 3426107501 ecr 944260210], length 0
+22:51:35.303339 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 222155:223555, ack 150, win 2602, options [nop,nop,TS val 944260212 ecr 3426107457], length 1400
+22:51:35.303341 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 223555:224955, ack 150, win 2602, options [nop,nop,TS val 944260212 ecr 3426107457], length 1400
+22:51:35.303382 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 224955, win 569, options [nop,nop,TS val 3426107506 ecr 944260212], length 0
+22:51:35.309650 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 224955:226355, ack 150, win 2602, options [nop,nop,TS val 944260221 ecr 3426107463], length 1400
+22:51:35.309651 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 226355:227755, ack 150, win 2602, options [nop,nop,TS val 944260221 ecr 3426107463], length 1400
+22:51:35.309702 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 227755, win 591, options [nop,nop,TS val 3426107512 ecr 944260221], length 0
+22:51:35.329314 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 227755:229155, ack 150, win 2602, options [nop,nop,TS val 944260237 ecr 3426107482], length 1400
+22:51:35.329316 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 229155:230555, ack 150, win 2602, options [nop,nop,TS val 944260237 ecr 3426107482], length 1400
+22:51:35.329317 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 230555:231955, ack 150, win 2602, options [nop,nop,TS val 944260239 ecr 3426107482], length 1400
+22:51:35.329318 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 231955:233355, ack 150, win 2602, options [nop,nop,TS val 944260239 ecr 3426107482], length 1400
+22:51:35.329422 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 233355, win 591, options [nop,nop,TS val 3426107532 ecr 944260239], length 0
+22:51:35.335025 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 233355:234755, ack 150, win 2602, options [nop,nop,TS val 944260241 ecr 3426107486], length 1400
+22:51:35.335026 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 234755:236155, ack 150, win 2602, options [nop,nop,TS val 944260241 ecr 3426107486], length 1400
+22:51:35.335028 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 236155:237555, ack 150, win 2602, options [nop,nop,TS val 944260244 ecr 3426107486], length 1400
+22:51:35.335029 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 237555:238955, ack 150, win 2602, options [nop,nop,TS val 944260244 ecr 3426107486], length 1400
+22:51:35.335320 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 238955, win 591, options [nop,nop,TS val 3426107538 ecr 944260244], length 0
+22:51:35.335872 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 238955:240355, ack 150, win 2602, options [nop,nop,TS val 944260247 ecr 3426107486], length 1400
+22:51:35.335874 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 240355:241755, ack 150, win 2602, options [nop,nop,TS val 944260247 ecr 3426107486], length 1400
+22:51:35.335915 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 241755, win 591, options [nop,nop,TS val 3426107538 ecr 944260247], length 0
+22:51:35.341124 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 241755:243155, ack 150, win 2602, options [nop,nop,TS val 944260249 ecr 3426107486], length 1400
+22:51:35.341126 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 243155:244555, ack 150, win 2602, options [nop,nop,TS val 944260249 ecr 3426107486], length 1400
+22:51:35.341172 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 244555, win 591, options [nop,nop,TS val 3426107544 ecr 944260249], length 0
+22:51:35.351823 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 244555:245955, ack 150, win 2602, options [nop,nop,TS val 944260257 ecr 3426107498], length 1400
+22:51:35.351825 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 245955:247355, ack 150, win 2602, options [nop,nop,TS val 944260257 ecr 3426107498], length 1400
+22:51:35.351826 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 247355:248755, ack 150, win 2602, options [nop,nop,TS val 944260258 ecr 3426107498], length 1400
+22:51:35.351827 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 248755:250155, ack 150, win 2602, options [nop,nop,TS val 944260258 ecr 3426107498], length 1400
+22:51:35.351934 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 250155, win 591, options [nop,nop,TS val 3426107555 ecr 944260258], length 0
+22:51:35.355637 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 250155:251555, ack 150, win 2602, options [nop,nop,TS val 944260261 ecr 3426107501], length 1400
+22:51:35.355640 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 251555:252955, ack 150, win 2602, options [nop,nop,TS val 944260261 ecr 3426107501], length 1400
+22:51:35.355641 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 252955:254355, ack 150, win 2602, options [nop,nop,TS val 944260263 ecr 3426107501], length 1400
+22:51:35.355642 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 254355:255755, ack 150, win 2602, options [nop,nop,TS val 944260263 ecr 3426107501], length 1400
+22:51:35.355690 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 255755, win 591, options [nop,nop,TS val 3426107558 ecr 944260263], length 0
+22:51:35.358128 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 255755:257155, ack 150, win 2602, options [nop,nop,TS val 944260266 ecr 3426107501], length 1400
+22:51:35.358129 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 257155:258555, ack 150, win 2602, options [nop,nop,TS val 944260266 ecr 3426107501], length 1400
+22:51:35.358130 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 258555:259955, ack 150, win 2602, options [nop,nop,TS val 944260269 ecr 3426107506], length 1400
+22:51:35.358131 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 259955:261355, ack 150, win 2602, options [nop,nop,TS val 944260269 ecr 3426107506], length 1400
+22:51:35.358133 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63377: Flags [P.], seq 1675936576:1675936627, ack 3582105914, win 1045, options [nop,nop,TS val 103006791 ecr 4157943941], length 51
+22:51:35.358133 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 261355:262755, ack 150, win 2602, options [nop,nop,TS val 944260272 ecr 3426107512], length 1400
+22:51:35.358134 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 262755:264155, ack 150, win 2602, options [nop,nop,TS val 944260272 ecr 3426107512], length 1400
+22:51:35.358188 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 264155, win 613, options [nop,nop,TS val 3426107561 ecr 944260272], length 0
+22:51:35.358232 IP ringfloodlightcam-85.lan.63377 > rg-in-f108.1e100.net.imaps: Flags [.], ack 51, win 1814, options [nop,nop,TS val 4157947026 ecr 103006791], length 0
+22:51:35.359686 IP ringfloodlightcam-85.lan.63377 > rg-in-f108.1e100.net.imaps: Flags [P.], seq 1:46, ack 51, win 1814, options [nop,nop,TS val 4157947027 ecr 103006791], length 45
+22:51:35.377745 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 264155:265555, ack 150, win 2602, options [nop,nop,TS val 944260289 ecr 3426107538], length 1400
+22:51:35.377747 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 265555:266955, ack 150, win 2602, options [nop,nop,TS val 944260289 ecr 3426107538], length 1400
+22:51:35.377748 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 266955:268355, ack 150, win 2602, options [nop,nop,TS val 944260291 ecr 3426107538], length 1400
+22:51:35.377749 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 268355:269755, ack 150, win 2602, options [nop,nop,TS val 944260291 ecr 3426107538], length 1400
+22:51:35.377922 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 269755, win 613, options [nop,nop,TS val 3426107581 ecr 944260291], length 0
+22:51:35.391050 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 269755:271155, ack 150, win 2602, options [nop,nop,TS val 944260293 ecr 3426107538], length 1400
+22:51:35.391052 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 271155:272555, ack 150, win 2602, options [nop,nop,TS val 944260293 ecr 3426107538], length 1400
+22:51:35.391053 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 272555:273955, ack 150, win 2602, options [nop,nop,TS val 944260296 ecr 3426107538], length 1400
+22:51:35.391054 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 273955:275355, ack 150, win 2602, options [nop,nop,TS val 944260296 ecr 3426107538], length 1400
+22:51:35.391055 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 275355:276755, ack 150, win 2602, options [nop,nop,TS val 944260299 ecr 3426107538], length 1400
+22:51:35.391056 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 276755:278155, ack 150, win 2602, options [nop,nop,TS val 944260299 ecr 3426107538], length 1400
+22:51:35.391172 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 278155, win 613, options [nop,nop,TS val 3426107594 ecr 944260299], length 0
+22:51:35.395739 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 278155:279555, ack 150, win 2602, options [nop,nop,TS val 944260305 ecr 3426107544], length 1400
+22:51:35.395740 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 279555:280955, ack 150, win 2602, options [nop,nop,TS val 944260305 ecr 3426107544], length 1400
+22:51:35.395788 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 280955, win 613, options [nop,nop,TS val 3426107598 ecr 944260305], length 0
+22:51:35.402498 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 280955:282355, ack 150, win 2602, options [nop,nop,TS val 944260310 ecr 3426107561], length 1400
+22:51:35.402499 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 282355:283755, ack 150, win 2602, options [nop,nop,TS val 944260310 ecr 3426107561], length 1400
+22:51:35.402500 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 283755:285155, ack 150, win 2602, options [nop,nop,TS val 944260312 ecr 3426107561], length 1400
+22:51:35.402501 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 285155:286555, ack 150, win 2602, options [nop,nop,TS val 944260312 ecr 3426107561], length 1400
+22:51:35.402557 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 286555, win 613, options [nop,nop,TS val 3426107605 ecr 944260312], length 0
+22:51:35.404689 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 286555:287955, ack 150, win 2602, options [nop,nop,TS val 944260315 ecr 3426107561], length 1400
+22:51:35.404690 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 287955:289355, ack 150, win 2602, options [nop,nop,TS val 944260315 ecr 3426107561], length 1400
+22:51:35.404691 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 289355:290755, ack 150, win 2602, options [nop,nop,TS val 944260317 ecr 3426107561], length 1400
+22:51:35.404692 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 290755:292155, ack 150, win 2602, options [nop,nop,TS val 944260317 ecr 3426107561], length 1400
+22:51:35.404743 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 292155, win 613, options [nop,nop,TS val 3426107607 ecr 944260317], length 0
+22:51:35.406481 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 292155:293555, ack 150, win 2602, options [nop,nop,TS val 944260320 ecr 3426107561], length 1400
+22:51:35.406482 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 293555:294955, ack 150, win 2602, options [nop,nop,TS val 944260320 ecr 3426107561], length 1400
+22:51:35.406534 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 294955, win 613, options [nop,nop,TS val 3426107609 ecr 944260320], length 0
+22:51:35.408361 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63377: Flags [.], ack 46, win 1045, options [nop,nop,TS val 103006844 ecr 4157947027], length 0
+22:51:35.408362 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 294955:296355, ack 150, win 2602, options [nop,nop,TS val 944260323 ecr 3426107561], length 1400
+22:51:35.408363 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 296355:297755, ack 150, win 2602, options [nop,nop,TS val 944260323 ecr 3426107561], length 1400
+22:51:35.408428 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 297755, win 613, options [nop,nop,TS val 3426107611 ecr 944260323], length 0
+22:51:35.412536 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 297755:299155, ack 150, win 2602, options [nop,nop,TS val 944260325 ecr 3426107561], length 1400
+22:51:35.412537 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 299155:300555, ack 150, win 2602, options [nop,nop,TS val 944260325 ecr 3426107561], length 1400
+22:51:35.412599 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 300555, win 613, options [nop,nop,TS val 3426107615 ecr 944260325], length 0
+22:51:35.414726 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 300555:301955, ack 150, win 2602, options [nop,nop,TS val 944260328 ecr 3426107561], length 1400
+22:51:35.414728 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 301955:303355, ack 150, win 2602, options [nop,nop,TS val 944260328 ecr 3426107561], length 1400
+22:51:35.414780 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 303355, win 635, options [nop,nop,TS val 3426107617 ecr 944260328], length 0
+22:51:35.423228 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 303355:304755, ack 150, win 2602, options [nop,nop,TS val 944260335 ecr 3426107581], length 1400
+22:51:35.423229 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 304755:306155, ack 150, win 2602, options [nop,nop,TS val 944260335 ecr 3426107581], length 1400
+22:51:35.423324 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 306155, win 635, options [nop,nop,TS val 3426107626 ecr 944260335], length 0
+22:51:35.425550 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 306155:307555, ack 150, win 2602, options [nop,nop,TS val 944260337 ecr 3426107581], length 1400
+22:51:35.425551 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 307555:308955, ack 150, win 2602, options [nop,nop,TS val 944260337 ecr 3426107581], length 1400
+22:51:35.425587 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 308955, win 635, options [nop,nop,TS val 3426107628 ecr 944260337], length 0
+22:51:35.441625 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 308955:310355, ack 150, win 2602, options [nop,nop,TS val 944260345 ecr 3426107594], length 1400
+22:51:35.441626 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 310355:311755, ack 150, win 2602, options [nop,nop,TS val 944260345 ecr 3426107594], length 1400
+22:51:35.441627 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 311755:313155, ack 150, win 2602, options [nop,nop,TS val 944260347 ecr 3426107594], length 1400
+22:51:35.441628 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 313155:314555, ack 150, win 2602, options [nop,nop,TS val 944260347 ecr 3426107594], length 1400
+22:51:35.441683 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 314555, win 635, options [nop,nop,TS val 3426107644 ecr 944260347], length 0
+22:51:35.446168 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 314555:315955, ack 150, win 2602, options [nop,nop,TS val 944260352 ecr 3426107594], length 1400
+22:51:35.446169 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 315955:317355, ack 150, win 2602, options [nop,nop,TS val 944260352 ecr 3426107594], length 1400
+22:51:35.446221 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 317355, win 635, options [nop,nop,TS val 3426107649 ecr 944260352], length 0
+22:51:35.452919 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 317355:318755, ack 150, win 2602, options [nop,nop,TS val 944260359 ecr 3426107605], length 1400
+22:51:35.452921 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 318755:320155, ack 150, win 2602, options [nop,nop,TS val 944260359 ecr 3426107605], length 1400
+22:51:35.452970 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 320155, win 635, options [nop,nop,TS val 3426107656 ecr 944260359], length 0
+22:51:35.458459 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 320155:321555, ack 150, win 2602, options [nop,nop,TS val 944260361 ecr 3426107605], length 1400
+22:51:35.458460 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 321555:322955, ack 150, win 2602, options [nop,nop,TS val 944260361 ecr 3426107605], length 1400
+22:51:35.458461 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 322955:324355, ack 150, win 2602, options [nop,nop,TS val 944260366 ecr 3426107609], length 1400
+22:51:35.458463 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 324355:325755, ack 150, win 2602, options [nop,nop,TS val 944260366 ecr 3426107609], length 1400
+22:51:35.458467 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 325755:327155, ack 150, win 2602, options [nop,nop,TS val 944260369 ecr 3426107609], length 1400
+22:51:35.458469 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 327155:328555, ack 150, win 2602, options [nop,nop,TS val 944260369 ecr 3426107609], length 1400
+22:51:35.458470 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63377: Flags [P.], seq 51:90, ack 46, win 1045, options [nop,nop,TS val 103006892 ecr 4157947027], length 39
+22:51:35.458533 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 328555, win 635, options [nop,nop,TS val 3426107661 ecr 944260369], length 0
+22:51:35.458573 IP ringfloodlightcam-85.lan.63377 > rg-in-f108.1e100.net.imaps: Flags [.], ack 90, win 1813, options [nop,nop,TS val 4157947126 ecr 103006892], length 0
+22:51:35.460960 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 328555:329955, ack 150, win 2602, options [nop,nop,TS val 944260373 ecr 3426107615], length 1400
+22:51:35.460961 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 329955:331355, ack 150, win 2602, options [nop,nop,TS val 944260373 ecr 3426107615], length 1400
+22:51:35.460962 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 331355:332755, ack 150, win 2602, options [nop,nop,TS val 944260376 ecr 3426107617], length 1400
+22:51:35.460963 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 332755:334155, ack 150, win 2602, options [nop,nop,TS val 944260376 ecr 3426107617], length 1400
+22:51:35.461048 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 334155, win 635, options [nop,nop,TS val 3426107664 ecr 944260376], length 0
+22:51:35.465943 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 334155:335555, ack 150, win 2602, options [nop,nop,TS val 944260379 ecr 3426107617], length 1400
+22:51:35.465945 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 335555:336955, ack 150, win 2602, options [nop,nop,TS val 944260379 ecr 3426107617], length 1400
+22:51:35.466033 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 336955, win 635, options [nop,nop,TS val 3426107669 ecr 944260379], length 0
+22:51:35.469990 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 336955:338355, ack 150, win 2602, options [nop,nop,TS val 944260383 ecr 3426107617], length 1400
+22:51:35.469992 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 338355:339755, ack 150, win 2602, options [nop,nop,TS val 944260383 ecr 3426107617], length 1400
+22:51:35.470037 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 339755, win 635, options [nop,nop,TS val 3426107673 ecr 944260383], length 0
+22:51:35.477107 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 339755:341155, ack 150, win 2602, options [nop,nop,TS val 944260386 ecr 3426107617], length 1400
+22:51:35.477109 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 341155:342555, ack 150, win 2602, options [nop,nop,TS val 944260386 ecr 3426107617], length 1400
+22:51:35.477157 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 342555, win 635, options [nop,nop,TS val 3426107680 ecr 944260386], length 0
+22:51:35.488750 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 342555:343955, ack 150, win 2602, options [nop,nop,TS val 944260402 ecr 3426107628], length 1400
+22:51:35.488752 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 343955:345355, ack 150, win 2602, options [nop,nop,TS val 944260402 ecr 3426107628], length 1400
+22:51:35.488797 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 345355, win 657, options [nop,nop,TS val 3426107691 ecr 944260402], length 0
+22:51:35.493755 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 345355:346755, ack 150, win 2602, options [nop,nop,TS val 944260404 ecr 3426107628], length 1400
+22:51:35.493756 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 346755:348155, ack 150, win 2602, options [nop,nop,TS val 944260404 ecr 3426107628], length 1400
+22:51:35.493803 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 348155, win 657, options [nop,nop,TS val 3426107696 ecr 944260404], length 0
+22:51:35.502986 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 348155:349555, ack 150, win 2602, options [nop,nop,TS val 944260407 ecr 3426107649], length 1400
+22:51:35.502987 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 349555:350955, ack 150, win 2602, options [nop,nop,TS val 944260407 ecr 3426107649], length 1400
+22:51:35.502988 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 350955:352355, ack 150, win 2602, options [nop,nop,TS val 944260411 ecr 3426107649], length 1400
+22:51:35.502989 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 352355:353432, ack 150, win 2602, options [nop,nop,TS val 944260411 ecr 3426107649], length 1077
+22:51:35.503041 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 353432, win 657, options [nop,nop,TS val 3426107706 ecr 944260411], length 0
+22:51:35.521945 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [P.], seq 150:234, ack 353432, win 657, options [nop,nop,TS val 3426107725 ecr 944260411], length 84
+22:51:35.579327 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], ack 234, win 2602, options [nop,nop,TS val 944260493 ecr 3426107725], length 0
+22:51:35.636618 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 353432:354832, ack 234, win 2602, options [nop,nop,TS val 944260542 ecr 3426107725], length 1400
+22:51:35.636620 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 354832:356232, ack 234, win 2602, options [nop,nop,TS val 944260542 ecr 3426107725], length 1400
+22:51:35.636622 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 356232:357632, ack 234, win 2602, options [nop,nop,TS val 944260544 ecr 3426107725], length 1400
+22:51:35.636623 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 357632:359032, ack 234, win 2602, options [nop,nop,TS val 944260544 ecr 3426107725], length 1400
+22:51:35.636680 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 359032:360432, ack 234, win 2602, options [nop,nop,TS val 944260547 ecr 3426107725], length 1400
+22:51:35.636681 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 360432:361653, ack 234, win 2602, options [nop,nop,TS val 944260547 ecr 3426107725], length 1221
+22:51:35.636847 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 359032, win 657, options [nop,nop,TS val 3426107839 ecr 944260544], length 0
+22:51:35.636940 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 361653, win 657, options [nop,nop,TS val 3426107839 ecr 944260547], length 0
+22:51:35.641637 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 361653:363053, ack 234, win 2602, options [nop,nop,TS val 944260550 ecr 3426107725], length 1400
+22:51:35.641638 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 363053:364453, ack 234, win 2602, options [nop,nop,TS val 944260550 ecr 3426107725], length 1400
+22:51:35.641639 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 364453:365853, ack 234, win 2602, options [nop,nop,TS val 944260554 ecr 3426107725], length 1400
+22:51:35.641640 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 365853:367253, ack 234, win 2602, options [nop,nop,TS val 944260554 ecr 3426107725], length 1400
+22:51:35.641641 IP ec2-54-85-105-29.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.64523: Flags [P.], seq 2857762848:2857762887, ack 3735987273, win 475, options [nop,nop,TS val 3842721372 ecr 544433382], length 39
+22:51:35.641644 IP ec2-54-85-105-29.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.64523: Flags [P.], seq 39:63, ack 1, win 475, options [nop,nop,TS val 3842721372 ecr 544433382], length 24
+22:51:35.641907 IP ringfloodlightcam-85.lan.64523 > ec2-54-85-105-29.compute-1.amazonaws.com.https: Flags [.], ack 63, win 2047, options [nop,nop,TS val 544498331 ecr 3842721372], length 0
+22:51:35.641927 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 367253, win 657, options [nop,nop,TS val 3426107844 ecr 944260554], length 0
+22:51:35.642170 IP ringfloodlightcam-85.lan.64523 > ec2-54-85-105-29.compute-1.amazonaws.com.https: Flags [P.], seq 1:40, ack 63, win 2048, options [nop,nop,TS val 544498331 ecr 3842721372], length 39
+22:51:35.642714 IP ringfloodlightcam-85.lan.64523 > ec2-54-85-105-29.compute-1.amazonaws.com.https: Flags [P.], seq 40:64, ack 63, win 2048, options [nop,nop,TS val 544498332 ecr 3842721372], length 24
+22:51:35.643077 IP ec2-54-85-105-29.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.64523: Flags [F.], seq 63, ack 1, win 475, options [nop,nop,TS val 3842721372 ecr 544433382], length 0
+22:51:35.643077 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 367253:368653, ack 234, win 2602, options [nop,nop,TS val 944260557 ecr 3426107725], length 1400
+22:51:35.643083 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 368653:370053, ack 234, win 2602, options [nop,nop,TS val 944260557 ecr 3426107725], length 1400
+22:51:35.643152 IP ringfloodlightcam-85.lan.64523 > ec2-54-85-105-29.compute-1.amazonaws.com.https: Flags [.], ack 64, win 2048, options [nop,nop,TS val 544498332 ecr 3842721372], length 0
+22:51:35.643190 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 370053, win 657, options [nop,nop,TS val 3426107845 ecr 944260557], length 0
+22:51:35.643800 IP ringfloodlightcam-85.lan.64523 > ec2-54-85-105-29.compute-1.amazonaws.com.https: Flags [F.], seq 64, ack 64, win 2048, options [nop,nop,TS val 544498333 ecr 3842721372], length 0
+22:51:35.650886 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 370053:371453, ack 234, win 2602, options [nop,nop,TS val 944260560 ecr 3426107725], length 1400
+22:51:35.650887 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 371453:372853, ack 234, win 2602, options [nop,nop,TS val 944260560 ecr 3426107725], length 1400
+22:51:35.650944 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 372853, win 657, options [nop,nop,TS val 3426107854 ecr 944260560], length 0
+22:51:35.652739 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 372853:374253, ack 234, win 2602, options [nop,nop,TS val 944260564 ecr 3426107725], length 1400
+22:51:35.652740 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 374253:375653, ack 234, win 2602, options [nop,nop,TS val 944260564 ecr 3426107725], length 1400
+22:51:35.652788 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 375653, win 657, options [nop,nop,TS val 3426107855 ecr 944260564], length 0
+22:51:35.655732 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 375653:377053, ack 234, win 2602, options [nop,nop,TS val 944260567 ecr 3426107725], length 1400
+22:51:35.655733 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 377053:378453, ack 234, win 2602, options [nop,nop,TS val 944260567 ecr 3426107725], length 1400
+22:51:35.655780 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 378453, win 657, options [nop,nop,TS val 3426107858 ecr 944260567], length 0
+22:51:35.659017 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 378453:379853, ack 234, win 2602, options [nop,nop,TS val 944260570 ecr 3426107725], length 1400
+22:51:35.659019 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 379853:381253, ack 234, win 2602, options [nop,nop,TS val 944260570 ecr 3426107725], length 1400
+22:51:35.659068 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 381253, win 657, options [nop,nop,TS val 3426107862 ecr 944260570], length 0
+22:51:35.664542 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 381253:382653, ack 234, win 2602, options [nop,nop,TS val 944260574 ecr 3426107725], length 1400
+22:51:35.664544 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 382653:384053, ack 234, win 2602, options [nop,nop,TS val 944260574 ecr 3426107725], length 1400
+22:51:35.664594 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 384053, win 657, options [nop,nop,TS val 3426107867 ecr 944260574], length 0
+22:51:35.672515 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 384053:385453, ack 234, win 2602, options [nop,nop,TS val 944260577 ecr 3426107725], length 1400
+22:51:35.672517 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 385453:386853, ack 234, win 2602, options [nop,nop,TS val 944260577 ecr 3426107725], length 1400
+22:51:35.672585 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 386853, win 614, options [nop,nop,TS val 3426107875 ecr 944260577], length 0
+22:51:35.678718 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 386853:388253, ack 234, win 2602, options [nop,nop,TS val 944260581 ecr 3426107725], length 1400
+22:51:35.678720 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 388253:389653, ack 234, win 2602, options [nop,nop,TS val 944260581 ecr 3426107725], length 1400
+22:51:35.678721 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 389653:391053, ack 234, win 2602, options [nop,nop,TS val 944260584 ecr 3426107725], length 1400
+22:51:35.678722 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 391053:392453, ack 234, win 2602, options [nop,nop,TS val 944260584 ecr 3426107725], length 1400
+22:51:35.678723 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 392453:393853, ack 234, win 2602, options [nop,nop,TS val 944260587 ecr 3426107725], length 1400
+22:51:35.678724 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 393853:395253, ack 234, win 2602, options [nop,nop,TS val 944260587 ecr 3426107725], length 1400
+22:51:35.678783 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 395253, win 483, options [nop,nop,TS val 3426107881 ecr 944260587], length 0
+22:51:35.687951 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 395253:396653, ack 234, win 2602, options [nop,nop,TS val 944260593 ecr 3426107839], length 1400
+22:51:35.687953 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 396653:398053, ack 234, win 2602, options [nop,nop,TS val 944260593 ecr 3426107839], length 1400
+22:51:35.687954 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 398053:399453, ack 234, win 2602, options [nop,nop,TS val 944260595 ecr 3426107839], length 1400
+22:51:35.687955 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 399453:400853, ack 234, win 2602, options [nop,nop,TS val 944260595 ecr 3426107839], length 1400
+22:51:35.687956 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 400853:402253, ack 234, win 2602, options [nop,nop,TS val 944260598 ecr 3426107839], length 1400
+22:51:35.687957 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 402253:403653, ack 234, win 2602, options [nop,nop,TS val 944260598 ecr 3426107839], length 1400
+22:51:35.688010 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 403653, win 352, options [nop,nop,TS val 3426107891 ecr 944260598], length 0
+22:51:35.691350 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 403653:405053, ack 234, win 2602, options [nop,nop,TS val 944260601 ecr 3426107845], length 1400
+22:51:35.691351 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 405053:406453, ack 234, win 2602, options [nop,nop,TS val 944260601 ecr 3426107845], length 1400
+22:51:35.691352 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 406453:407853, ack 234, win 2602, options [nop,nop,TS val 944260605 ecr 3426107845], length 1400
+22:51:35.691353 IP ec2-54-85-105-29.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.64523: Flags [.], ack 64, win 475, options [nop,nop,TS val 3842721423 ecr 544498332], length 0
+22:51:35.691354 IP ec2-54-85-105-29.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.64523: Flags [.], ack 40, win 475, options [nop,nop,TS val 3842721423 ecr 544498331], length 0
+22:51:35.691354 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 407853:409253, ack 234, win 2602, options [nop,nop,TS val 944260605 ecr 3426107845], length 1400
+22:51:35.691355 IP ec2-54-85-105-29.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.64523: Flags [R.], seq 64, ack 64, win 475, options [nop,nop,TS val 3842721423 ecr 544498332], length 0
+22:51:35.691416 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 409253, win 350, options [nop,nop,TS val 3426107894 ecr 944260605], length 0
+22:51:35.695574 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [.], seq 409253:410653, ack 234, win 2602, options [nop,nop,TS val 944260608 ecr 3426107845], length 1400
+22:51:35.695576 IP rg-in-f108.1e100.net.imaps > ringfloodlightcam-85.lan.63364: Flags [P.], seq 410653:412053, ack 234, win 2602, options [nop,nop,TS val 944260608 ecr 3426107845], length 1400
+22:51:35.695650 IP ringfloodlightcam-85.lan.63364 > rg-in-f108.1e100.net.imaps: Flags [.], ack 412053, win 350, options [nop,nop,TS val 3426107898 ecr 944260608], length 0
+22:51:35.696846 IP ec2-54-85-105-29.compute-1.amazonaws.com.https > ringfloodlightcam-85.lan.64523: Flags [R], seq 2857762912, win 0, length 0
