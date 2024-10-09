@@ -11,11 +11,11 @@ Each week will have an assigned reading that is best completed prior to the clas
 | **Wk** | **Date** | **Day** | **Description** | **Content** | **Readings / Homework** |
 |:-:|:-:|:-:|---|:-:|---|
 |   |       |   | **Shell Scripting**  | | [Week 7 Readings](../readings/readings-week07.md) |
-| 7 | 10-07 | M | Process, I/O Redirection | [Slides](https://canvas.nd.edu/files/4095737/download?download_frd=1) <br> [Recap](../lectures/lecture-17-10-07-24/lecture-17-recap.md) | [HW 5 (Assigned)](../hw/hw05/README.md) |
-| 7 | 10-09 | W | Variables, Command Substitution <br> Matching | Slides <br> Recap | | 
-| 7 | 10-11 | F | Control Flow, Cmd Line Args | Slides <br> Recap | | 
+| 7 | 10-07 | M | Process, Files | [Slides](https://canvas.nd.edu/files/4095737/download?download_frd=1) <br> [Recap](../lectures/lecture-17-10-07-24/lecture-17-recap.md) | [HW 5 (Assigned)](../hw/hw05/README.md) |
+| 7 | 10-09 | W | Permissions, Redirection <br> Matching | [Slides](https://canvas.nd.edu/files/4113337/download?download_frd=1) <br> [Recap](../lectures/lecture-18-10-09-24/lecture-18-recap.md) | | 
+| 7 | 10-11 | F | Variables, Command Substitution <br> Matching | Slides <br> Recap | | 
 |   |       |   | **Pipelines, Filters** | | [Week 8 Readings](../readings/readings-week08.md) | 
-| 8 | 10-14 | M | Pipelines | Slides <br> Recap | HW 6 (Assigned) | 
+| 8 | 10-14 | M | Control Flow, Cmd Line Args <br> Pipelines | Slides <br> Recap | HW 6 (Assigned) | 
 | 8 | 10-16 | W | Reg Ex - Shell Style | Slides <br> Recap | | 
 | 8 | 10-18 | F | Filters - Part 1 | Slides <br> Recap | | 
 |   |       |   | **Fall Break** | | No Readings |
