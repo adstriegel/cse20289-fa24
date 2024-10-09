@@ -1,4 +1,4 @@
-# Homework 5 - CSE20289 - Fall 2024 - DRAFT
+# Homework 5 - CSE20289 - Fall 2024 
 
 In Homework 5, we will be shifting gears to look at UNIX shell commands.  For this homework and the next homework, the homework will be done individually. This homework will also have you using `git branch` to start to give you experience with branching.
 
@@ -95,4 +95,3 @@ For the Canvas side of the submission, submit the hash of your last git commit. 
 * 1 pt - Correct usage of branching
 * 1 pt - Three or more commits are present
 * 8 pts - All requested files present and correct
-
