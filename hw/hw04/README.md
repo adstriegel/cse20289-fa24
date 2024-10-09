@@ -158,9 +158,29 @@ Before you submit your code, make sure to check the following:
 
 ## Rubric
 
-To be posted at mid-week
+### General - 14 pts
 
+* 5 pts - Homework submission is problem free without intervention required by the TA including files in the correct locations (`hw/hw04`) off of the private group repository
+* 5 pts - Code quality is excellent, clean and well commented code
+* 1 pt - All source files + README.md contain name and e-mail
+* 2 pt - `.gitignore` is present and excludes Python cache files and other intermediate files
+* 1 pt - No residual files are left over after a run besides the intended PDFs
 
+### Inputs / Normal Operation - 16 pts 
 
+* 6 pts - Correct operation in single process (no `-multi`) on the provided example YAML files
+* 4 pts - Output while running is near / close to specification and informative
+* 6 pts - Correct operation on test YAML files
 
+### Robustness / Operations - 5 pts
+
+* 1 pt - Help information is actually informative
+* 2 pt - Proper limiting on range of processors
+* 2 pt - Properly tolerant of various badly formed arguments
+
+### Multiprocess Support - 15 pts
+
+* 9 pts - Code runs without issues across a variety of input task files and across varying sets of multiple processes on provided files
+* 3 pts - Code runs without issues across a variety of test files on varying multiple processes settings
+* 3 pts - Results from 1, 2, and 4 processes are listed in the `README.md` 
 
