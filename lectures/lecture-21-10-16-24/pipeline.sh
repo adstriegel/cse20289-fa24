@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ps aux | grep -v grep | grep -Eo 'bash' | wc -l
 
 ps aux | grep -v grep | grep -Eo '(bash|csh|tcsh|zsh|sh)' | grep -v ssh | sort | uniq

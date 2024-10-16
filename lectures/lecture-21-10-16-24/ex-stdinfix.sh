@@ -13,7 +13,7 @@ set -x
 #
 # Recall the True / False discussion about error codes
 
-while read line || [[ -n $line ]]
+while read -r line || [[ -n $line ]]
 do
   echo "$line"
 done < "${1:-/dev/stdin}"
