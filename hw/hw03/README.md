@@ -9,7 +9,7 @@ In this homework, we are going to bring along several aspects from class includi
 | **Due (EC)** | Friday, September 27th - 10 PM |
 | **Group** | May be done as a group |  
 | **Canvas Link** | Homework 03 |
-| **Points** | 81 |
+| **Points** | 93 |
 
 ## Task 1 - Setting up the Environment
 
@@ -339,7 +339,7 @@ If the `checktests.py` code is invoked with a `--all` argument, ignore the month
 * 1 pt - All source files + README.md contain name and e-mail
 * 1 pt - `.gitignore` is present and excludes Python cache files
 
-### Orchestration Code - `checktests.py` - 26 pts
+### Orchestration Code - `checktests.py` - 38 pts
 
 If Task 6 is not completed, partial grading will be assessed using the required functionality from Task 3.  That rubric portion is not specified but will start at half of the points for Task 6.  
 
