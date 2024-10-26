@@ -1,0 +1,188 @@
+{
+    "files" : [ "README.md", "checktests.py", "createreport.py", "plotdata.py", ".gitignore" ],
+    "commit" : "hw03",
+    "prefix" : "group-cse20289-fa24-",
+    "groups" : [],
+    "location" : "hw/hw03",
+    "results" : "/Users/striegel/Documents/repos/graded-cse20289-fa24/hw03/",
+    "python3" : "/Users/striegel/opt/anaconda3/bin/python3",
+    "tests" :
+    [
+        {
+            "name" : "Orchestration Code - checktests.py - 10 data points",            
+            "id" : "t001-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 05 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-10.json"
+            ],
+            "expectedfiles" : [ "2024-05-eth0.json", "2024-05-wlan0.json" ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - 250 data points",            
+            "id" : "t002-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 05 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-250.json"
+            ],
+            "expectedfiles" : [ "2024-05-Wired.json", "2024-05-WiFi.json" ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - 1000 data points",            
+            "id" : "t003-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 05 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-1000.json"
+            ],
+            "expectedfiles" : [ "2024-05-Wired.json", "2024-05-WiFi.json" ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - all data points",            
+            "id" : "t004-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 05 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-all.json"
+            ],
+            "expectedfiles" : [ "2024-05-Wired.json", "2024-05-WiFi.json" ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - all - raw data points",            
+            "id" : "t005-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 05 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-raw.json"
+            ],
+            "expectedfiles" : [ "2024-05-Wired.json", "2024-05-WiFi.json" ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - all - raw data points - month 4",            
+            "id" : "t006-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 04 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-raw.json"
+            ],
+            "expectedfiles" : [ "2024-04-Wired.json", "2024-04-WiFi.json" ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - new dataset - raw data points - month 5",            
+            "id" : "nt001-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 05 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-second-full.json"
+            ],
+            "expectedfiles" : [ "2024-05-Wired.json", "2024-05-WiFi.json" ]
+        },        
+        {
+            "name" : "Orchestration Code - checktests.py - new dataset - raw data points - month 4",            
+            "id" : "nt002-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 04 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-second-full.json"
+            ],
+            "expectedfiles" : [ "2024-04-Wired.json", "2024-04-WiFi.json" ]
+        },        
+        {
+            "name" : "Orchestration Code - checktests.py - new dataset - raw data points - month 2",            
+            "id" : "nt003-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 02 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-second-full.json"
+            ],
+            "expectedfiles" : [ "2024-02-Wired.json", "2024-02-WiFi.json" ]
+        },        
+        {
+            "name" : "Orchestration Code - checktests.py - missing argument case 1",            
+            "id" : "am01-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 04 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-raw.json"
+            ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - missing argument case 2",            
+            "id" : "am02-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-raw.json"
+            ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - bad text file",            
+            "id" : "bf01-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 05 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start-none.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-raw.json"
+            ]
+        },
+        {
+            "name" : "Orchestration Code - checktests.py - bad URL",            
+            "id" : "bf02-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 05 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-raw-xx.json"
+            ]
+        },
+        {
+            "name" : "Graph Generation - plotdata.py - correct operation - provided example (Ethernet)",            
+            "id" : "ggcop001-plotdata",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/plotdata.py ~/Documents/repos/cse20289-fa24/hw/hw03/ex-data/data-2024-05-eth0.json 31 Out-May-Eth.png"
+            ],
+            "expectedfiles" : [ "Out-May-Eth.png" ]
+        },
+        {
+            "name" : "Graph Generation - plotdata.py - correct operation - provided example (WiFi)",            
+            "id" : "ggcop002-plotdata",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/plotdata.py ~/Documents/repos/cse20289-fa24/hw/hw03/ex-data/data-2024-05-wlan0.json 31 Out-May-WLan.png"
+            ],
+            "expectedfiles" : [ "Out-May-WLan.png" ]
+        },
+        {
+            "name" : "Graph Generation - plotdata.py - test example - April 2024 (Ethernet)",            
+            "id" : "ggtf001-plotdata",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/plotdata.py ~/Documents/repos/cse20289-fa24/support/grading/hw03/data-2024-04-eth0.json 30 Out-Apr-Eth.png"
+            ],
+            "expectedfiles" : [ "Out-Apr-Eth.png" ]
+        },
+        {
+            "name" : "Graph Generation - plotdata.py - test example - April 2024 (WiFi)",            
+            "id" : "ggtf001-plotdata",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/plotdata.py ~/Documents/repos/cse20289-fa24/support/grading/hw03/data-2024-04-wlan0.json 30 Out-Apr-WiFi.png"
+            ],
+            "expectedfiles" : [ "Out-Apr-WLan.png" ]
+        },
+        {
+            "name" : "Word Document Generation - createreport.py - base case",            
+            "id" : "wdc001-createreport.py",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/createreport.py ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt ~/Documents/repos/cse20289-fa24/hw/hw03/ex-src/example-bar.png Output-Word-Base.docx"
+            ],
+            "expectedfiles" : [ "Output-Word-Base.docx" ]
+        },
+        {
+            "name" : "Word Document Generation - createreport.py - alternative text input",            
+            "id" : "wdc002-createreport.py",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/createreport.py ~/Documents/repos/cse20289-fa24/support/grading/hw03/start-two.txt ~/Documents/repos/cse20289-fa24/hw/hw03/ex-src/example-bar.png Output-Word-Two.docx"
+            ],
+            "expectedfiles" : [ "Output-Word-Two.docx" ]
+        },
+        {
+            "name" : "Extra Credit - checkplots.py --all",            
+            "id" : "ec-checktests",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/checktests.py 2024 01 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-second-full.json --all"
+            ],
+            "expectedfiles" : [ "All-Wired.json", "All-WiFi.json" ]
+        }        
+    ]
+}
