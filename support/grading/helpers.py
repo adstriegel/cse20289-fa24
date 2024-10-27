@@ -132,8 +132,9 @@ def conductTests (directory, netid, config):
 
     for theTest in config['tests']:
         print()
-        print('************************************')
+        print('*************************************************************')
         print('* Running test: ', theTest['name'])
+        print()
 
         os.chdir(theDirectory)
 
@@ -149,18 +150,27 @@ def conductTests (directory, netid, config):
                 theCommand = theCommand.replace("$THEDIR$", theDirectory)
 
             print('  Command:   ', theCommand)
+            print()
             print('  Directory: ', theDirectory)
+            print()
+
             #result = os.popen(theCommand).read()
             try:
                 startTime = time.time()
                 result = subprocess.run(theCommand, cwd=theDirectory, timeout=30, capture_output=True, shell=True)
                 endTime = time.time()
                 print('  ** Execution time: ', fancyFloat(endTime - startTime), ' s')
+                print()
                 # Results from stdout and stderr
                 print('  ** stdout (len=', len(result.stdout), ' bytes) **')
                 print(result.stdout.decode('utf-8'))                
+                print()
                 print('  ** stderr (len=', len(result.stderr), ' bytes) **')
                 print(result.stderr.decode('utf-8'))
+                print()
+                if(result.stderr.decode('utf-8').startswith("Traceback")):
+                    print("  ** Error: Traceback detected **")
+                    
             except subprocess.TimeoutExpired:
                 print('  Execution timed out after 30 s')
                 print('  ** stdout (len=', len(result.stdout), ' bytes) **')

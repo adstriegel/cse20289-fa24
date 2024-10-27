@@ -1,1 +1,0 @@
-This is a very simple starting set of text that is used to evaluate if the data is being output properly to the Word file.
