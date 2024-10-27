@@ -196,5 +196,5 @@ Make sure to appropriately clean up, comment, and format your code.  Merge back 
 
 ## Rubric
 
-To be added during fall break
+To be added on Monday, October 28th
  
