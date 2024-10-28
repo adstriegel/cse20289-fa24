@@ -6,9 +6,9 @@ In today's lecture, we looked at shell scripting functionality, starting first w
 ## Relevant Links
 
 * Slides - See also Canvas
-   * [PDF - 1 Page per Slide](https://canvas.nd.edu/files/4148077/download?download_frd=1)
-   * [PDF - Notes Format](https://canvas.nd.edu/files/4148076/download?download_frd=1)
-* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9acc4ecf-960f-4774-b150-b20b010db818)
+   * [PDF - 1 Page per Slide](https://canvas.nd.edu/files/4177270/download?download_frd=1)
+   * [PDF - Notes Format](https://canvas.nd.edu/files/4177269/download?download_frd=1)
+* [Panopto Lecture Recording](https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=00cc2b74-34c7-49ed-9908-b20d01129592)
 
 ## Key Points
 
