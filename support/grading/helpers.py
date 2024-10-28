@@ -3,12 +3,34 @@ import json
 import os
 import subprocess
 import time
+import argparse
 
 from stat import S_IREAD, S_IRGRP, S_IROTH, S_IWUSR
 
 # Fancy float gives a float with two decimal places
 def fancyFloat (val):
     return "{:.2f}".format(val)
+
+
+def parseArguments (theDescription):
+
+    parser = argparse.ArgumentParser(description=theDescription)
+    # Directory where all of the student repositories are kept
+    parser.add_argument('config', type=str, help='The configuration file to use')
+    # This is where all of the student repositories are located
+    parser.add_argument('dir', type=str, help='The directory containing the directories to process')
+    # The net ID of the student to grade
+    parser.add_argument('netid', type=str, help='The NetID of the student to grade')
+
+    # Should the repositories be updated as part of the grading process
+    parser.add_argument('--updaterepos', help='Update the repositories', action='store_true')
+
+    # Should the repositories be updated as part of the grading process
+    parser.add_argument('--noprotect', help='Disable file protection for invocation and rely on the repo', action='store_true')
+
+    args = parser.parse_args()    
+
+    return args
 
 # Is there a submission for this netid?
 def hasSubmission (directory, netid, config):
@@ -124,7 +146,7 @@ def constructDirectory (directory, netid, config):
     
     return os.path.join(directory, config['prefix'] + netid)
 
-def conductTests (directory, netid, config):
+def conductTests (directory, netid, config, noProtect=False):
     # Confirm that the submission is present
     theRepo = constructDirectory(directory, netid, config)
     theDirectory = os.path.join(theRepo, config['location'])
@@ -138,9 +160,10 @@ def conductTests (directory, netid, config):
 
     #print('Repo Base List: ', repoBaseList)
 
-    # Make files as requested to be read only (e.g. files that the student code may be opening in write only mode potentially)
-    for theProtectFile in config['protectedfiles']:
-        os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH)
+    if not noProtect:
+        # Make files as requested to be read only (e.g. files that the student code may be opening in write only mode potentially)
+        for theProtectFile in config['protectedfiles']:
+            os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH)
 
     for theTest in config['tests']:
         print()
@@ -233,6 +256,7 @@ def conductTests (directory, netid, config):
 
         #break
 
-    # Make files as requested to be read only (e.g. files that the student code may be opening in write only mode potentially)
-    for theProtectFile in config['protectedfiles']:
-        os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH | S_IWUSR)
+    if not noProtect:
+        # Make files as requested to be back to read / write 
+        for theProtectFile in config['protectedfiles']:
+            os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH | S_IWUSR)
