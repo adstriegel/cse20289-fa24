@@ -182,7 +182,7 @@
             [ 
                 "python3 $THEDIR$/checktests.py 2024 01 ~/Documents/repos/cse20289-fa24/support/grading/hw03/start.txt http://ns-mn1.cse.nd.edu/cse20289-fa24/hw03/data-second-full.json --all"
             ],
-            "expectedfiles" : [ "All-Wired.json", "All-WiFi.json" ]
+            "expectedfiles" : [ "All-Wired.docx", "All-WiFi.docx" ]
         }        
     ]
 }
