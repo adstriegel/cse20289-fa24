@@ -127,7 +127,13 @@ def conductTests (directory, netid, config):
     theRepo = constructDirectory(directory, netid, config)
     theDirectory = os.path.join(theRepo, config['location'])
 
+    if not os.path.exists(theDirectory):
+        print('Error: Homework directory does not exist at ' + theDirectory)
+
+    os.chdir(theDirectory)
+
     repoBaseList = os.listdir(theDirectory)
+
     #print('Repo Base List: ', repoBaseList)
 
     for theTest in config['tests']:
