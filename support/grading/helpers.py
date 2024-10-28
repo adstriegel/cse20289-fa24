@@ -4,6 +4,8 @@ import os
 import subprocess
 import time
 
+from stat import S_IREAD, S_IRGRP, S_IROTH, S_IWUSR
+
 # Fancy float gives a float with two decimal places
 def fancyFloat (val):
     return "{:.2f}".format(val)
@@ -136,6 +138,10 @@ def conductTests (directory, netid, config):
 
     #print('Repo Base List: ', repoBaseList)
 
+    # Make files as requested to be read only (e.g. files that the student code may be opening in write only mode potentially)
+    for theProtectFile in config['protectedfiles']:
+        os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH)
+
     for theTest in config['tests']:
         print()
         print('*************************************************************')
@@ -226,3 +232,7 @@ def conductTests (directory, netid, config):
                 print('    Generated files - placed in [', theTest['id'], ']: ', DetectedFiles)
 
         #break
+
+    # Make files as requested to be read only (e.g. files that the student code may be opening in write only mode potentially)
+    for theProtectFile in config['protectedfiles']:
+        os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH | S_IWUSR)
