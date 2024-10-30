@@ -152,14 +152,20 @@ def conductTests (directory, netid, config, noProtect=False):
     theDirectory = os.path.join(theRepo, config['location'])
 
     if not os.path.exists(theDirectory):
-        print('Error: Homework directory does not exist at ' + theDirectory)
+        print('Error: Homework directory does not exist at the correct location ' + theDirectory)
+        return
 
     os.chdir(theDirectory)
 
+    # Construct a base listing of all of the files present before running the respectiv tests,
+    #  e.g. what files are present to allow us to "cleanup" after a test is run to reset the
+    #  directory to its original state
     repoBaseList = os.listdir(theDirectory)
 
-    #print('Repo Base List: ', repoBaseList)
-
+    # The configuration for the script allows certain files to be write protected to prevent
+    # student code from being able to overwrite (e.g. the student script opens up an input file
+    # in write mode and blitzes the file away). The default value is to protect the specified
+    # files
     if not noProtect:
         # Make files as requested to be read only (e.g. files that the student code may be opening in write only mode potentially)
         for theProtectFile in config['protectedfiles']:
@@ -225,15 +231,31 @@ def conductTests (directory, netid, config, noProtect=False):
 
         DetectedFiles = []
 
+        # See which files were created by comparing a list of the files before the test and
+        # the files present in the directory after the test was run
         for theExtraFile in postTestList:
             if theExtraFile not in repoBaseList:
                 DetectedFiles.append(theExtraFile)
                 # Figure out the full path
                 theExtraFullFile = os.path.join(theDirectory, theExtraFile)
 
-                # Move it over
-                #print(' Extra file was ', theExtraFile)
-                os.rename(theExtraFullFile, os.path.join(config['results'], netid, theTest['id'], theExtraFile))
+
+                # If this is a Python cache directory, delete it instead of moving it over
+                if theExtraFile == '__pycache__':
+                    # Get a listing of all files inside of the cache directory
+                    theCacheFiles = os.listdir(theExtraFullFile)
+
+                    # Remove the files in the sub-directory first
+                    for theCacheFile in theCacheFiles:
+                        os.remove(os.path.join(theExtraFullFile, theCacheFile))
+
+                    # Remove the cache directory next
+                    os.rmdir(theExtraFullFile)
+
+                    # Remove the cache from the list of detected files
+                    DetectedFiles.remove(theExtraFile)
+                else:
+                    os.rename(theExtraFullFile, os.path.join(config['results'], netid, theTest['id'], theExtraFile))
 
         if 'expectedfiles' in theTest:
             print('  Expected Files: ', theTest['expectedfiles'])

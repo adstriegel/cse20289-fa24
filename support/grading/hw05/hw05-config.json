@@ -1,0 +1,9 @@
+{
+    "files" : [ "README.md", "NETID", "theLines.txt", "output-startFile.txt", "output-endFile.txt", "output-xxd.txt", "output-reverse.txt", "revND.txt", "host-ip-mac.csv", "out-ls", "mygroup", "pythoninfo.txt", "doErr.py", "doErr-NoErr.txt", "doErr-StdErr.txt" ],
+    "commit" : "hw05",
+    "prefix" : "student-cse20289-fa24-",
+    "groups" : [],
+    "location" : "hw/hw05",
+    "results" : "/Users/striegel/Documents/repos/graded-cse20289-fa24/hw05/",
+    "python3" : "/Users/striegel/opt/anaconda3/bin/python3"
+}

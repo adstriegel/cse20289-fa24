@@ -17,6 +17,9 @@ parser.add_argument('dir', type=str, help='The directory containing the director
 # The CSV file containing the class list
 parser.add_argument('csv', type=str, help='The CSV file containing the class list')
 
+# Allow for grading of the assignment for a single student
+parser.add_argument('--netid', type=str, help='The NetID of the student to grade, grades only a single student')
+
 args = parser.parse_args()
 
 # Open up the CSV file
@@ -29,13 +32,22 @@ problemIDs = []
 # Open up the configuration file
 theConfig = helpers.loadConfigFile(os.path.join(args.homework, args.homework + '-config.json'))
 
+if theConfig == None:
+    print('Error: Configuration file failed to load - exiting')
+    exit(-1)
+
 with open(args.csv, 'r') as csvfile:
     reader = csv.DictReader(csvfile)
 
     for row in reader:
         netid = row['NetID']
 
+        # Ignore a blank row if present
         if netid == None or len(netid) == 0:
+            continue
+
+        # Skip if we are grading only a single student
+        if args.netid != None and args.netid != netid:
             continue
 
         # Invoke a subprocess to run the grading script

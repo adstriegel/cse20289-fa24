@@ -41,7 +41,7 @@ with open(args.csv, 'r') as csvfile:
             dirLoc = os.path.join(args.dir, 'group-cse20289-fa24-' + netid)
         else:
             repo = gitid + '/student-cse20289-fa24-' + netid
-            dirLoc = os.path.join(args.dir, 'group-cse20289-fa24-' + netid)
+            dirLoc = os.path.join(args.dir, 'student-cse20289-fa24-' + netid)
 
         print(dirLoc)
 
