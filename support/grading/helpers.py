@@ -146,7 +146,7 @@ def constructDirectory (directory, netid, config):
     
     return os.path.join(directory, config['prefix'] + netid)
 
-def conductTests (directory, netid, config, noProtect=False):
+def conductTests (directory, netid, config, noProtect=False, Timeout=60):
     # Confirm that the submission is present
     theRepo = constructDirectory(directory, netid, config)
     theDirectory = os.path.join(theRepo, config['location'])
@@ -198,7 +198,7 @@ def conductTests (directory, netid, config, noProtect=False):
             #result = os.popen(theCommand).read()
             try:
                 startTime = time.time()
-                result = subprocess.run(theCommand, cwd=theDirectory, timeout=30, capture_output=True, shell=True)
+                result = subprocess.run(theCommand, cwd=theDirectory, timeout=Timeout, capture_output=True, shell=True)
                 endTime = time.time()
                 print('  ** Execution time: ', fancyFloat(endTime - startTime), ' s')
                 print()
@@ -213,7 +213,7 @@ def conductTests (directory, netid, config, noProtect=False):
                     print("  ** Error: Traceback detected **")
                     
             except subprocess.TimeoutExpired:
-                print('  Execution timed out after 30 s')
+                print('** Execution timed out after ', str(Timeout), ' s')
                 print('  ** stdout (len=', len(result.stdout), ' bytes) **')
                 print(result.stdout.decode('utf-8'))                
                 print('  ** stderr (len=', len(result.stderr), ' bytes) **')
@@ -221,7 +221,10 @@ def conductTests (directory, netid, config, noProtect=False):
 
             #result = subprocess.run(theCommand, cwd=theDirectory)
             #result.wait()
-            
+
+        print('Test ', theTest['id'], ' completed')  
+        print('')
+          
         postTestList = os.listdir(theDirectory)
         #print('Post Test List: ', postTestList)
 
@@ -238,24 +241,7 @@ def conductTests (directory, netid, config, noProtect=False):
                 DetectedFiles.append(theExtraFile)
                 # Figure out the full path
                 theExtraFullFile = os.path.join(theDirectory, theExtraFile)
-
-
-                # If this is a Python cache directory, delete it instead of moving it over
-                if theExtraFile == '__pycache__':
-                    # Get a listing of all files inside of the cache directory
-                    theCacheFiles = os.listdir(theExtraFullFile)
-
-                    # Remove the files in the sub-directory first
-                    for theCacheFile in theCacheFiles:
-                        os.remove(os.path.join(theExtraFullFile, theCacheFile))
-
-                    # Remove the cache directory next
-                    os.rmdir(theExtraFullFile)
-
-                    # Remove the cache from the list of detected files
-                    DetectedFiles.remove(theExtraFile)
-                else:
-                    os.rename(theExtraFullFile, os.path.join(config['results'], netid, theTest['id'], theExtraFile))
+                os.rename(theExtraFullFile, os.path.join(config['results'], netid, theTest['id'], theExtraFile))
 
         if 'expectedfiles' in theTest:
             print('  Expected Files: ', theTest['expectedfiles'])

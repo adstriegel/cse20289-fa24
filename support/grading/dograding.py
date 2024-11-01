@@ -71,9 +71,9 @@ with open(args.csv, 'r') as csvfile:
         StudentName = row['Name']
         LastName = StudentName.split()[-1]
 
-        os.rename(os.path.join(theConfig['results'], netid), os.path.join(theConfig['results'], LastName + ' - ' + netid))
+        # Is there already a directory there from a prior execution?
+        if os.path.exists(os.path.join(theConfig['results'], LastName + ' - ' + netid)):
+            os.rename(os.path.join(theConfig['results'], LastName + ' - ' + netid), os.path.join(theConfig['results'], LastName + ' - ' + netid + '-old'))
 
-        #result = subprocess.run('python3' + os.path.join(args.homework, args.homework + '-config.json'), 'grade-' + args.homework, args.dir, netid], cwd=args.dir, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-        
-        #result = subprocess.run('python3 grade-hw03.py hw03/hw3-config.json ~/Documents/repos/repos-group-20289-fa24 acongdon', shell=True)
+        os.rename(os.path.join(theConfig['results'], netid), os.path.join(theConfig['results'], LastName + ' - ' + netid))
 
