@@ -70,6 +70,7 @@ Read / refresh your understanding of the Python `unittest` module via the follow
 * [Writing unittests for your code](https://realpython.com/python-unittest/)
    * Note in particular the usage of the `verbosity` setting in the call to `unittest.main()`.  We will be using setting 2.
    * Also note that we will be using docstrings in the unittests.  
+* A small working example is available in the [example](./example) directory
 
 For the purposes of this homework, we will be using the auto-discovery features of unit test meaning that we will be invoking the unittest by writing:
 
@@ -196,5 +197,5 @@ Make sure to appropriately clean up, comment, and format your code.  Merge back 
 
 ## Rubric
 
-To be added on Monday, October 28th
+To be added over the weekend
  
