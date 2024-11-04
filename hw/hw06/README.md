@@ -9,7 +9,7 @@ In Homework 6, we will be blending Python unit tests together with shell scripti
 | **Due (EC)** | Friday, November 1st - 10 PM |
 | **Group** | Individual |  
 | **Canvas Link** | Homework 06 |
-| **Points** | TBA |
+| **Points** | 51 |
 
 ## Homework Overview
 
@@ -197,5 +197,33 @@ Make sure to appropriately clean up, comment, and format your code.  Merge back 
 
 ## Rubric
 
-To be added over the weekend
+### General - 10 pts
+
+* 5 pts - Homework submission is problem free without intervention required by the TA including files in the correct locations (`hw/hw06`) off of the private repository, files are named correctly
+* 3 pts - Code quality is excellent, clean and well commented code
+* 1 pt - All source files + README.md contain name and e-mail
+* 1 pt - `.gitignore` is present and excludes appropriate files
  
+### searchsrc.py testing - 10 pts
+
+* 7 pts - Proper unit tests and scope for various features and variety of files
+* 3 pts - Proper robustness testing of operation
+
+### searchdir.py testing - 15 pts
+
+* 5 pts - Proper testing related to non-recursive examples
+* 5 pts - Proper testing related to recursive examples
+* 5 pts - Proper testing related to robustness
+
+### Shell Script Behavior - 10 pts
+
+* 1 pt - Invokable from the `hw06` directory
+* 2 pts - Proper saving of the log file to the correct file name
+* 1 pt - File name is echoed to the console
+* 2 pt - Log properly captures `stdout` and `stdout` from the unit tests
+* 4 pts - Correct behavior on successful unit test passing versus failed unit tests
+
+### Buggy Code - 6 pts
+
+* 3 pts - Buggy code for hw6searchsrc.py fails unit tests
+* 3 pts - Buggy code for hw6searchdir.py fails unit tests
