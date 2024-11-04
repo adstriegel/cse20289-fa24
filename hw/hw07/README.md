@@ -1,4 +1,4 @@
-# Homework 7 - Inspector Detector - Near-Final Draft
+# Homework 7 - Inspector Detector 
 
 In this homework, you will be laying the foundation for automated scanning in Homework 8 that will detect malicious URLs as well as exfiltrated sensitive data contained within archives. You will write the underlying tools in this homework that you will build upon / improve in Homework 8.
 
@@ -94,11 +94,14 @@ The exact specifics of the output are up to you on this command.  We will be che
 
 ### Task 3b - Bad Sites
 
-There are several example files placed on-line in the `examples/badsites` directory.  The files are as follows:
+There are several example files placed on-line in the `badsites` directory on Homework 7.  The files are as follows:
 
 * `badsite-nocmnt-10.csv` : This contains a list of the first 10 bad sites from [URLHaus](https://urlhaus.abuse.ch/) in CSV format without leading comments.
 * `badsite-10.csv` : This contains a list of the first 10 bad sites from [URLHaus](https://urlhaus.abuse.ch/) in CSV format with the leading comments as denoted by #.
 * `badsite-100.csv` : This contains a list of the first 100 bad sites from [URLHaus](https://urlhaus.abuse.ch/) in CSV format with the leading comments as denoted by #.
+
+There are several example files in the `files` directory in Homework 7.
+
 * `clean-file.eml` : A clean file that should pass.
 * `bad-file.eml` : A file containing a malicious URL.
 * `bad-file2.eml` : A second file containing a malicious URL.
@@ -118,11 +121,12 @@ For instance, you would run your script as:
 
 ### Task 3c - Sensitive Files
 
-There are several example files placed on-line in the `examples/sensitive` directory.  The files are as follows:
+For this part, you will be writing the examples.  Draft four example files before you start your writing of the script.
 
 * `good.txt` : A clean file that does not contain any sensitive information.
 * `bad-marking.txt` : A file that trips the `*SENSITIVE*` marker.
 * `bad-SSN.txt` : A file that trips the social security number (recall that SSNs have the format of XXX-XX-XXXX).
+* `bad-NDID.txt` : A file that contains a Notre Dame 900 number
 
 Write a script named `sf.sh` (Sensitive Finder) that scans a file for sensitive information.  If no sensitive information is detected, the script should echo CLEAN.  If sensitive information is detected, you should echo out SENSITIVE followed by the reason (MARKED SENSITIVE, SSN, STUDENTID), e.g. SENSITIVE, MARKED SENSITIVE or SENSITIVE, SSN or SENSITIVE, STUDENTID.
 
@@ -131,9 +135,9 @@ For the ND ID, think about the format of the Notre Dame 900 number and how to te
 You would run your script as:
 
 ```
-    $ sh sf.sh archive/bad-file.eml
+    $ sh sf.sh sensitive/good.txt
     Scanning for sensitive information
-    File to scan: archive/bad-file.eml
+    File to scan: sensitive/good.txt
     CLEAN
     $
 ```

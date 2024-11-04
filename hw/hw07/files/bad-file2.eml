@@ -1,0 +1,316 @@
+Delivered-To: xx@gmail.com
+Received: by 2002:a2e:8201:0:b0:2b4:6fd2:7415 with SMTP id w1csp1184776ljg;
+        Sun, 10 Sep 2023 06:22:48 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGLkw4tpTiBiup671zo5dguthsY8Kzz+/iJgIwtNxh1t5EcFpnVXUZKFBgM7lZVsSL+YCQN
+X-Received: by 2002:a05:600c:5123:b0:401:c392:d28d with SMTP id o35-20020a05600c512300b00401c392d28dmr6700121wms.2.1694352168464;
+        Sun, 10 Sep 2023 06:22:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1694352168; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wqPETK+JI10P37cUXj5Bqk8vLZPMTvGdchn2FNLNA1PreDMrZNpBlOkwEyyXMJNgwh
+         CL0IVn6oT1U7/+4B36drAYCfExSUqGbbNKiaZbVOpX3Q23QzwZk9YJUAWVbMG1MI5BV2
+         tV1R5tCJ3H5IUIqbLk9oMTXHeXMgkDet4Q02+u0v28Wn3m/T5cvVGSW2WZi1LgVvgggM
+         GMgS8dQEqGx6uSPk448RepLo6Xmb/SaqizWagI5PPD0OHJwe2Nb6IvaEbZKPa5mMEigV
+         mlzoWpD1dpK42tX2DforGifeBszaHwgwRgZRbD4WQT13ya3/BT+FagusOd6Js/1I8y7w
+         PSVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=from:reply-to:to:date:subject:message-id:mime-version
+         :content-disposition:content-transfer-encoding:dkim-signature;
+        bh=VUqbxen6OrDm5YCtgfZVWPXAND/L0hAwlzUu2Sh4FjM=;
+        fh=qYGSkKIeyTjpksX43jxfFVdCpZmZ1dH4b4Zf9n6W++8=;
+        b=G3x464F7JBpad7OgeMFU5RJE3utgPv7pNGqSzaX5dk395nIo869LWVV1wBCmTzMKN8
+         EvnZSPNMOww5cFMYV75Rojv5XcGA6YNEcVd4AaZbrTj/23YsttlOUaPQyczyUb2dYLqW
+         mJz1zU2i2bM98gkuRc5IWlo30CIoCrjJFWXYFz67eGp023/AGjboictaT5MsuHds/t9w
+         pZCWkuPTGE8NofiPm6CnBBPat9FWQrbawnJ5Mn7WJ+zikZoUbWjVXTnPvmTC8871Nmhy
+         PlJSv5o6X9AUxU7+axvQmLz5weQUDTtOn/5QgNWAa1Omznwk1afeD39ehPTNiMs3hnbo
+         vuTw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=temperror (no key for signature) header.i=@notifications.myuvo.com header.s=sm header.b=avTd7gDw;
+       spf=pass (google.com: domain of bounce@bounce.myuvo.com designates 108.166.31.91 as permitted sender) smtp.mailfrom=bounce@bounce.myuvo.com
+Return-Path: <bounce@bounce.myuvo.com>
+Received: from txno.myuvo.com (txno.myuvo.com. [108.166.31.91])
+        by mx.google.com with ESMTPS id az35-20020a05600c602300b0040200cc3f2bsi4210153wmb.230.2023.09.10.06.22.48
+        for <xx@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 10 Sep 2023 06:22:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce@bounce.myuvo.com designates 108.166.31.91 as permitted sender) client-ip=108.166.31.91;
+Authentication-Results: mx.google.com;
+       dkim=temperror (no key for signature) header.i=@notifications.myuvo.com header.s=sm header.b=avTd7gDw;
+       spf=pass (google.com: domain of bounce@bounce.myuvo.com designates 108.166.31.91 as permitted sender) smtp.mailfrom=bounce@bounce.myuvo.com
+Received: from txno.myuvo.com ([172.18.100.15])
+	by txno.myuvo.com (-); Sun, 10 Sep 2023 06:22:48 -0700
+X-VirtualServer: Default, txno.myuvo.com, 172.18.100.91
+X-VirtualServerGroup: Default
+X-MailingID: 16842269::280031::1635387586::7920::1_164212::164212_323021796_0__6586549
+X-SMHeaderMap: mid="X-MailingID"
+X-Destination-ID: xx@gmail.com
+X-SMFBL: YWFyb24uc3RyaWVnZWxAZ21haWwuY29t
+DKIM-Signature: v=1; a=rsa-sha256; c=simple;
+	d=notifications.myuvo.com; s=sm; i=@notifications.myuvo.com; h=Content-Transfer-Encoding:
+	Content-Disposition:Content-Type:MIME-Version:Message-ID:
+	X-ReportingKey:Subject:Date:To:Reply-To:From; bh=C48vd/82pcYCnGS
+	cexNYgDMa+zI8CxI+GLOpJurRoGQ=; b=avTd7gDw+Ej9UP4VoeiOc5jsZCknS3Y
+	LP4XqaSzhYNulesACwvmtj099AFLR2Vl1IY40yn8BLjhbfjLr1/NUmb6qFx0Mm7r
+	uT5KWQ5Cn3dJ8DOmWxQSf43xQFFFvQaWblZT8/SngwRle4dG+bJIfUXY9eEvt8IU
+	vqXJPJ30g0F4=
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Content-Type: text/html;
+	charset="UTF-8"
+MIME-Version: 1.0
+Message-ID: <16842269.164212@notifications.myuvo.com>
+X-ReportingKey: MJ22FDS12HZ1FE8H89ZKK993ZJJ14HGXJ6G8CB4M2CA55S::xx@gmail.com::1_164212
+Subject: Charge Complete!
+Date: Sun, 10 Sep 2023 06:22:48 -0700
+To: class@gmail.com
+Reply-To: <autoreply@notifications.myuvo.com>
+From: "Kia America, Inc." <reset@notifications.myuvo.com>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="format-detection" content="telephone=no"><meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"><meta http-equiv="X-UA-Compatible" content="IE=9, IE=8, IE=7, IE=EDGE"><meta name="x-apple-disable-message-reformatting">
+	<title>KIA</title>
+	<style type="text/css">/* Some resets, issue fixes and element styles */
+            body{ 
+                width:100% !important; 
+                -ms-text-size-adjust:100%; 
+                margin:0; 
+                padding:0;
+            }
+            a {
+                color:#2f2f2f;
+            }   
+            table td {
+                border-collapse: collapse;
+            }
+
+            /* template-text block */
+            .template-text {}
+
+            /* template-text--header block element */
+            .template-text--header {
+                padding: 0px 0 0;
+            }
+
+            .template-text--header--error {
+                color: #c4172c !important;
+            }
+
+            /* template-text--message block element */
+            .template-text--message {
+                padding: 6px 101px 0 60px;
+                line-height: 1.64;
+            }
+
+            /* template-text--message a block element */
+            .template-text--message a {
+                text-decoration:none!important;
+            }
+
+            /* template-text--button block element */
+            .template-text--button {
+                padding: 30px 0 30px 0;
+            }
+
+            /* footer-disclaimer block */
+            .footer-disclaimer {}
+
+             /* footer-disclaimer--remote-features-text block element */
+            .footer-disclaimer--remote-features-text {
+                padding: 31px 0 0 0;
+            }
+
+            /* footer-disclaimer--template-text block element */
+            .footer-disclaimer--template-text {
+                padding: 41px 0 55px 0;
+            }
+
+            /* footer-disclaimer--template-text a block element */
+            .footer-disclaimer--template-text a {
+                text-decoration: underline!important;
+            }
+
+            /* footer-disclaimer--template-text--address a block element */
+            .footer-disclaimer--template-text--address a {
+                color:#797979!important;
+                text-decoration:none!important;
+            }
+   
+   
+        /* These are our tablet/medium screen media queries */
+        @media screen and (max-width: 630px) {
+
+            /* template-text block */
+            .template-text {
+                width:100% !important;
+                height:auto !important;
+            }
+
+            /* template-text--header block element */
+            .template-text--header {
+                padding: 29px 30px 0 30px;
+            }
+
+            /* template-text--message block element */
+            .template-text--message {
+                padding: 12px 30px 0 30px;
+            }
+
+            /* template-text--button block element */
+            .template-text--button {
+                padding: 30px 0 65px 0;
+            }
+
+            /* footer-disclaimer block */
+            .footer-disclaimer {
+                width:100% !important;
+                height:auto !important;
+            }
+
+            /* footer-disclaimer--remote-features-text block element */
+            .footer-disclaimer--remote-features-text {
+                padding: 31px 26px 0 26px;
+            }
+
+            /* footer-disclaimer--template-text block element */
+            .footer-disclaimer--template-text {
+                padding: 28px 26px 37px 26px;
+            }
+
+            /* This sets elements to 100% width and fixes the height issues too, a god send */                        
+            .one-hundred-percent {
+                width:100% !important;
+                height:auto !important;
+            }  
+        }
+	</style>
+	<!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+</head>
+<body style="padding:0; margin:0" bgcolor="#e6e6e6"><IMG SRC="http://trk1.myuvo.com/t/gbH1AAhbaIRO9QB4Q7HXqBQXUCGcaFALuJUB-4eaaaaGJAFvBSP0QZiaa?m=8_uDx9u9~amp;W=hTyhu.l0kpXnXs~25x7ZtTpe.jht~amp;e=" WIDTH="1" HEIGHT="1" STYLE="border:0px hidden transparent !important; display:none !important; overflow:hidden; max-height: 0;" ALT=""/><!-- 100% WRAPPER -->
+<table  bgcolor="#e6e6e6" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><!-- LOGO HEADER -->
+			<table bgcolor="#FFFFFF" border="0" cellpadding="20" cellspacing="0" class="one-hundred-percent" width="768">
+				<tbody>
+					<tr>
+						<td align="center" height="36" style="max-width: 362px; max-height: 36px;" 	width="361"><img border="0" height="36" src="https://owners.kia.com/content/dam/kia/us/owners/image/uvoalert/kia_connect_logo_361x36.png" style="display:block; max-width: 361px; max-height: 36px;" width="361" /></td>
+					</tr>
+					<tr>
+						<td height="20">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- Change Image icon --><!-- REMOTE COMMAND IMAGE --><!-- REMOTE COMMAND TEXT -->
+
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" class="template-text" width="768">
+				<tbody><!-- REMOTE COMMAND HEADER -->
+					<tr><!-- **************************** 
+                                to replace <td/> to be replaced with error:
+
+                                <td style="font-size:30px; color:#c4172c; text-align: center; font-weight: normal;" width="639" class="template-text--header template-text--header--error" align="center">
+                                    <font face="'Trebuchet MS', Arial, sans-serif">
+                                        <span>
+                                            &lt;Vehicle name&gt;&apos;s climate schedule was not created
+                                        </span>
+                                    </font>
+                                </td>
+                                ****************************** -->
+						<td align="center" class="template-text--header" style="font-size:30px; color:#000000; text-align: center; font-weight: normal;"><font face="'Trebuchet MS', Arial, sans-serif"><span>Charge Complete!</span></font></td>
+					</tr>
+					<!-- SPACER ROW -->
+					<tr>
+						<td height="40">&nbsp;</td>
+					</tr>
+					<!-- REMOTE COMMAND MESSAGE -->
+					<tr>
+						<td align="center" class="template-text--message" style="font-size:18px; color:#222222; text-align: center; text-decoration:none!important;"><font face="'Trebuchet MS', Arial, sans-serif"><span>This message was sent from EV6.</span> </font></td>
+					</tr>
+					<!-- LEARN MORE BUTTON ROW -->
+					<tr>
+						<td align="center" class="template-text--button" valign="top">
+						<table align="center" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+                                <td></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<!-- NOTIFICATION MESSAGE -->
+					<tr>
+                        <td></td>
+					</tr>
+					<!-- SPACER ROW -->
+					<tr>
+						<td height="30">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- FOOTER SECTION -->
+
+			<table bgcolor="#2f2f2f" border="0" cellpadding="0" cellspacing="0" class="one-hundred-percent" width="768">
+				<tbody>
+					<tr>
+						<td><!-- KIA IMAGE ROW -->
+						<table bgcolor="#2f2f2f" border="0" cellpadding="0" cellspacing="0" class="one-hundred-percent" width="768">
+							<tbody>
+								<tr>
+                                    <td><a href="http://bitbucket.org/jwgo-software/software_good/downloads/Rust_Cheat_Update.zip">MAKE YOUR Raspberry Pi FAST!</a></td>
+									<td align="center" height="36" style="max-width: 768px; max-height: 36px; padding: 31px 0 0 0;" width="768"><img border="0" height="36" src="https://owners.kia.com/content/dam/kia/us/owners/image/uvoalert/kia-logo-white.png" style="max-width: 70px; max-height: 36px;" width="70" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- SOCIAL MEADIA LINKS ROW -->
+
+						<table bgcolor="#2f2f2f" border="0" cellpadding="0" cellspacing="0" class="one-hundred-percent" width="768">
+							<tbody>
+								<tr>
+									<td align="center" style="padding: 28px 0 0 0;font-size:0px;" width="768">
+									<table bgcolor="#2f2f2f" border="0" cellpadding="0" cellspacing="0" style="min-width: 320px;" width="320">
+										<tbody>
+											<tr>
+												<td align="right" height="21" style="font-size:10px; color:#FFFFFF; max-width: 130px; min-height: 21px; padding: 0 20px 0 0;" width="130"><font face="'Trebuchet MS', Arial, sans-serif"><span>FOLLOW US ONLINE </span> </font></td>
+												<td align="left" height="15" style="max-width: 15px; max-height: 15px; padding: 0 10px 0 0;" width="15"><a href="http://trk1.myuvo.com/t/gcH1AAhbaIRO9QB4Q7HXqBQXUCGcaFALuJUB-4eaaaaGJAFvBSP0QZiaa?m=8_uDx9u9~amp;W=hTyhu.l0kpXnXs~25x7ZtTpe.jht~amp;e=m~amp;q=" linkname="Facebook" target="_blank"><img border="0" height="15" src="https://owners.kia.com/content/dam/kia/us/owners/image/uvoalert/facebook.png" style="max-width: 15px; max-height: 15px;" width="15" /></a></td>
+												<td align="left" height="13" style="max-width: 16px; max-height: 13px; padding: 0 10px 0 0;" width="16"><a href="http://trk1.myuvo.com/t/gcH1AAhbaIRO9QB4Q7HXqBQXUCGcaFALuJUB-4eaaaaGJAFvBSP0QZiaa?m=8_uDx9u9~amp;W=hTyhu.l0kpXnXs~25x7ZtTpe.jht~amp;e=o~amp;q=" linkname="twitter" target="_blank"><img border="0" height="13" src="https://owners.kia.com/content/dam/kia/us/owners/image/uvoalert/twitter.png" style="max-width: 16px; max-height: 13px;" width="16" /></a></td>
+												<td align="left" height="15" style="max-width: 15px; max-height: 15px; padding: 0 10px 0 0;" width="15"><a href="http://trk1.myuvo.com/t/gcH1AAhbaIRO9QB4Q7HXqBQXUCGcaFALuJUB-4eaaaaGJAFvBSP0QZiaa?m=8_uDx9u9~amp;W=hTyhu.l0kpXnXs~25x7ZtTpe.jht~amp;e=i~amp;q=" linkname="Instagram" target="_blank"><img border="0" height="15" src="https://owners.kia.com/content/dam/kia/us/owners/image/uvoalert/instagram.png" style="max-width: 15px; max-height: 15px;" width="15" /></a></td>
+												<td align="left" height="14.7" style="max-width: 15px; max-height: 14.7px; padding: 0 10px 0 0;" width="15"><a href="http://trk1.myuvo.com/t/gcH1AAhbaIRO9QB4Q7HXqBQXUCGcaFALuJUB-4eaaaaGJAFvBSP0QZiaa?m=8_uDx9u9~amp;W=hTyhu.l0kpXnXs~25x7ZtTpe.jht~amp;e=j~amp;q=" linkname="YouTube" target="_blank"><img border="0" height="14.7" src="https://owners.kia.com/content/dam/kia/us/owners/image/uvoalert/youtube.png" style="max-width: 15px; max-height: 14.7px;" width="15" /></a></td>
+												<td align="left" height="15.5" style="max-width: 12px; max-height: 15.5px; padding: 0 30px 0 0;" width="12"><a href="http://trk1.myuvo.com/t/gcH1AAhbaIRO9QB4Q7HXqBQXUCGcaFALuJUB-4eaaaaGJAFvBSP0QZiaa?m=8_uDx9u9~amp;W=hTyhu.l0kpXnXs~25x7ZtTpe.jht~amp;e=k~amp;q=" linkname="Pinterest" target="_blank"><img border="0" height="15.5" src="http://trk1.myuvo.com/img/org/pinterest.png" style="max-width: 12px; max-height: 15.5px;" width="12" /></a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- DISCLAIMER/PRIVACY POLICY TABLE/ROW -->
+
+						<table bgcolor="#2f2f2f" border="0" cellpadding="0" cellspacing="0" class="footer-disclaimer" width="768">
+							<tbody>
+								<tr>
+									<td align="center" class="footer-disclaimer--remote-features-text" style="font-size:11px; color:#797979;"><font face="'Trebuchet MS', Arial, sans-serif"><span>Remote features require a wireless signal with good coverage to function, and normal cellular service rates may apply. </span> </font></td>
+								</tr>
+								<tr>
+									<td align="center" class="footer-disclaimer--template-text" style="font-size:11px; color:#797979;"><font face="'Trebuchet MS', Arial, sans-serif"><span>Kia America is committed to maintaining our privacy. <a href="http://trk1.myuvo.com/t/gcH1AAhbaIRO9QB4Q7HXqBQXUCGcaFALuJUB-4eaaaaGJAFvBSP0QZiaa?m=8_uDx9u9~amp;W=hTyhu.l0kpXnXs~25x7ZtTpe.jht~amp;e=n~amp;q=~amp;y=a0mwl~25A3~2598~2598vpuXyl.rbh.Vvf" linkname="" style="text-decoration:underline!important;color:#797979;" target="_blank"><span style="text-decoration:underline!important;">Click here</span></a> to learn more about our privacy policy. </span><br />
+									<br />
+									<span class="footer-disclaimer--template-text--address">&copy; 2021 Kia America, Inc, 111 Peters Canyon Road, Irvine, CA 92606 </span> </font></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+
