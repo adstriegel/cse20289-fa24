@@ -74,17 +74,20 @@ def echoSubmission (directory, netid, config):
         return 
 
     for file in config['files']:
-        print('***** File: ', file, ' *****')
-        print('')
+        try:
+            print('***** File: ', file, ' *****')
+            print('')
 
-        if not os.path.exists(os.path.join(theDirectory, file)):
-            print('File: ', file, ' does not exist')
-        else:
-            with open(os.path.join(theDirectory, file), 'r') as theFile:
-                result = theFile.read()
-                print(result)
+            if not os.path.exists(os.path.join(theDirectory, file)):
+                print('File: ', file, ' does not exist')
+            else:
+                with open(os.path.join(theDirectory, file), 'r') as theFile:
+                    result = theFile.read()
+                    print(result)
 
-        print('')
+            print('')
+        except Exception as e:
+            print('Exception when trying to output file: ', e)
 
 
 # Check for the presence of the required file names
@@ -123,7 +126,7 @@ def checkCommits (directory, startString):
         if len(theSplit) >= 2:
             secondSplit = theSplit[1].lower()       
 
-            if secondSplit.startswith(startString):
+            if secondSplit.lower().startswith(startString):
                 DetectedCommits += 1
                 print('   Commit: ', theCommit)
 
