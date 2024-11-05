@@ -4,6 +4,7 @@
 #  Ninth line is the CSV identification information
 
 # Example CSV comment lines from URLhaus
+
 ################################################################
 # abuse.ch URLhaus Database Dump (CSV)                         #
 # Last updated: 2024-10-27 14:19:30 (UTC)                      #
