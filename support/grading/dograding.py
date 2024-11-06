@@ -20,6 +20,8 @@ parser.add_argument('csv', type=str, help='The CSV file containing the class lis
 # Allow for grading of the assignment for a single student
 parser.add_argument('--netid', type=str, help='The NetID of the student to grade, grades only a single student')
 
+parser.add_argument('--altconfig', type=str, help='The alternate configuration file to use', default='None')
+
 args = parser.parse_args()
 
 # Open up the CSV file
@@ -29,8 +31,14 @@ if not os.path.exists(args.csv):
 
 problemIDs = []
 
+
 # Open up the configuration file
-theConfig = helpers.loadConfigFile(os.path.join(args.homework, args.homework + '-config.json'))
+if args.altconfig == 'None':
+    theConfig = helpers.loadConfigFile(os.path.join(args.homework, args.homework + '-config.json'))
+    configFile = os.path.join(args.homework, args.homework + '-config.json')
+else:
+    theConfig = helpers.loadConfigFile(os.path.join(args.homework, args.homework + '-config-' + args.altconfig + '.json'))    
+    configFile = os.path.join(args.homework, args.homework + '-config-' + args.altconfig + '.json')
 
 if theConfig == None:
     print('Error: Configuration file failed to load - exiting')
@@ -52,7 +60,7 @@ with open(args.csv, 'r') as csvfile:
 
         # Invoke a subprocess to run the grading script
         print('Grading '  + args.homework + ' for: ', netid)    
-        result = subprocess.run('python3 grade-' + args.homework + '.py ' + os.path.join(args.homework, args.homework + '-config.json') + ' ' + args.dir + ' ' + netid, shell=True, capture_output=True)        
+        result = subprocess.run('python3 grade-' + args.homework + '.py ' + configFile + ' ' + args.dir + ' ' + netid, shell=True, capture_output=True)        
 
         #print(result.stdout.decode('utf-8'))
 

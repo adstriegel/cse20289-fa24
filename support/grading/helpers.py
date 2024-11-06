@@ -135,6 +135,8 @@ def checkCommits (directory, startString):
     return DetectedCommits
 
 def loadConfigFile (configFile):
+    print('Loading configuration at: ', configFile)
+
     if not os.path.exists(configFile):
         print('Error: Configuration file does not exist')
         exit(-1)
@@ -150,6 +152,8 @@ def constructDirectory (directory, netid, config):
     return os.path.join(directory, config['prefix'] + netid)
 
 def conductTests (directory, netid, config, noProtect=False, Timeout=60):
+    print('Conducting test sequence for ', netid)
+
     # Confirm that the submission is present
     theRepo = constructDirectory(directory, netid, config)
     theDirectory = os.path.join(theRepo, config['location'])
@@ -175,97 +179,113 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
             os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH)
 
     for theTest in config['tests']:
-        print()
-        print('*************************************************************')
-        print('* Running test: ', theTest['name'])
-        print()
-
-        os.chdir(theDirectory)
-
-        for theCommand in theTest['commands']:
-#            if "$RESULTS$" in theCommand:
-#                print('Detected a command with a results directory')
-#                theCommand = theCommand.replace("$RESULTS$", os.path.join(config['results'], netid, theTest['id']))
-#                if not os.path.exists(os.path.join(config['results'], netid, theTest['id'])):
-#                    os.makedirs(os.path.join(config['results'], netid, theTest['id']))
-#                continue
-
-            if "$THEDIR$" in theCommand:
-                theCommand = theCommand.replace("$THEDIR$", theDirectory)
-
-            print('  Command:   ', theCommand)
+        try:
             print()
-            print('  Directory: ', theDirectory)
+            print('*************************************************************')
+            print('* Running test: ', theTest['name'])
             print()
 
-            #result = os.popen(theCommand).read()
-            try:
-                startTime = time.time()
-                result = subprocess.run(theCommand, cwd=theDirectory, timeout=Timeout, capture_output=True, shell=True)
-                endTime = time.time()
-                print('  ** Execution time: ', fancyFloat(endTime - startTime), ' s')
-                print()
-                # Results from stdout and stderr
-                print('  ** stdout (len=', len(result.stdout), ' bytes) **')
-                print(result.stdout.decode('utf-8'))                
-                print()
-                print('  ** stderr (len=', len(result.stderr), ' bytes) **')
-                print(result.stderr.decode('utf-8'))
-                print()
-                if(result.stderr.decode('utf-8').startswith("Traceback")):
-                    print("  ** Error: Traceback detected **")
-                    
-            except subprocess.TimeoutExpired:
-                print('** Execution timed out after ', str(Timeout), ' s')
-                print('  ** stdout (len=', len(result.stdout), ' bytes) **')
-                print(result.stdout.decode('utf-8'))                
-                print('  ** stderr (len=', len(result.stderr), ' bytes) **')
-                print(result.stderr.decode('utf-8'))
+            os.chdir(theDirectory)
 
-            #result = subprocess.run(theCommand, cwd=theDirectory)
-            #result.wait()
+            for theCommand in theTest['commands']:
+    #            if "$RESULTS$" in theCommand:
+    #                print('Detected a command with a results directory')
+    #                theCommand = theCommand.replace("$RESULTS$", os.path.join(config['results'], netid, theTest['id']))
+    #                if not os.path.exists(os.path.join(config['results'], netid, theTest['id'])):
+    #                    os.makedirs(os.path.join(config['results'], netid, theTest['id']))
+    #                continue
+
+                if "$THEDIR$" in theCommand:
+                    theCommand = theCommand.replace("$THEDIR$", theDirectory)
+
+                print('  Command:   ', theCommand)
+                print()
+                print('  Directory: ', theDirectory)
+                print()
+
+                #result = os.popen(theCommand).read()
+                try:
+                    startTime = time.time()
+                    result = subprocess.run(theCommand, cwd=theDirectory, timeout=Timeout, capture_output=True, shell=True)
+                    endTime = time.time()
+                    print('  ** Execution time: ', fancyFloat(endTime - startTime), ' s')
+                    print()
+                    # Results from stdout and stderr
+                    print('  ** stdout (len=', len(result.stdout), ' bytes) **')
+                    print(result.stdout.decode('utf-8'))                
+                    print()
+                    print('  ** stderr (len=', len(result.stderr), ' bytes) **')
+                    print(result.stderr.decode('utf-8'))
+                    print()
+                    if(result.stderr.decode('utf-8').startswith("Traceback")):
+                        print("  ** Error: Traceback detected **")
+
+                # Catch the timeout exception                    
+                except subprocess.TimeoutExpired:
+                    print('** Execution timed out after ', str(Timeout), ' s')
+                    #print('  ** stdout (len=', len(result.stdout), ' bytes) **')
+                    #print(result.stdout.decode('utf-8'))                
+                    #print('  ** stderr (len=', len(result.stderr), ' bytes) **')
+                    #print(result.stderr.decode('utf-8'))
+
+                # Catch any other exception
+                except Exception as e:
+                    print('** Exception detection: ', e)
+                    #print('  ** stdout (len=', len(result.stdout), ' bytes) **')
+                    #print(result.stdout.decode('utf-8'))                
+                    #print('  ** stderr (len=', len(result.stderr), ' bytes) **')
+                    #print(result.stderr.decode('utf-8'))
+
+
+                #result = subprocess.run(theCommand, cwd=theDirectory)
+                #result.wait()
+        except Exception as e:
+            print('Exception detected during the test: ', e)
 
         print('Test ', theTest['id'], ' completed')  
         print('')
-          
-        postTestList = os.listdir(theDirectory)
-        #print('Post Test List: ', postTestList)
 
-        # Make sure our output directory exists
-        if not os.path.exists(os.path.join(config['results'], netid, theTest['id'])):
-            os.makedirs(os.path.join(config['results'], netid, theTest['id']))
+        try:
+            postTestList = os.listdir(theDirectory)
+            #print('Post Test List: ', postTestList)
 
-        DetectedFiles = []
+            # Make sure our output directory exists
+            if not os.path.exists(os.path.join(config['results'], netid, theTest['id'])):
+                os.makedirs(os.path.join(config['results'], netid, theTest['id']))
 
-        # See which files were created by comparing a list of the files before the test and
-        # the files present in the directory after the test was run
-        for theExtraFile in postTestList:
-            if theExtraFile not in repoBaseList:
-                DetectedFiles.append(theExtraFile)
-                # Figure out the full path
-                theExtraFullFile = os.path.join(theDirectory, theExtraFile)
-                os.rename(theExtraFullFile, os.path.join(config['results'], netid, theTest['id'], theExtraFile))
+            DetectedFiles = []
 
-        if 'expectedfiles' in theTest:
-            print('  Expected Files: ', theTest['expectedfiles'])
+            # See which files were created by comparing a list of the files before the test and
+            # the files present in the directory after the test was run
+            for theExtraFile in postTestList:
+                if theExtraFile not in repoBaseList:
+                    DetectedFiles.append(theExtraFile)
+                    # Figure out the full path
+                    theExtraFullFile = os.path.join(theDirectory, theExtraFile)
+                    os.rename(theExtraFullFile, os.path.join(config['results'], netid, theTest['id'], theExtraFile))
 
-            for theExpectedFile in theTest['expectedfiles']:
-                if theExpectedFile not in DetectedFiles:
-                    print('    Missing file: ', theExpectedFile)
+            if 'expectedfiles' in theTest:
+                print('  Expected Files: ', theTest['expectedfiles'])
+
+                for theExpectedFile in theTest['expectedfiles']:
+                    if theExpectedFile not in DetectedFiles:
+                        print('    Missing file: ', theExpectedFile)
+                    else:
+                        print('    Correct file: ', theExpectedFile)
+
+                if len(DetectedFiles) > 0:
+                    print('    Generated files - placed in [', theTest['id'], ']: ', DetectedFiles)
                 else:
-                    print('    Correct file: ', theExpectedFile)
-
-            if len(DetectedFiles) > 0:
-                print('    Generated files - placed in [', theTest['id'], ']: ', DetectedFiles)
+                    print('    No generated files detected')
             else:
-                print('    No generated files detected')
-        else:
-            print('  Expected Files: None')
+                print('  Expected Files: None')
 
-            if len(DetectedFiles) > 0:
-                print('    Generated files - placed in [', theTest['id'], ']: ', DetectedFiles)
+                if len(DetectedFiles) > 0:
+                    print('    Generated files - placed in [', theTest['id'], ']: ', DetectedFiles)
 
-        #break
+            #break
+        except Exception as e:
+            print('Exception detected during the post test: ', e)
 
     if not noProtect:
         # Make files as requested to be back to read / write 
