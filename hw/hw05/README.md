@@ -31,7 +31,7 @@ A few pointers / tips:
 
 1. Create the appropriate branch for the assignment
 
-2. Create the `hw05` sub-directory inside of your `hw05`
+2. Create the `hw05` sub-directory inside of your `hw` directory
 
 3. Create your normal `README.md` file
 
