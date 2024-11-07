@@ -1,0 +1,8 @@
+
+This file is an example of a Notre Dame ID number.
+
+NDID        Name
+=========   ==================================
+900000000   Striegel, A-A-ron
+900000001   Lucky, Irish
+912345678   USC, Boo
