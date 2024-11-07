@@ -185,6 +185,15 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
             print('* Running test: ', theTest['name'])
             print()
 
+            if len(config['stagedfiles']) > 0:
+                print('  Staged Files: ', config['stagedfiles'])
+
+            # Copy in any staged files
+            for theStagedFile in config['stagedfiles']:
+                print('  Staged File: ', theStagedFile) 
+                # Needs to be a relative path               
+                #os.system('cp ' + os.path.join(config['stagedir'], theStagedFile) + ' ' + theDirectory)
+
             os.chdir(theDirectory)
 
             for theCommand in theTest['commands']:
