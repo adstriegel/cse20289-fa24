@@ -126,7 +126,7 @@ For this part, you will be writing the examples.  Draft four example files befor
 * `good.txt` : A clean file that does not contain any sensitive information.
 * `bad-marking.txt` : A file that trips the `*SENSITIVE*` marker.
 * `bad-SSN.txt` : A file that trips the social security number (recall that SSNs have the format of XXX-XX-XXXX).
-* `bad-NDID.txt` : A file that contains a Notre Dame 900 number
+* `bad-NDID.txt` : A file that contains a Notre Dame 90x number (you may test for either a strict 900xxx number or given that many IDs now start with 902, test for 90xxxx)
 
 Write a script named `sf.sh` (Sensitive Finder) that scans a file for sensitive information.  If no sensitive information is detected, the script should echo CLEAN.  If sensitive information is detected, you should echo out SENSITIVE followed by the reason (MARKED SENSITIVE, SSN, STUDENTID), e.g. SENSITIVE, MARKED SENSITIVE or SENSITIVE, SSN or SENSITIVE, STUDENTID.
 

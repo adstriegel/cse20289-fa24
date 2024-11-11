@@ -8,11 +8,11 @@
 | 10 | 11-04 | M |[Systems C - See Part 3](./schedule-part3.md) <br> Compiling, Building | Slides <br> Recap | [HW 7 (Assigned)](../hw/hw07/README.md) |  
 | 10 | 11-06 | W |[Systems C - See Part 3](./schedule-part3.md) <br> Libraries, Pointers, Arrays | Slides <br> Recap | |  
 | 10 | 11-08 | F |[Systems C - See Part 3](./schedule-part3.md) <br> Strings, Debugging (GDB, Valgrind) | Slides <br> Recap | |  
-|    |       |   | **Exam Practice, Exam 2, Systems C** | | No Readings - Week 11 | | 
+|    |       |   | **Exam Practice, Exam 2, Systems C** | | [No Readings - Week 11](../readings/readings-week11.md) | | 
 | 11 | 11-11 | M | Review - Exam 2 | Slides <br> Recap | [HW 8 (Assigned)](../hw/hw08/README.md) | 
 | 11 | 11-13 | W | Exam 2 | | | 
 | 11 | 11-15 | F | [Systems C - See Part 3](./schedule-part3.md) <br> Memory Allocation | Slides <br> Recap | |
-|    |       |   | **Structures, Unions, Systems C** | | Readings - Week 12 | | 
+|    |       |   | **Structures, Unions, Systems C** | | [Readings - Week 12](../readings/readings-week12.md) | | 
 | 12 | 11-18 | M | Structs, Unions | Slides <br> Recap | HW 9 - Assigned | | 
 | 12 | 11-20 | W | Linked Data Structures | Slides <br> Recap | | | 
 | 12 | 11-22 | F | Data Structures (Adv) <br> Virtual Lecture | Slides <br> Recap | | |

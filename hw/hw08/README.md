@@ -1,4 +1,4 @@
-# Homework 8 - Protect the Castle - Draft
+# Homework 8 - Protect the Castle
 
 In this homework, you will be building on the scripts that you wrote in Homework 7 to create an automated scanning tool that monitors a directory and appropriately confirms whether or not archives passed as e-mail attachments are approved or quarantined.
 
@@ -97,7 +97,7 @@ The log functionality should operate in the following manner:
    * For a clean entry, that should just be DateTime, ArchiveName, APPROVE.
    * For a bad entry, that should echo the reason file together with the clean information on a single line, e.g. DateTime, ArchiveName, QUARANTINE, SENSITIVE, SSN.    
 
-## Extra Credit - REST API Interface
+## Extra Credit - REST API Interface - Up to 15 points
 
 Using Flask, create a server that allows one to post a file and have the file placed in the specified directory for scanning.  The web server should then appropriately identify the result and post the result as a web response.
 
