@@ -15,7 +15,7 @@ In this homework, you will be building on the scripts that you wrote in Homework
 
 With your proof of concept tools built in Homework 7, your task now is to fully automate the toolset.  You may choose to reuse some or all of your code from Homework 7 as appropriate.
 
-In this homework, you may assume that e-mail attachments will be copied into a specified directory (e.g. `toscan`) that will be specified as an argument to your script. Attachments that are approved to be received or sent should be placed into an `approved` directory whereas e-mail attachments that should be reviewed should be placed into a `quarantined` directory.  
+In this homework, you may assume that e-mail attachments will be copied into a specified directory (e.g. `scandata\toscan`) that will be specified as an argument to your script. Attachments that are approved to be received or sent should be placed into an `approved` directory whereas e-mail attachments that should be reviewed should be placed into a `quarantined` directory.  
 The e-mail provider will "automatically" copy files into the specified directory.  The extensions for the files are assumed to be marked accurately but your code should tolerate / not crash if the extensions are inaccurate.  
 
 Your script should do the following:
