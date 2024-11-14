@@ -15,7 +15,8 @@ In this homework, you will be building on the scripts that you wrote in Homework
 
 With your proof of concept tools built in Homework 7, your task now is to fully automate the toolset.  You may choose to reuse some or all of your code from Homework 7 as appropriate.
 
-In this homework, you may assume that e-mail attachments will be copied into a specified directory (e.g. `scandata\toscan`) that will be specified as an argument to your script. Attachments that are approved to be received or sent should be placed into an `approved` directory whereas e-mail attachments that should be reviewed should be placed into a `quarantined` directory.  
+In this homework, you may assume that e-mail attachments will be copied into a specified directory (e.g. `scandata/toscan`) that will be specified as an argument to your script. Attachments that are approved to be received or sent should be placed into an `approved` directory whereas e-mail attachments that should be reviewed should be placed into a `quarantined` directory.
+
 The e-mail provider will "automatically" copy files into the specified directory.  The extensions for the files are assumed to be marked accurately but your code should tolerate / not crash if the extensions are inaccurate.  
 
 Your script should do the following:
@@ -34,10 +35,10 @@ Your script should do the following:
 Create five directories for the purposes of this homework outside of your repository:
 
 * `scandata`: This is the upper level directory where your data operations will take place
-* `scandata\toscan`: This is the directory where files for scanning will be staged
-* `scandata\approved`: This is the directory where approved attachments will be placed 
-* `scandata\quarantined`: This is the directory where quarantined files will be placed along with the accompanying `.reason` file
-* `scandata\log`: This is the location where the log files will be placed
+* `scandata/toscan`: This is the directory where files for scanning will be staged
+* `scandata/approved`: This is the directory where approved attachments will be placed 
+* `scandata/quarantined`: This is the directory where quarantined files will be placed along with the accompanying `.reason` file
+* `scandata/log`: This is the location where the log files will be placed
 
 ### Task 2a - Feeding the Scanner
 
@@ -57,7 +58,7 @@ You should write several scripts that copy in files that are both fully good, fu
 Expanding upon the earlier description, your script named `scanner.sh` should do the following:
 
 * Take in as an argument the following:
-   * The directory where content (archives) is located
+   * The directory where content (archives) to scan is located
    * The directory to place approved content (typically `approved`)
    * The directory to place quarantined content (typically `quarantined`)
    * A directory for a log that appends any decisions made by your script, creating the log if needed
@@ -69,7 +70,7 @@ Expanding upon the earlier description, your script named `scanner.sh` should do
       * Sleep for one second and repeat the loop
    * If there is new content
       * Extract the archive in an appropriate location of your choosing
-         * If the extraction files, the archive should be quarantined with the reason of `CANNOTEXTRACT`   
+         * If the extraction files, the archive should be quarantined with the reason of `CANNOTEXTRACT` 
       * Scan the underlying files for malicious URLs - use the 100 entry CSV at a location you choose
       * Scan the underlying files for sensitive content
       * If either the malicious URL or sensitive content is violated, place the archive into the quarantine location.  Add in a file with the `.reason` extension that contains the reason for quarantine (e.g. if `FA34ECA4.tar.gz` trips an issue, there should be a file named `FA34ECA4.tar.gz.reason` created with the reason.   
@@ -126,8 +127,8 @@ The submission will be the same procedure as with earlier assignments.  That mea
 
 ### Scanner Operation - 30 points
  
-* 1 pt - All scripts for Task 4 are placed in the correct location
-* 1 pt - Only the appropriate scripts or support files are repository
+* 1 pt - All scripts are in the correct location in your homework
+* 1 pt - Only the appropriate scripts or support files are in the repository
    * It is OK for instance to have a sub-directory where you place the bad site listing (make sure to use the 100 URL one) 
 * 2 pts - Proper usage of arguments
 * 8 pts - Proper operation the main loop with various test cases
