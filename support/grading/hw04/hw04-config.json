@@ -11,10 +11,19 @@
     [
         {
             "name" : "Input / Normal Operation - gogo.py - All data points",            
-            "id" : "t001-checktests",
+            "id" : "t001-gogo",
             "commands" : 
             [ 
-                "python3 $THEDIR$/gogo.py ex-do-one.yaml"
+                "python3 $THEDIR$/gogo.py ~/Documents/repos/cse20289-fa24/hw/hw04/ex-do-one.yaml"
+            ],
+            "expectedfiles" : [ "RPI01Wired.docx", "RPI01WiFi.docx" ]
+        },
+        {
+            "name" : "Input / Normal Operation - gogo.py - All data points",            
+            "id" : "t002-gogo",
+            "commands" : 
+            [ 
+                "python3 $THEDIR$/gogo.py ~/Documents/repos/cse20289-fa24/hw/hw04/ex-do-three.yaml"
             ],
             "expectedfiles" : [ "RPI012024-05-eth0.docx", "RPI012024-05-wlan0.docx" ]
         }

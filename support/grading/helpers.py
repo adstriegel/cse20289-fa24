@@ -174,9 +174,11 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
     # in write mode and blitzes the file away). The default value is to protect the specified
     # files
     if not noProtect:
-        # Make files as requested to be read only (e.g. files that the student code may be opening in write only mode potentially)
-        for theProtectFile in config['protectedfiles']:
-            os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH)
+        if 'protectedfiles' in config:
+            # Make files as requested to be read only (e.g. files that the student code may be opening in write only mode potentially)
+            for theProtectFile in config['protectedfiles']:
+                os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH)
+
 
     for theTest in config['tests']:
         try:
@@ -189,10 +191,10 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
                 print('  Staged Files: ', config['stagedfiles'])
 
             # Copy in any staged files
-            for theStagedFile in config['stagedfiles']:
-                print('  Staged File: ', theStagedFile) 
-                # Needs to be a relative path               
-                #os.system('cp ' + os.path.join(config['stagedir'], theStagedFile) + ' ' + theDirectory)
+            if 'stagedfiles' in config:
+                for theStagedFile in config['stagedfiles']:
+                    print('  Staged File: ', theStagedFile) 
+                    os.system('cp ' + theStagedFile + ' ' + theDirectory + '/.')
 
             os.chdir(theDirectory)
 
@@ -255,6 +257,13 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
         print('')
 
         try:
+            # Remove any staged files
+            if 'stagedfiles' in config:
+                for theStagedFile in config['stagedfiles']:
+                    print('  Staged File: ', theStagedFile) 
+#                    os.system('rm ' + theDirectory + '/.')
+
+
             postTestList = os.listdir(theDirectory)
             #print('Post Test List: ', postTestList)
 
@@ -297,6 +306,7 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
             print('Exception detected during the post test: ', e)
 
     if not noProtect:
-        # Make files as requested to be back to read / write 
-        for theProtectFile in config['protectedfiles']:
-            os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH | S_IWUSR)
+        if 'protectedfiles' in config:
+            # Make files as requested to be back to read / write 
+            for theProtectFile in config['protectedfiles']:
+                os.chmod(theProtectFile, S_IREAD | S_IRGRP | S_IROTH | S_IWUSR)
