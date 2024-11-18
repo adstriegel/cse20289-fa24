@@ -9,7 +9,7 @@ In this homework, you will be shoring up an existing base of C code by improving
 | **Due (EC)** | Friday, November 22nd - 10 PM |
 | **Group** | Group |  
 | **Canvas Link** | Homework 09 |
-| **Points** | TBA |
+| **Points** | 27 |
 
 ## Task 1 - Get the Codebase
 
