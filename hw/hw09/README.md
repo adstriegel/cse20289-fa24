@@ -20,7 +20,7 @@ As we move forward with C coding, you will now start to get broader skeletons to
 3. If all is correct, you should have the following files in your `hw09` directory:
 
 ```
-Assignment7.md	data	packet.c	pcap-process.c	pcap-read.c
+README.md	data	packet.c	pcap-process.c	pcap-read.c
 Makefile	main.c		packet.h	pcap-process.h	pcap-read.h
 ```
 
