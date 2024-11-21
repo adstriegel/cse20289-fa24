@@ -40,6 +40,8 @@ There are three components to Homework 9:
 2. *Debug critical issues*: The code compiles successfuly but results in a segfault.  You will need to use your debugging skills including adding / modifying `printfs` and `gdb`. 
 3. *Detect any memory leaks:* Use `valgrind` to determine if there are any memory leaks in the code and fix the code as needed.
 
+> Note that the advanced `Makefile` from class may have options that may or may not be appropriate and may not necessarily be invoking things at the correct stages.  It is up to you to interpret where / when things should happen and what options should be used.  
+
 Your submission will be a revised version of the code as well as commentary in the `README.md` as to what / how you fixed the respective issues.  
 
 ## Task 3 - Shoring up the Codebase
@@ -48,7 +50,7 @@ Your first task is to improve the codebase.  As noted earlier, you need to do th
 
 * Modify the *Makefile* to properly use variables, use intermediate object files during compilation, and to link the code together into the final executable.  
 * Create a `.gitignore` file that excludes any files that should not be placed in the repository, e.g. the final executable and the intermediate object files
-* Create a `redextract-debug` target that brings in all of the relevant debugging information for testing purposes.  Think about what that might entail.
+* Create a `redextract-debug` target that brings in all of the relevant debugging information for testing purposes.  Think about what that might entail. `redextract` should create an executable without debugging information.
 
 As a subtle hint, this is probably a pretty great place to do a commit as part of your assignment.
 
