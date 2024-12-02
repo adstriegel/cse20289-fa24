@@ -1,0 +1,47 @@
+{
+    "files" : [ "README.md", "ae.sh", "sbs.sh", "sf.sh", "aa.sh", ".gitignore" ],
+    "commit" : "hw07",
+    "prefix" : "group-cse20289-fa24-",
+    "groups" : [],
+    "location" : "hw/hw07",
+    "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-tar.tar",
+                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-targz.tar.gz",
+                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-two-gz.tar.gz",
+                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-two.tar",
+                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-zip.zip",
+                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/zip-test.zip"
+                    ],
+    "results" : "/Users/striegel/Documents/repos/graded-cse20289-fa24/hw07/",
+    "tests" :
+    [
+        {
+            "name" : "Archive Extraction - tar file",            
+            "id" : "ae-t001",
+            "commands" : 
+            [ 
+                "chmod +x ae.sh",
+                "./ae.sh example-tar.tar"
+            ]
+        },
+        {
+            "name" : "Archive Extraction - targz file",            
+            "id" : "ae-t002",
+            "commands" : 
+            [ 
+                "chmod +x ae.sh",
+                "./ae.sh example-targz.tar.gz"
+            ]
+        },
+        {
+            "name" : "Archive Extraction - targz file",            
+            "id" : "ae-t003",
+            "commands" : 
+            [ 
+                "chmod +x ae.sh",
+                "./ae.sh example-two-gz.tar.gz"
+            ]
+        }
+
+
+    ]
+}

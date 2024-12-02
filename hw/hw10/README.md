@@ -139,7 +139,7 @@ The C code is much simpler than the Python code but you will have some freedom t
 
 ## Task 3 - Small Scale Testing - ZMQ
 
-To start, copy over the contents of Homework 10 to your private repository.  Remember to use `cp -R`.  
+To start, copy over the contents of the `example` sub-directory Homework 10 to your private repository.  Remember to use `cp -R`.  
 
 ### Task 3a - Get It Working
 

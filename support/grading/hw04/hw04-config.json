@@ -4,8 +4,8 @@
     "prefix" : "group-cse20289-fa24-",
     "groups" : [],
     "location" : "hw/hw04",
-    "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/support/grading/hw04/intro.txt"],
-    "results" : "/Users/striegel/Documents/repos/graded-cse20289-fa24/hw04/",
+    "stagedfiles" : [ "~/cse20289-fa24/support/grading/hw04/intro.txt"],
+    "results" : "~/repos/graded-cse20289-fa24/hw04/",
     "python3" : "/Users/striegel/opt/anaconda3/bin/python3",
     "tests" :
     [
@@ -14,7 +14,7 @@
             "id" : "t001-gogo",
             "commands" : 
             [ 
-                "python3 $THEDIR$/gogo.py ~/Documents/repos/cse20289-fa24/hw/hw04/ex-do-one.yaml"
+                "python3 $THEDIR$/gogo.py ~/repos/cse20289-fa24/hw/hw04/ex-do-one.yaml"
             ],
             "expectedfiles" : [ "RPI01Wired.docx", "RPI01WiFi.docx" ]
         },
@@ -23,7 +23,7 @@
             "id" : "t002-gogo",
             "commands" : 
             [ 
-                "python3 $THEDIR$/gogo.py ~/Documents/repos/cse20289-fa24/hw/hw04/ex-do-three.yaml"
+                "python3 $THEDIR$/gogo.py ~/repos/cse20289-fa24/hw/hw04/ex-do-three.yaml"
             ],
             "expectedfiles" : [ "RPI012024-05-eth0.docx", "RPI012024-05-wlan0.docx" ]
         }

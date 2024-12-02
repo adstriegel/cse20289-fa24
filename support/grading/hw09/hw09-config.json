@@ -1,0 +1,26 @@
+{
+    "files" : [ "README.md", ".gitignore", "Makefile" ],
+    "commit" : "hw09",
+    "prefix" : "group-cse20289-fa24-",
+    "groups" : [],
+    "location" : "hw/hw09",
+    "results" : "/Users/striegel/Documents/repos/graded-cse20289-fa24/hw09/",
+    "tests" :
+    [
+        {
+            "name" : "Normal Operation - All Tests",            
+            "id" : "t001",
+            "commands" : 
+            [ 
+                "make clean",
+                "make",
+                "make redextract-debug",
+                "./redextract-debug ~/Documents/repos/cse20289-fa24/hw/hw09/data/testFile.pcap",
+                "./redextract ~/Documents/repos/cse20289-fa24/hw/hw09/data/testFile.pcap",
+                "./redextract ~/Documents/repos/cse20289-fa24/hw/hw09/data/test2.pcap",
+                "./redextract ~/Documents/repos/cse20289-fa24/hw/hw09/data/TestSmall.pcap"
+            ],
+            "expectedfiles" : [ "redextract", "redextract-debug" ]
+        }
+    ]
+}

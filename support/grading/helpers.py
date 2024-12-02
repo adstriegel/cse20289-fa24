@@ -187,7 +187,7 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
             print('* Running test: ', theTest['name'])
             print()
 
-            if len(config['stagedfiles']) > 0:
+            if 'stagedfiles' in config and len(config['stagedfiles']) > 0:
                 print('  Staged Files: ', config['stagedfiles'])
 
             # Copy in any staged files
@@ -251,6 +251,7 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
                 #result = subprocess.run(theCommand, cwd=theDirectory)
                 #result.wait()
         except Exception as e:
+            print('Command: ', theCommand)
             print('Exception detected during the test: ', e)
 
         print('Test ', theTest['id'], ' completed')  
