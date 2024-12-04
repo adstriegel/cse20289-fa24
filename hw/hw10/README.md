@@ -39,7 +39,7 @@ However, we cannot always work in our language of choice and sometimes need to h
 
 At a high level, we are going to be doing the following.  A user will run the C program.  This C program will take input from the user with regards to what queries to make with respect our set of JSON data.  Since C is not terribly great at parsing JSON, the C code will send the query request via ZMQ to the Python code.
 
-Our Python code will be our "server" that will largely sit and wait for requests from our C client.  Upon receiving a request from the C program, the Python code will either directly answer the query and / or fetch new data from a remote web server.  Requests can include picking which dataset to use (e.g. 2024-01-21), asking for the information for a specific data instance.  While in class the original concept was going to be to do interactions with beacons, we are going to do a slight audible and keep working with the original speed test data from earlier homework.  
+Our Python code will be our "server" that will largely sit and wait for requests from our C client.  Upon receiving a request from the C program, the Python code will directly answer the query.  Requests will be asking for the information through specified filters on the data specified during startup (e.g. which JSON file was fetched).  While in class the original concept was going to be to do interactions with beacons, we are going to do a slight audible and keep working with the original speed test data from earlier homework.  
 
 When the Python code resolves the specific request, it will send the data back in a C friendly format (e.g. CSV).  The C code will then display that data back to the user.
 
