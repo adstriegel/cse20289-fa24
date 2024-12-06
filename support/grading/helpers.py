@@ -187,12 +187,12 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
             print('* Running test: ', theTest['name'])
             print()
 
-            if 'stagedfiles' in config and len(config['stagedfiles']) > 0:
-                print('  Staged Files: ', config['stagedfiles'])
+            if 'stagedfiles' in theTest and len(theTest['stagedfiles']) > 0:
+                print('  Staged Files: ', theTest['stagedfiles'])
 
             # Copy in any staged files
-            if 'stagedfiles' in config:
-                for theStagedFile in config['stagedfiles']:
+            if 'stagedfiles' in theTest:
+                for theStagedFile in theTest['stagedfiles']:
                     print('  Staged File: ', theStagedFile) 
                     os.system('cp ' + theStagedFile + ' ' + theDirectory + '/.')
 
@@ -259,8 +259,8 @@ def conductTests (directory, netid, config, noProtect=False, Timeout=60):
 
         try:
             # Remove any staged files
-            if 'stagedfiles' in config:
-                for theStagedFile in config['stagedfiles']:
+            if 'stagedfiles' in theTest:
+                for theStagedFile in theTest['stagedfiles']:
                     print('  Staged File: ', theStagedFile) 
 #                    os.system('rm ' + theDirectory + '/.')
 

@@ -4,19 +4,13 @@
     "prefix" : "group-cse20289-fa24-",
     "groups" : [],
     "location" : "hw/hw07",
-    "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-tar.tar",
-                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-targz.tar.gz",
-                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-two-gz.tar.gz",
-                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-two.tar",
-                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-zip.zip",
-                    "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/zip-test.zip"
-                    ],
     "results" : "/Users/striegel/Documents/repos/graded-cse20289-fa24/hw07/",
     "tests" :
     [
         {
             "name" : "Archive Extraction - tar file",            
             "id" : "ae-t001",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-tar.tar" ],
             "commands" : 
             [ 
                 "chmod +x ae.sh",
@@ -26,6 +20,7 @@
         {
             "name" : "Archive Extraction - targz file",            
             "id" : "ae-t002",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-targz.tar.gz" ],
             "commands" : 
             [ 
                 "chmod +x ae.sh",
@@ -35,13 +30,188 @@
         {
             "name" : "Archive Extraction - targz file",            
             "id" : "ae-t003",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-two-gz.tar.gz" ],
             "commands" : 
             [ 
                 "chmod +x ae.sh",
                 "./ae.sh example-two-gz.tar.gz"
             ]
-        }
-
-
+        },
+        {
+            "name" : "Archive Extraction - zip file",            
+            "id" : "ae-t004",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/archives/example-zip.zip" ],
+            "commands" : 
+            [ 
+                "chmod +x ae.sh",
+                "./ae.sh example-zip.zip"
+            ]
+        },
+        {
+            "name" : "Archive Extraction - No file (bad input)",            
+            "id" : "ae-t005",
+            "commands" : 
+            [ 
+                "chmod +x ae.sh",
+                "./ae.sh"
+            ]
+        },
+        {
+            "name" : "Archive Extraction - File does not exist (bad input)",            
+            "id" : "ae-t006",
+            "commands" : 
+            [ 
+                "chmod +x ae.sh",
+                "./ae.sh DOESNOTEXIST.tar"
+            ]
+        },
+        {
+            "name" : "Search Bad Sites (File 1, List 10)",            
+            "id" : "sbs-t001",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/bad-file.eml",
+                              "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-10.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sbs.sh",
+                "./sbs.sh badsite-10.csv bad-file.eml"
+            ]
+        },
+        {
+            "name" : "Search Bad Sites (File 1, List 100)",            
+            "id" : "sbs-t002",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/bad-file.eml",
+                              "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-100.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sbs.sh",
+                "./sbs.sh badsite-100.csv bad-file.eml"
+            ]
+        },
+        {
+            "name" : "Search Bad Sites (File 2, List 100)",            
+            "id" : "sbs-t003",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/clean-file.eml",
+                              "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-100.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sbs.sh",
+                "./sbs.sh badsite-100.csv clean-file.eml"
+            ]
+        },
+        {
+            "name" : "Search Bad Sites (File 2, List 250)",            
+            "id" : "sbs-t004",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/clean-file.eml",
+                              "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-250.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sbs.sh",
+                "./sbs.sh badsite-250.csv clean-file.eml"
+            ]
+        },
+        {
+            "name" : "Search Bad Sites (File 1, List NoCmnt)",            
+            "id" : "sbs-t005",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/bad-file.eml",
+                              "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-nocmnt-10.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sbs.sh",
+                "./sbs.sh badsite-nocmnt-10.csv bad-file.eml"
+            ]
+        },
+        {
+            "name" : "Search Bad Sites (List 250, List 250)",            
+            "id" : "sbs-t006",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/clean-file.eml",
+                              "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-250.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sbs.sh",
+                "./sbs.sh badsite-250.csv badsite-250.csv"
+            ]
+        },
+        {
+            "name" : "Search Bad Sites (Missing Arguments)",            
+            "id" : "sbs-t007",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/clean-file.eml",
+                              "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-250.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sbs.sh",
+                "./sbs.sh"
+            ]
+        },
+        {
+            "name" : "Search Bad Sites (Bad File To Scan)",            
+            "id" : "sbs-t008",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/clean-file.eml",
+                              "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-250.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sbs.sh",
+                "./sbs.sh badsite-250.csv DOESNOTEXIST.eml"
+            ]
+        },
+        {
+            "name" : "Sensitive Number (File 1)",            
+            "id" : "sf-t001",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/files/clean-file.eml" ],
+            "commands" : 
+            [ 
+                "chmod +x sf.sh",
+                "./sf.sh clean-file.eml"
+            ]
+        },        
+        {
+            "name" : "Sensitive Number (File 2)",            
+            "id" : "sf-t002",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/badsites/badsite-250.csv" ],
+            "commands" : 
+            [ 
+                "chmod +x sf.sh",
+                "./sf.sh badsite-250.csv"
+            ]
+        },        
+        {
+            "name" : "Sensitive Number (File 3)",            
+            "id" : "sf-t003",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/sensitive/exNDID.txt" ],
+            "commands" : 
+            [ 
+                "chmod +x sf.sh",
+                "./sf.sh exNDID.txt"
+            ]
+        },        
+        {
+            "name" : "Sensitive Number (File 4)",            
+            "id" : "sf-t004",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/sensitive/exSSN.txt" ],
+            "commands" : 
+            [ 
+                "chmod +x sf.sh",
+                "./sf.sh exSSN.txt"
+            ]
+        },        
+        {
+            "name" : "Sensitive Number (File 5)",            
+            "id" : "sf-t005",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/sensitive/exSensitive.txt" ],
+            "commands" : 
+            [ 
+                "chmod +x sf.sh",
+                "./sf.sh exSensitive.txt"
+            ]
+        },        
+        {
+            "name" : "Sensitive Number (No File or Argument)",            
+            "id" : "sf-t006",
+            "stagedfiles" : [ "/Users/striegel/Documents/repos/cse20289-fa24/hw/hw07/sensitive/exSensitive.txt" ],
+            "commands" : 
+            [ 
+                "chmod +x sf.sh",
+                "./sf.sh NOTEXIST.txt"
+            ]
+        }        
     ]
 }
