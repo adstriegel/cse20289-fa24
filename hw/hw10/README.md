@@ -128,6 +128,8 @@ RCVD: exit
 SENT: success, exiting
 ```
 
+> Note: The lines with `SENT` and `RCVD` denote actual messages.  The other lines are debugging output that you may customize as you see fit.  Remember, we will be testing your overall code so as long as your client / server play well together, you are all set.  
+
 ### C Code
 
 The C code will do something fairly similar:
