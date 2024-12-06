@@ -1,4 +1,4 @@
-# Homework 10 - Penultimation
+# Homework 10 - Everything All at Once
 
 In this homework, we will be bringing together multiple components that we have discussed in class.  Specifically, we will be doing a blend of Python and C programming whereby we have one process written in Python connected via the network via an approach called ZMQ (Zero Message Queuing) to our C code.  Furthermore, we will also add in requests from a remote web server for the data that will be processed by Python.  Everything will come full circle then with small wrapper scripts then to invoke the C code which in turn works with the Python server.  
 
