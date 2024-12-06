@@ -61,7 +61,7 @@ As described in lecture, the Python code will launch with two arguments: the URL
       * `date` is either `*` (any date) or a valid date in `YYYY-MM-DD` format with a wildcard allowed for any of the sub-fields (YYYY or MM or DD) but only for an entire sub-field, e.g. `20*` is not allowed but `*-05-15` is allowed
       * `time` is either `*` (any time) or a valid hour ranging from 0-23
       * `filter` conducts a selection of certain fields such as `iface` (interface), `dir` (direction), or `type` (type of test)
-      * The filter is specified by writing `iface=eth0;dir=downlink;type=iperf` where the field name is stated and the value follows an equals sign.  The fields to filter on are separated by semicolons.  By default, the default filter should be `iface=eth0;dir=downlink,type=iperf`.
+      * The filter is specified by writing `iface=eth0;dir=downlink;type=iperf` where the field name is stated and the value follows an equals sign.  The fields to filter on are separated by semicolons.  By default, the default filter should be `iface=eth0;dir=downlink;type=iperf`.
    * `list` is a special kind of stat command that lists the data one line at a time
       * When in `list` mode, the `success` result returns the number of matching records
       * Each individual record is then fetched using `more` 
@@ -102,18 +102,18 @@ For instance, the server would display the following:
 % python3 theServer.py support/grading/hw03/hw03-config.json 41003
 Server started successfully - listening on Port 41003!
 Waiting for a new command
-RCVD: count, 2024-05-18, *, iface=eth0;dir=downlink,type=iperf
+RCVD: count, 2024-05-18, *, iface=eth0;dir=downlink;type=iperf
 count requested - 35 records 
 SENT: success, count, 35
 Waiting for a new command
-RCVD: mean, 2024-05-18, *, iface=eth0;dir=downlink,type=iperf
+RCVD: mean, 2024-05-18, *, iface=eth0;dir=downlink;type=iperf
 mean request - 35 records
 SENT: success, average, 16.7382
-RCVD: avg, 2024-05-18, *, iface=eth0;dir=downlink,type=iperf
+RCVD: avg, 2024-05-18, *, iface=eth0;dir=downlink;type=iperf
 error - bad command avg
 SENT: failure, bad command - avg
 Waiting for a new command
-RCVD: list, 2024-05-18, 1, iface=eth0;dir=downlink,type=iperf
+RCVD: list, 2024-05-18, 1, iface=eth0;dir=downlink;type=iperf
 SENT: success, 2
 Waiting for a new command
 RCVD: more
