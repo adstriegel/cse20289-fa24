@@ -74,6 +74,9 @@ As described in lecture, the Python code will launch with two arguments: the URL
    * When commands are unsuccessful, it should generally have `failure` followed by the reason for failure of the command
 4. Repeat the loop
 
+Example data in the JSON
+
+```
     {
         "timestamp": "2024-05-03T02:26:16-04:00",
         "mac": "DC-A6-32-1D-A4-E0",
@@ -90,8 +93,8 @@ As described in lecture, the Python code will launch with two arguments: the URL
         "max_tput_mbps": 814.9305375808235,
         "min_tput_mbps": 741.7217525614017,
         "median_tput_mbps": 799.9386373617318
-    },
-
+    }
+```
 
 For instance, the server would display the following:
 
