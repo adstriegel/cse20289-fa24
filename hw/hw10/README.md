@@ -212,6 +212,7 @@ Write the following shell scripts that read the `.config` file to launch your C 
 * `bb` that operates in the following manner
    * If the first argument is not `-query` then the next arguments the stat followed must be year, month, day, and hour
       * If you have already written your code to behave otherwise, please note that in your `README.md` file
+      * You should have the ability to do a `list` command though you do have flexibility on how you go about that      
    * If the first argument is `-query` then the next argument must be a filter string (e.g. iface=eth0;...) followed by the year, month, day, and hour
    * This command may simply echo what is provided by the server in a raw manner
    * To support list, you may want to have a command that is only in your C code but executes a batch of commands, e.g. `listmore` that does a list and a more
