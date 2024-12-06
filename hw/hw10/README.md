@@ -205,7 +205,7 @@ EXE=client
 HOST=localhost
 PORT=41003
 ```
-where HOST is the hostname (typically localhost) and PORT is the port that your server is running on.
+where `HOST` is the hostname (typically localhost) and `PORT` is the port that your server is running on.
 
 Write the following shell scripts that read the `.config` file to launch your C code providing the following functionality:
 
@@ -245,4 +245,10 @@ The submission will be the same procedure as past homework.  That means:
 
 ## Rubric
 
-To be added after Thanksgiving break
+### Core Functionality - 85 points
+
+TBA
+
+### Extended Functionality - 15 points
+
+Add in additional formatting and clarity for `bbf.sh`
