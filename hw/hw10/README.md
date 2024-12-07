@@ -221,6 +221,28 @@ The script should be appropriately executable.
 
 At this point, the code as robustly written will get you to 85 percent of the potential score.
 
+You may choose how best to handle the arguments so as to make things easier to interact with your C client.  For instance, you might do the following:
+
+```
+% ./bb list 2024-05-14 *
+
+% ./bb count 2024-05-* 13
+
+% ./bb -query iface=eth0;dir=uplink;type=iperf max 2024-05-14 *
+```
+
+Alternatively, you might elect to split up the arguments for the date and time information:
+
+```
+% ./bb list 2024 05 14 *
+
+% ./bb count 2024 05 * 13
+
+% ./bb -query iface=eth0;dir=uplink;type=iperf max 2024 05 14 *
+```
+
+Since your code is the one that invokes your C client, you have a significant amount of latitude on how you direct input for your C code to operate correctly.  You should appropriately note how to invoke the script both through a help function (e.g. what happens when you do not have the right number of arguments) and in your README file.
+
 ## Task 5 - Clean Output
 
 While `bb` provided functionality in a raw format, the final task is to clean up the output in a script named `bbf`. Your task is then to improve the code and add in functionality that you feel appropriate to get to a higher score.  You may choose whatever you see is fit to get there or simply call it good at 85 percent through Task 4.
