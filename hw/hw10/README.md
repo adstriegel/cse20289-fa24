@@ -212,7 +212,7 @@ Write the following shell scripts that read the `.config` file to launch your C 
 * `bb` that operates in the following manner
    * If the first argument is not `-query` then the next arguments the stat followed must be year, month, day, and hour
       * If you have already written your code to behave otherwise, please note that in your `README.md` file
-      * You should have the ability to do a `list` command though you do have flexibility on how you go about that      
+      * In the basic version for `bb`, you do not need to support `list`      
    * If the first argument is `-query` then the next argument must be a filter string (e.g. iface=eth0;...) followed by the year, month, day, and hour
    * This command may simply echo what is provided by the server in a raw manner
    * To support list, you may want to have a command that is only in your C code but executes a batch of commands, e.g. `listmore` that does a list and a more
@@ -224,7 +224,7 @@ At this point, the code as robustly written will get you to 85 percent of the po
 You may choose how best to handle the arguments so as to make things easier to interact with your C client.  For instance, you might do the following:
 
 ```
-% ./bb list 2024-05-14 *
+% ./bb min 2024-05-14 *
 
 % ./bb count 2024-05-* 13
 
@@ -234,7 +234,7 @@ You may choose how best to handle the arguments so as to make things easier to i
 Alternatively, you might elect to split up the arguments for the date and time information:
 
 ```
-% ./bb list 2024 05 14 *
+% ./bb min 2024 05 14 *
 
 % ./bb count 2024 05 * 13
 
@@ -254,6 +254,20 @@ While `bb` provided functionality in a raw format, the final task is to clean up
       * For full credit, you should clean up the normal stat requests as well as list though you may reduce the number of fields reported in a list
 
 The script should be appropriately executable.
+
+For instance, instead of the following output:
+
+```
+% ./bb count 2024 05 * 13
+success, count, 35
+```
+
+You should appropriately transform the output:
+
+```
+% ./bbf count 2024 05 * 13
+Count (2024-05-* 13): 35 records
+```
 
 ## Submission
 
