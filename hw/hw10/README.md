@@ -243,6 +243,8 @@ Alternatively, you might elect to split up the arguments for the date and time i
 
 Since your code is the one that invokes your C client, you have a significant amount of latitude on how you direct input for your C code to operate correctly.  You should appropriately note how to invoke the script both through a help function (e.g. what happens when you do not have the right number of arguments) and in your README file.
 
+> **Note:** You may elect to also include quotes around arguments as you see fit.  You should document this in your `README.md`.  
+
 ## Task 5 - Clean Output
 
 While `bb` provided functionality in a raw format, the final task is to clean up the output in a script named `bbf`. Your task is then to improve the code and add in functionality that you feel appropriate to get to a higher score.  You may choose whatever you see is fit to get there or simply call it good at 85 percent through Task 4.
