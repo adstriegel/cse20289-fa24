@@ -247,13 +247,13 @@ Since your code is the one that invokes your C client, you have a significant am
 
 ## Task 5 - Clean Output
 
-While `bb` provided functionality in a raw format, the final task is to clean up the output in a script named `bbf`. Your task is then to improve the code and add in functionality that you feel appropriate to get to a higher score.  You may choose whatever you see is fit to get there or simply call it good at 85 percent through Task 4.
+While `bb` provided functionality in a raw format, the final task is to clean up the output in a script named `bbf`. Your task is then to improve the code and add in functionality that you feel appropriate to get to a higher score.  You may choose whatever you see is fit to get there or simply call it good at 85 percent through Task 4.  Support for `list` is required to get full credit with `bbf`.
 
 * `bbf` that operates in the following manner
    * Same requirements with respect to `-query` or without it as with `bb`
    * Adapt the output to be "fancier" and cleanly formatted.  It is up to you where this cleanup occurs whether it makes sense to put it in the C code or in a shell script  
    * It is up to you what a clean output looks like and how clean you make the output
-      * For full credit, you should clean up the normal stat requests as well as list though you may reduce the number of fields reported in a list
+      * For full credit, you should clean up the normal stat requests as well as `list` though you may reduce the number of fields reported in a `list`
 
 The script should be appropriately executable.
 
